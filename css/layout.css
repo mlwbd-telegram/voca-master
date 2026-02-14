@@ -1,1 +1,97 @@
+/* css/layout.css */
 
+/* Main Auth Container - Centers content vertically & horizontally */
+main.auth-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: var(--spacing-md);
+    width: 100%;
+}
+
+.auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card Layout Structure */
+.card {
+    background: var(--bg-surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 420px; /* Optimal reading width for forms */
+    padding: var(--spacing-xl);
+    position: relative;
+    overflow: hidden;
+    animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animation for page load */
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Section */
+.auth-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.auth-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: -0.025em;
+}
+
+.auth-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Form Layout */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: left;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    .card {
+        padding: var(--spacing-lg);
+        border-radius: var(--radius-md);
+    }
+    
+    .auth-title {
+        font-size: 1.5rem;
+    }
+}
