@@ -4,14 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Vocab Master</title>
-    <meta name="description" content="Login to access your vocabulary learning dashboard.">
+    <meta name="description" content="Sign in to your vocabulary learning dashboard.">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
+
+    <!-- Page Specific Animations -->
+    <style>
+        body {
+            overflow-x: hidden;
+            background-color: #f8fafc;
+        }
+
+        /* Ambient Background Shapes */
+        .ambient-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            z-index: -1;
+            opacity: 0.6;
+            animation: float 15s infinite ease-in-out;
+            pointer-events: none;
+        }
+
+        .shape-1 {
+            top: -150px;
+            left: -150px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(99,102,241,0.4) 0%, rgba(99,102,241,0) 70%);
+        }
+
+        .shape-2 {
+            bottom: -150px;
+            right: -150px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(139,92,246,0.4) 0%, rgba(139,92,246,0) 70%);
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(40px, 60px); }
+        }
+
+        /* Animated Link Style */
+        .animated-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .animated-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--primary-color);
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .animated-link:hover {
+            color: var(--primary-hover);
+        }
+
+        .animated-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Decorative Background -->
+    <div class="ambient-shape shape-1"></div>
+    <div class="ambient-shape shape-2"></div>
 
     <main class="auth-layout">
         <div class="auth-container">
@@ -19,20 +95,22 @@
             <div class="card">
                 <header class="auth-header">
                     <h1 class="auth-title">Welcome Back</h1>
-                    <p class="auth-subtitle">Enter your details to access your account</p>
+                    <p class="auth-subtitle">Sign in to continue mastering new words</p>
                 </header>
 
                 <div class="auth-form">
                     
-                    <!-- Email Input -->
+                    <!-- Email Field -->
                     <div class="form-group">
                         <label for="email" class="form-label">Email Address</label>
                         <input type="email" id="email" class="form-input" placeholder="name@example.com" autocomplete="email">
                     </div>
 
-                    <!-- Password Input -->
+                    <!-- Password Field -->
                     <div class="form-group">
-                        <label for="password" class="form-label">Password</label>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <label for="password" class="form-label">Password</label>
+                        </div>
                         <input type="password" id="password" class="form-input" placeholder="Enter your password" autocomplete="current-password">
                     </div>
 
@@ -57,10 +135,10 @@
                         Sign in with Google
                     </button>
 
-                    <!-- Switch to Register -->
-                    <div style="margin-top: 1.5rem; text-align: center; font-size: 0.9rem; color: var(--text-muted);">
+                    <!-- Footer Link -->
+                    <div style="margin-top: 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
                         New to Vocab Master? 
-                        <button id="registerBtn" type="button" class="link-button">Create Account</button>
+                        <a href="register.html" id="registerBtn" class="animated-link">Create Account</a>
                     </div>
 
                 </div>
@@ -68,7 +146,7 @@
         </div>
     </main>
 
-    <!-- Logic Script -->
+    <!-- Logic -->
     <script type="module" src="js/login.js"></script>
 </body>
 </html>
