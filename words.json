@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "word": "abandon",
+    "part_of_speech": "verb",
+    "definition_en": "to leave something completely",
+    "definition_bn": "সম্পূর্ণভাবে ছেড়ে দেওয়া",
+    "example_en": "He abandoned the project after many failures.",
+    "example_bn": "অনেক ব্যর্থতার পরে সে প্রকল্পটি ছেড়ে দেয়।",
+    "level": 1
+  },
+  {
+    "id": 2,
+    "word": "achieve",
+    "part_of_speech": "verb",
+    "definition_en": "to successfully reach a goal",
+    "definition_bn": "লক্ষ্য অর্জন করা",
+    "example_en": "She worked hard to achieve success.",
+    "example_bn": "সে সফলতা অর্জনের জন্য কঠোর পরিশ্রম করেছে।",
+    "level": 1
+  },
+  {
+    "id": 3,
+    "word": "accurate",
+    "part_of_speech": "adjective",
+    "definition_en": "correct and exact",
+    "definition_bn": "সঠিক",
+    "example_en": "The information is accurate.",
+    "example_bn": "তথ্যটি সঠিক।",
+    "level": 1
+  },
+  {
+    "id": 4,
+    "word": "ancient",
+    "part_of_speech": "adjective",
+    "definition_en": "very old from a long time ago",
+    "definition_bn": "প্রাচীন",
+    "example_en": "We visited an ancient temple.",
+    "example_bn": "আমরা একটি প্রাচীন মন্দিরে গিয়েছিলাম।",
+    "level": 1
+  },
+  {
+    "id": 5,
+    "word": "benefit",
+    "part_of_speech": "noun",
+    "definition_en": "something good that helps you",
+    "definition_bn": "উপকার",
+    "example_en": "Exercise has many health benefits.",
+    "example_bn": "ব্যায়ামের অনেক স্বাস্থ্য উপকার আছে।",
+    "level": 1
+  },
+  {
+    "id": 6,
+    "word": "confident",
+    "part_of_speech": "adjective",
+    "definition_en": "sure about your ability",
+    "definition_bn": "আত্মবিশ্বাসী",
+    "example_en": "He felt confident before the exam.",
+    "example_bn": "পরীক্ষার আগে সে আত্মবিশ্বাসী অনুভব করছিল।",
+    "level": 2
+  },
+  {
+    "id": 7,
+    "word": "develop",
+    "part_of_speech": "verb",
+    "definition_en": "to grow or improve over time",
+    "definition_bn": "উন্নত হওয়া বা উন্নয়ন করা",
+    "example_en": "Children develop new skills quickly.",
+    "example_bn": "শিশুরা দ্রুত নতুন দক্ষতা অর্জন করে।",
+    "level": 2
+  },
+  {
+    "id": 8,
+    "word": "environment",
+    "part_of_speech": "noun",
+    "definition_en": "the natural world around us",
+    "definition_bn": "পরিবেশ",
+    "example_en": "We must protect the environment.",
+    "example_bn": "আমাদের পরিবেশ রক্ষা করতে হবে।",
+    "level": 2
+  },
+  {
+    "id": 9,
+    "word": "improve",
+    "part_of_speech": "verb",
+    "definition_en": "to become better",
+    "definition_bn": "উন্নতি করা",
+    "example_en": "Practice will improve your English.",
+    "example_bn": "চর্চা তোমার ইংরেজি উন্নত করবে।",
+    "level": 2
+  },
+  {
+    "id": 10,
+    "word": "knowledge",
+    "part_of_speech": "noun",
+    "definition_en": "information and understanding",
+    "definition_bn": "জ্ঞান",
+    "example_en": "Reading books increases knowledge.",
+    "example_bn": "বই পড়া জ্ঞান বৃদ্ধি করে।",
+    "level": 2
+  },
+  {
+    "id": 11,
+    "word": "maintain",
+    "part_of_speech": "verb",
+    "definition_en": "to keep something in good condition",
+    "definition_bn": "রক্ষণাবেক্ষণ করা",
+    "example_en": "You should maintain your health.",
+    "example_bn": "তোমার স্বাস্থ্য ভালো রাখতে হবে।",
+    "level": 3
+  },
+  {
+    "id": 12,
+    "word": "opportunity",
+    "part_of_speech": "noun",
+    "definition_en": "a good chance to do something",
+    "definition_bn": "সুযোগ",
+    "example_en": "This job is a great opportunity.",
+    "example_bn": "এই চাকরিটি একটি দারুণ সুযোগ।",
+    "level": 3
+  },
+  {
+    "id": 13,
+    "word": "prefer",
+    "part_of_speech": "verb",
+    "definition_en": "to like one thing more than another",
+    "definition_bn": "বেশি পছন্দ করা",
+    "example_en": "I prefer tea to coffee.",
+    "example_bn": "আমি কফির চেয়ে চা বেশি পছন্দ করি।",
+    "level": 3
+  },
+  {
+    "id": 14,
+    "word": "reduce",
+    "part_of_speech": "verb",
+    "definition_en": "to make something smaller or less",
+    "definition_bn": "কমানো",
+    "example_en": "We should reduce plastic use.",
+    "example_bn": "আমাদের প্লাস্টিক ব্যবহার কমানো উচিত।",
+    "level": 3
+  },
+  {
+    "id": 15,
+    "word": "significant",
+    "part_of_speech": "adjective",
+    "definition_en": "important or noticeable",
+    "definition_bn": "গুরুত্বপূর্ণ",
+    "example_en": "There was a significant change.",
+    "example_bn": "একটি গুরুত্বপূর্ণ পরিবর্তন হয়েছিল।",
+    "level": 4
+  },
+  {
+    "id": 16,
+    "word": "analyze",
+    "part_of_speech": "verb",
+    "definition_en": "to examine carefully",
+    "definition_bn": "বিশ্লেষণ করা",
+    "example_en": "Scientists analyze data.",
+    "example_bn": "বিজ্ঞানীরা তথ্য বিশ্লেষণ করেন।",
+    "level": 4
+  },
+  {
+    "id": 17,
+    "word": "concept",
+    "part_of_speech": "noun",
+    "definition_en": "an idea or thought",
+    "definition_bn": "ধারণা",
+    "example_en": "The concept is difficult to understand.",
+    "example_bn": "ধারণাটি বোঝা কঠিন।",
+    "level": 4
+  },
+  {
+    "id": 18,
+    "word": "strategy",
+    "part_of_speech": "noun",
+    "definition_en": "a plan to achieve something",
+    "definition_bn": "কৌশল",
+    "example_en": "We need a better strategy.",
+    "example_bn": "আমাদের একটি ভালো কৌশল দরকার।",
+    "level": 5
+  },
+  {
+    "id": 19,
+    "word": "sufficient",
+    "part_of_speech": "adjective",
+    "definition_en": "enough for a need",
+    "definition_bn": "যথেষ্ট",
+    "example_en": "This amount is sufficient.",
+    "example_bn": "এই পরিমাণ যথেষ্ট।",
+    "level": 5
+  },
+  {
+    "id": 20,
+    "word": "complex",
+    "part_of_speech": "adjective",
+    "definition_en": "not simple and hard to understand",
+    "definition_bn": "জটিল",
+    "example_en": "The problem is complex.",
+    "example_bn": "সমস্যাটি জটিল।",
+    "level": 5
+  }
+]
