@@ -131,7 +131,7 @@ const ExamPage = {
     
     this.elements.optionsGrid.innerHTML = '';
     
-    q.options.forEach((option, index) => {
+    q.options.forEach((option) => {
       const btn = document.createElement('button');
       btn.className = 'option-btn';
       btn.textContent = option.meaning_bn;
@@ -171,10 +171,15 @@ const ExamPage = {
     }
     
     this.elements.feedback.classList.add('show');
+    
+    // Show next button - NO AUTO ADVANCE
     this.elements.nextBtn.classList.remove('hidden');
     
-    if (this.currentQuestion < this.questions.length - 1) {
-      setTimeout(() => this.nextQuestion(), 1500);
+    // Change button text for last question
+    if (this.currentQuestion === this.questions.length - 1) {
+      this.elements.nextBtn.textContent = 'See Results →';
+    } else {
+      this.elements.nextBtn.textContent = 'Next Question →';
     }
   },
   
