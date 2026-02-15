@@ -1,38 +1,332 @@
 [
   {
-    "word": "abandon",
-    "pos": "verb",
-    "meaning_bn": "পরিত্যাগ করা",
-    "definition": "To leave behind, to desert",
-    "example_en": "The crew had to abandon the sinking ship.",
-    "example_bn": "দলকে ডুবে যাওয়া জাহাজ পরিত্যাগ করতে হয়েছিল।",
-    "synonyms": ["desert", "forsake", "leave"]
-  },
-  {
-    "word": "ability",
-    "pos": "noun",
-    "meaning_bn": "সামর্থ্য",
-    "definition": "The power or capacity to do something",
-    "example_en": "She has the ability to solve complex problems.",
-    "example_bn": "তার জটিল সমস্যা সমাধান করার সামর্থ্য আছে।",
-    "synonyms": ["capability", "skill", "talent"]
-  },
-  {
-    "word": "accurate",
-    "pos": "adjective",
-    "meaning_bn": "নির্ভুল",
-    "definition": "Correct in all details; exact",
-    "example_en": "The weather forecast was surprisingly accurate.",
-    "example_bn": "আবহাওয়ার পূর্বাভাস আশ্চর্যজনকভাবে নির্ভুল ছিল।",
-    "synonyms": ["precise", "exact", "correct"]
-  },
-  {
-    "word": "achieve",
-    "pos": "verb",
-    "meaning_bn": "অর্জন করা",
-    "definition": "Successfully bring about or reach a desired objective",
-    "example_en": "He worked hard to achieve his goals.",
-    "example_bn": "তিনি তার লক্ষ্য অর্জন করতে কঠোর পরিশ্রম করেছিলেন।",
-    "synonyms": ["accomplish", "attain", "reach"]
-  }
+"word": "achieve",
+"part_of_speech": "verb",
+"definition_en": "to successfully complete something or reach a goal",
+"definition_bn": "কোনো লক্ষ্য অর্জন করা বা কিছু সফলভাবে সম্পন্ন করা",
+"example_en": "She worked hard to achieve her goals.",
+"example_bn": "সে তার লক্ষ্য অর্জনের জন্য কঠোর পরিশ্রম করেছে।",
+"synonyms": ["accomplish", "attain", "reach"],
+"level": "basic"
+},
+{
+"word": "benefit",
+"part_of_speech": "noun",
+"definition_en": "an advantage or good thing that comes from something",
+"definition_bn": "কোনো কিছুর থেকে পাওয়া উপকার বা সুবিধা",
+"example_en": "Regular exercise has many health benefits.",
+"example_bn": "নিয়মিত ব্যায়ামের অনেক স্বাস্থ্যগত সুবিধা রয়েছে।",
+"synonyms": ["advantage", "gain", "profit"],
+"level": "basic"
+},
+{
+"word": "create",
+"part_of_speech": "verb",
+"definition_en": "to make something new or bring something into existence",
+"definition_bn": "কিছু নতুন তৈরি করা বা অস্তিত্বে আনা",
+"example_en": "Artists create beautiful paintings.",
+"example_bn": "শিল্পীরা সুন্দর চিত্র তৈরি করেন।",
+"synonyms": ["make", "produce", "develop"],
+"level": "basic"
+},
+{
+"word": "decide",
+"part_of_speech": "verb",
+"definition_en": "to make a choice or come to a conclusion",
+"definition_bn": "একটি সিদ্ধান্ত নেওয়া বা চূড়ান্ত করা",
+"example_en": "We need to decide where to go for dinner.",
+"example_bn": "আমাদের রাতের খাবারের জন্য কোথায় যাব তা সিদ্ধান্ত নিতে হবে।",
+"synonyms": ["choose", "determine", "resolve"],
+"level": "basic"
+},
+{
+"word": "explain",
+"part_of_speech": "verb",
+"definition_en": "to make something clear by giving details or reasons",
+"definition_bn": "বিস্তারিত বা কারণ দেখিয়ে কিছু স্পষ্ট করা",
+"example_en": "Can you explain how this machine works?",
+"example_bn": "আপনি কি ব্যাখ্যা করতে পারেন মেশিনটি কীভাবে কাজ করে?",
+"synonyms": ["describe", "clarify", "illustrate"],
+"level": "basic"
+},
+{
+"word": "follow",
+"part_of_speech": "verb",
+"definition_en": "to go after someone or move in the same direction",
+"definition_bn": "কাউকে অনুসরণ করা বা একই দিকে যাওয়া",
+"example_en": "Please follow the instructions carefully.",
+"example_bn": "দয়া করে নির্দেশাবলী মনোযোগ সহকারে অনুসরণ করুন।",
+"synonyms": ["pursue", "track", "obey"],
+"level": "basic"
+},
+{
+"word": "improve",
+"part_of_speech": "verb",
+"definition_en": "to make something better or become better",
+"definition_bn": "কিছু ভালো করা বা ভালো হওয়া",
+"example_en": "He practices every day to improve his skills.",
+"example_bn": "সে তার দক্ষতা উন্নত করতে প্রতিদিন অনুশীলন করে।",
+"synonyms": ["enhance", "upgrade", "develop"],
+"level": "basic"
+},
+{
+"word": "increase",
+"part_of_speech": "verb",
+"definition_en": "to make something larger in amount or size",
+"definition_bn": "পরিমাণ বা আকার বাড়ানো",
+"example_en": "The company plans to increase its workforce.",
+"example_bn": "কোম্পানি তার শ্রমিক বাড়াতে পরিকল্পনা করছে।",
+"synonyms": ["grow", "expand", "raise"],
+"level": "basic"
+},
+{
+"word": "protect",
+"part_of_speech": "verb",
+"definition_en": "to keep someone or something safe from harm",
+"definition_bn": "কাউকে বা কিছুকে ক্ষতি থেকে নিরাপদ রাখা",
+"example_en": "We must protect the environment for future generations.",
+"example_bn": "আমাদের ভবিষ্যৎ প্রজন্মের জন্য পরিবেশ রক্ষা করতে হবে।",
+"synonyms": ["guard", "defend", "shield"],
+"level": "basic"
+},
+{
+"word": "provide",
+"part_of_speech": "verb",
+"definition_en": "to give or supply something needed",
+"definition_bn": "প্রয়োজনীয় কিছু দেওয়া বা সরবরাহ করা",
+"example_en": "The government provides free education to children.",
+"example_bn": "সরকার শিশুদের জন্য বিনামূল্যে শিক্ষা প্রদান করে।",
+"synonyms": ["supply", "offer", "furnish"],
+"level": "basic"
+},
+{
+"word": "receive",
+"part_of_speech": "verb",
+"definition_en": "to get or be given something",
+"definition_bn": "কিছু পাওয়া বা দেওয়া হওয়া",
+"example_en": "She received a gift from her friend.",
+"example_bn": "সে তার বন্ধুর কাছ থেকে একটি উপহার পেয়েছে।",
+"synonyms": ["get", "obtain", "accept"],
+"level": "basic"
+},
+{
+"word": "support",
+"part_of_speech": "verb",
+"definition_en": "to help or encourage someone",
+"definition_bn": "কাউকে সাহায্য বা উৎসাহ দেওয়া",
+"example_en": "Her family always supports her dreams.",
+"example_bn": "তার পরিবার সবসময় তার স্বপ্নকে সমর্থন করে।",
+"synonyms": ["assist", "back", "aid"],
+"level": "basic"
+},
+{
+"word": "understand",
+"part_of_speech": "verb",
+"definition_en": "to know what someone means or how something works",
+"definition_bn": "কারও মানে বা কিছু কীভাবে কাজ করে তা বোঝা",
+"example_en": "I don't understand this math problem.",
+"example_bn": "আমি এই গণিতের সমস্যাটি বুঝতে পারছি না।",
+"synonyms": ["comprehend", "grasp", "realize"],
+"level": "basic"
+},
+{
+"word": "ability",
+"part_of_speech": "noun",
+"definition_en": "the skill or power to do something",
+"definition_bn": "কিছু করার দক্ষতা বা ক্ষমতা",
+"example_en": "His ability to solve problems is impressive.",
+"example_bn": "সমস্যা সমাধানের তার ক্ষমতা অসাধারণ।",
+"synonyms": ["skill", "capacity", "talent"],
+"level": "basic"
+},
+{
+"word": "action",
+"part_of_speech": "noun",
+"definition_en": "something that is done or happens",
+"definition_bn": "যে কাজটি করা হয় বা ঘটে",
+"example_en": "Quick action saved many lives during the emergency.",
+"example_bn": "জরুরি অবস্থায় দ্রুত কর্ম অনেক জীবন বাঁচিয়েছে।",
+"synonyms": ["activity", "step", "measure"],
+"level": "basic"
+},
+{
+"word": "activity",
+"part_of_speech": "noun",
+"definition_en": "something that people do or a task they perform",
+"definition_bn": "মানুষ যে কাজটি করে বা যে কার্য সম্পাদন করে",
+"example_en": "Swimming is a popular activity in summer.",
+"example_bn": "গ্রীষ্মে সাঁতার একটি জনপ্রিয় কার্যকলাপ।",
+"synonyms": ["task", "exercise", "work"],
+"level": "basic"
+},
+{
+"word": "adult",
+"part_of_speech": "noun",
+"definition_en": "a fully grown person who is no longer a child",
+"definition_bn": "পূর্ণ বয়স্ক ব্যক্তি যে আর শিশু নয়",
+"example_en": "Adults should take responsibility for their actions.",
+"example_bn": "প্রাপ্তবয়স্কদের তাদের কর্মের জন্য দায়িত্ব নিতে হবে।",
+"synonyms": ["grown-up", "mature person", "elder"],
+"level": "basic"
+},
+{
+"word": "amount",
+"part_of_speech": "noun",
+"definition_en": "how much of something there is",
+"definition_bn": "কোনো জিনিসের পরিমাণ কতটুকু আছে",
+"example_en": "The amount of rainfall was higher than expected.",
+"example_bn": "বৃষ্টিপাতের পরিমাণ প্রত্যাশার চেয়ে বেশি ছিল।",
+"synonyms": ["quantity", "number", "sum"],
+"level": "basic"
+},
+{
+"word": "answer",
+"part_of_speech": "noun",
+"definition_en": "a response to a question",
+"definition_bn": "প্রশ্নের উত্তর",
+"example_en": "She gave the correct answer to the difficult question.",
+"example_bn": "সে কঠিন প্রশ্নটির সঠিক উত্তর দিয়েছে।",
+"synonyms": ["reply", "response", "solution"],
+"level": "basic"
+},
+{
+"word": "attack",
+"part_of_speech": "verb",
+"definition_en": "to start fighting against someone or something",
+"definition_bn": "কাউকে বা কিছুকে আক্রমণ করা",
+"example_en": "The soldiers were ordered to attack the enemy camp.",
+"example_bn": "সৈনিকদের শত্রু শিবিরে আক্রমণ করার নির্দেশ দেওয়া হয়েছিল।",
+"synonyms": ["assault", "assail", "strike"],
+"level": "basic"
+},
+{
+"word": "attention",
+"part_of_speech": "noun",
+"definition_en": "the act of focusing on something",
+"definition_bn": "কোনো কিছুতে মনোযোগ দেওয়া",
+"example_en": "Students need to pay attention during class.",
+"example_bn": "শিক্ষার্থীদের ক্লাসে মনোযোগ দিতে হবে।",
+"synonyms": ["focus", "concentration", "notice"],
+"level": "basic"
+},
+{
+"word": "behavior",
+"part_of_speech": "noun",
+"definition_en": "the way someone acts or behaves",
+"definition_bn": "কেউ কীভাবে আচরণ করে",
+"example_en": "Good behavior is important in school.",
+"example_bn": "স্কুলে ভালো আচরণ গুরুত্বপূর্ণ।",
+"synonyms": ["conduct", "action", "manners"],
+"level": "basic"
+},
+{
+"word": "believe",
+"part_of_speech": "verb",
+"definition_en": "to think that something is true",
+"definition_bn": "কিছু সত্য বলে মনে করা",
+"example_en": "I believe in the power of positive thinking.",
+"example_bn": "আমি ইতিবাচক চিন্তার ক্ষমতায় বিশ্বাস করি।",
+"synonyms": ["trust", "think", "accept"],
+"level": "basic"
+},
+{
+"word": "certain",
+"part_of_speech": "adjective",
+"definition_en": "sure about something without doubt",
+"definition_bn": "কোনো কিছু সম্পর্কে নিশ্চিত বা সন্দেহহীন",
+"example_en": "I am certain that she will arrive on time.",
+"example_bn": "আমি নিশ্চিত যে সে সময়মতো আসবে।",
+"synonyms": ["sure", "confident", "positive"],
+"level": "basic"
+},
+{
+"word": "chance",
+"part_of_speech": "noun",
+"definition_en": "a possibility or opportunity to do something",
+"definition_bn": "কিছু করার সম্ভাবনা বা সুযোগ",
+"example_en": "Winning the lottery was just a chance.",
+"example_bn": "লটারি জেতা ছিল শুধুমাত্র একটি সুযোগ।",
+"synonyms": ["opportunity", "possibility", "probability"],
+"level": "basic"
+},
+{
+"word": "change",
+"part_of_speech": "noun",
+"definition_en": "the process of becoming different",
+"definition_bn": "ভিন্ন হওয়ার প্রক্রিয়া",
+"example_en": "Change is necessary for growth and development.",
+"example_bn": "বৃদ্ধি এবং উন্নয়নের জন্য পরিবর্তন প্রয়োজন।",
+"synonyms": ["transformation", "alteration", "shift"],
+"level": "basic"
+},
+{
+"word": "choice",
+"part_of_speech": "noun",
+"definition_en": "the act of selecting or making a decision",
+"definition_bn": "নির্বাচন করা বা সিদ্ধান্ত নেওয়ার কাজ",
+"example_en": "Making the right choice requires careful consideration.",
+"example_bn": "সঠিক পছন্দ করতে মনোযোগ দিয়ে চিন্তা করা প্রয়োজন।",
+"synonyms": ["selection", "option", "preference"],
+"level": "basic"
+},
+{
+"word": "condition",
+"part_of_speech": "noun",
+"definition_en": "the state or situation something is in",
+"definition_bn": "কোনো কিছু যে অবস্থায় আছে",
+"example_en": "The patient's condition improved after treatment.",
+"example_bn": "চিকিৎসার পরে রোগীর অবস্থার উন্নতি হয়েছে।",
+"synonyms": ["state", "situation", "status"],
+"level": "basic"
+},
+{
+"word": "continue",
+"part_of_speech": "verb",
+"definition_en": "to keep doing something without stopping",
+"definition_bn": "থামার ছাড়া কিছু করতে থাকা",
+"example_en": "Despite the rain, the match continued.",
+"example_bn": "বৃষ্টি সত্ত্বেও খেলা চলতে থাকে।",
+"synonyms": ["proceed", "carry on", "persist"],
+"level": "basic"
+},
+{
+"word": "control",
+"part_of_speech": "verb",
+"definition_en": "to manage or have power over something",
+"definition_bn": "কোনো কিছু পরিচালনা বা নিয়ন্ত্রণ করা",
+"example_en": "Parents try to control their children's behavior.",
+"example_bn": "পিতামাতা তাদের শিশুদের আচরণ নিয়ন্ত্রণ করার চেষ্টা করে।",
+"synonyms": ["manage", "govern", "regulate"],
+"level": "basic"
+},
+{
+"word": "couple",
+"part_of_speech": "noun",
+"definition_en": "two people who are together as partners",
+"definition_bn": "দুজন মানুষ যারা অংশীদার হিসেবে একসাথে আছে",
+"example_en": "The young couple walked hand in hand.",
+"example_bn": "তরুণ দম্পতি হাত ধরে হাঁটছিল।",
+"synonyms": ["pair", "twosome", "duo"],
+"level": "basic"
+},
+{
+"word": "culture",
+"part_of_speech": "noun",
+"definition_en": "the beliefs, customs, and arts of a group of people",
+"definition_bn": "একটি মানুষের দলের বিশ্বাস, রীতিনীতি এবং শিল্প",
+"example_en": "Each country has its own unique culture.",
+"example_bn": "প্রতিটি দেশের নিজস্ব অনন্য সংস্কৃতি আছে।",
+"synonyms": ["tradition", "custom", "heritage"],
+"level": "basic"
+},
+{
+"word": "decision",
+"part_of_speech": "noun",
+"definition_en": "a choice that is made after thinking",
+"definition_bn": "চিন্তা করে যে সিদ্ধান্ত নেওয়া হয়",
+"example_en": "Making an important decision takes time.",
+"example_bn": "গুরুত্বপূর্ণ সিদ্ধান্ত নিতে সময় লাগে।",
+"synonyms": ["choice", "resolution", "verdict"],
+"level": "basic"
+}
 ]
