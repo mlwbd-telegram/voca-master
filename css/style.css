@@ -5,19 +5,15 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #1a1a1a;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    animation: gradientShift 8s ease-in-out infinite;
-}
-
-@keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
 .container {
@@ -26,132 +22,151 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: #2d2d2d;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    border: 1px solid #404040;
     text-align: center;
-    animation: slideUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: cardAppear 0.3s ease-out forwards;
 }
 
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
+@keyframes cardAppear {
     to {
-        opacity: 1;
         transform: translateY(0);
+        opacity: 1;
     }
 }
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;    background: linear-gradient(90deg, transparent, #555, transparent);
+}
+
 .card h1 {
-    color: white;
+    color: #ffffff;
     margin-bottom: 8px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
 }
 
 .card p {
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 30px;
+    color: #b0b0b0;
+    margin-bottom: 32px;
     font-size: 1rem;
     font-weight: 300;
+    opacity: 0.8;
 }
 
 .btn {
     padding: 14px 28px;
-    border: none;
-    border-radius: 16px;
+    border: 1px solid #555;
+    border-radius: 12px;
+    background: #3a3a3a;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.2s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.3s ease;
+}
+
+.btn:hover::after {
+    left: 100%;
+}
 .btn-primary {
-    background: rgba(255, 255, 255, 0.95);
-    color: #667eea;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: #4a4a4a;
+    border-color: #666;
 }
 
 .btn-primary:hover {
-    background: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: #525252;
+    transform: translateY(-1px);
 }
 
 .btn-secondary {
-    background: rgba(76, 175, 80, 0.95);
+    background: #2d5a2d;
+    border-color: #3a7a3a;
     color: white;
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
 }
 
 .btn-secondary:hover:not(:disabled) {
-    background: #4CAF50;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);}
+    background: #326a32;
+    transform: translateY(-1px);
+}
 
 .btn:disabled {
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: not-allowed;
     transform: none;
-    box-shadow: none;
 }
 
 .word-container {
-    margin: 25px 0 35px;
-}
-
-@keyframes popIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    70% {
-        transform: scale(1.05);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+    margin: 32px 0 36px;
 }
 
 #word {
-    font-size: 2.8rem;
-    color: white;
+    font-size: 3rem;
+    color: #ffffff;
     margin: 0;
     font-weight: 700;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    animation: popIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    letter-spacing: -0.5px;
     line-height: 1.2;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: wordFadeIn 0.3s ease-out;
+}
+
+@keyframes wordFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;        transform: scale(1);
+    }
 }
 
 .options-container {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    margin-bottom: 25px;
+    gap: 16px;
+    margin-bottom: 28px;
 }
 
 .option-btn {
     padding: 18px 24px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.15);
-    color: white;    font-size: 18px;
+    border: 1px solid #444;
+    border-radius: 12px;
+    background: #333;
+    color: #ffffff;
+    font-size: 18px;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.2s ease;
     text-align: center;
     font-weight: 500;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     position: relative;
     overflow: hidden;
 }
@@ -163,16 +178,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.05);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
 }
 
 .option-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background: #383838;
+    border-color: #555;
 }
 
 .option-btn:hover::before {
@@ -180,46 +193,38 @@ body {
 }
 
 .option-btn:active {
-    transform: translateY(0);
+    transform: scale(0.98);
 }
-
 .option-btn.correct {
-    background: rgba(76, 175, 80, 0.3);
-    border-color: rgba(76, 175, 80, 0.6);
-    color: white;
-    animation: scaleUp 0.3s ease-out;
-    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+    background: #2d5a2d;
+    border-color: #3a7a3a;
+    color: #ffffff;
+    animation: correctPulse 0.6s ease-in-out;
+    box-shadow: 0 0 15px rgba(45, 155, 45, 0.3);
 }
 
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 rgba(76, 175, 80, 0);    }
-    50% {
-        transform: scale(1.02);
-        box-shadow: 0 0 25px rgba(76, 175, 80, 0.5);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
-    }
+@keyframes correctPulse {
+    0% { box-shadow: 0 0 0 rgba(45, 155, 45, 0); }
+    50% { box-shadow: 0 0 20px rgba(45, 155, 45, 0.5); }
+    100% { box-shadow: 0 0 15px rgba(45, 155, 45, 0.3); }
 }
 
 .option-btn.incorrect {
-    background: rgba(244, 67, 54, 0.3);
-    border-color: rgba(244, 67, 54, 0.6);
-    color: white;
-    animation: shake 0.5s ease-in-out;
+    background: #5a2d2d;
+    border-color: #7a3a3a;
+    color: #ffffff;
+    animation: shake 0.3s ease-in-out;
 }
 
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
-    20%, 60% { transform: translateX(-5px); }
-    40%, 80% { transform: translateX(5px); }
+    25% { transform: translateX(-8px); }
+    75% { transform: translateX(8px); }
 }
 
 .option-btn.selected {
-    border-color: rgba(255, 255, 255, 0.8);
+    border-color: #666;
+    background: #3a3a3a;
 }
 
 .option-btn:disabled {
@@ -232,35 +237,35 @@ body {
     min-height: 30px;
 }
 
-@keyframes fadeIn {
+#feedback {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    animation: feedbackFadeIn 0.3s ease-out;}
+
+.feedback-correct {
+    color: #7cff7c;
+    background: rgba(45, 90, 45, 0.2);
+    border: 1px solid rgba(124, 255, 124, 0.3);
+}
+
+.feedback-incorrect {
+    color: #ff7c7c;
+    background: rgba(90, 45, 45, 0.2);
+    border: 1px solid rgba(255, 124, 124, 0.3);
+}
+
+@keyframes feedbackFadeIn {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(5px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-#feedback {    font-size: 18px;
-    font-weight: 500;
-    margin: 0;
-    padding: 12px 16px;
-    border-radius: 12px;
-    animation: fadeIn 0.4s ease-out;
-}
-
-.feedback-correct {
-    color: rgba(25, 118, 210, 0.9);
-    background: rgba(224, 242, 254, 0.8);
-    border: 1px solid rgba(25, 118, 210, 0.2);
-}
-
-.feedback-incorrect {
-    color: rgba(211, 47, 47, 0.9);
-    background: rgba(255, 235, 238, 0.8);
-    border: 1px solid rgba(211, 47, 47, 0.2);
 }
 
 .hidden {
@@ -271,35 +276,50 @@ body {
     width: 100%;
 }
 
-@keyframes appear {
+#next-btn {
+    margin-top: 15px;
+    animation: nextButtonAppear 0.3s ease-out 0.1s both;
+}
+
+@keyframes nextButtonAppear {
     from {
         opacity: 0;
-        transform: translateY(20px);
-        scale: 0.95;
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
-        scale: 1;
     }
 }
 
-#next-btn {
-    margin-top: 15px;
-    animation: appear 0.4s ease-out 0.2s both;
+/* Card flip animation for next question */@keyframes cardFlip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.card-flipping {
+    animation: cardFlip 0.4s ease-in-out;
 }
 
 @media (max-width: 480px) {
     .card {
         padding: 24px;
-        margin: 12px;    }
+        margin: 12px;
+    }
     
     .card h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     #word {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     
     .option-btn {
@@ -315,14 +335,13 @@ body {
 
 @media (max-width: 375px) {
     #word {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .option-btn {
         padding: 15px 18px;
         font-size: 15px;
-    }
-    
+    }    
     .card {
         padding: 20px;
     }
