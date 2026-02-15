@@ -1,82 +1,216 @@
-// Learn page functionality
-class LearnPage {
-    constructor() {
-        this.currentWordIndex = 0;
-        this.words = [];
-        this.init();
+/**
+ * Vocab Master - Learn Page Logic
+ */
+
+const LearnPage = {
+  init() {
+    // Wait for App to load data
+    if (App.words.length === 0) {
+      App.init().then(() => this.setup());
+    } else {
+      this.setup();
     }
-
-    async init() {
-        this.words = await DataLoader.init();
-        this.currentWordIndex = 0;
-        this.displayCurrentWord();
-        this.setupEventListeners();
+  },
+  
+  setup() {
+    this.cacheElements();
+    this.bindEvents();
+    this.render();
+  },
+  
+  cacheElements() {
+    this.elements = {
+      wordDisplay: document.getElementById('word-display'),
+      wordMain: document.getElementById('word-main'),
+      wordPos: document.getElementById('word-pos'),
+      wordBangla: document.getElementById('word-bangla'),
+      definition: document.getElementById('definition'),
+      example: document.getElementById('example'),
+      exampleBn: document.getElementById('example-bn'),
+      synonyms: document.getElementById('synonyms'),
+      prevBtn: document.getElementById('prev-btn'),
+      nextBtn: document.getElementById('next-btn'),
+      learnedBtn: document.getElementById('learned-btn'),
+      examBtn: document.getElementById('exam-btn'),
+      currentIndex: document.getElementById('current-index'),
+      totalWords: document.getElementById('total-words'),
+      learnedStatus: document.getElementById('learned-status')
+    };
+  },
+  
+  bindEvents() {
+    this.elements.prevBtn.addEventListener('click', () => this.prevWord());
+    this.elements.nextBtn.addEventListener('click', () => this.nextWord());
+    this.elements.learnedBtn.addEventListener('click', () => this.toggleLearned());
+    this.elements.examBtn.addEventListener('click', () => {
+      window.location.href = 'exam.html';
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') this.prevWord();
+      if (e.key === 'ArrowRight') this.nextWord();
+      if (e.key === ' ') {
+        e.preventDefault();
+        this.toggleLearned();
+      }
+    });
+  },
+  
+  render() {
+    if (App.words.length === 0) {
+      this.showLoading();
+      return;
     }
-
-    setupEventListeners() {
-        document.getElementById('show-meaning-btn').addEventListener('click', () => {
-            this.showMeaning();
-        });
-
-        document.getElementById('mark-learned-btn').addEventListener('click', () => {
-            this.markAsLearned();
-        });
-
-        document.getElementById('next-word-btn').addEventListener('click', () => {
-            this.nextWord();
-        });
+    
+    const word = App.words[App.currentIndex];
+    this.displayWord(word);
+    this.updateNavigation();
+  },
+  
+  displayWord(word) {
+    // Animate transition
+    this.elements.wordDisplay.classList.remove('fade-in');
+    void this.elements.wordDisplay.offsetWidth; // Trigger reflow
+    this.elements.wordDisplay.classList.add('fade-in');
+    
+    // Main word
+    this.elements.wordMain.textContent = word.word;
+    this.elements.wordMain.setAttribute('data-text', word.word);
+    
+    // Part of speech
+    this.elements.wordPos.textContent = word.pos || 'unknown';
+    
+    // Bangla meaning
+    this.elements.wordBangla.textContent = word.meaning_bn;
+    
+    // Definition
+    this.elements.definition.textContent = word.definition || 'No definition available.';
+    
+    // Examples
+    this.elements.example.textContent = word.example_en || 'No example available.';
+    this.elements.exampleBn.textContent = word.example_bn || '';
+    
+    // Synonyms
+    this.renderSynonyms(word.synonyms);
+    
+    // Update learned button state
+    this.updateLearnedButton(word.word);
+    
+    // Update counter
+    this.elements.currentIndex.textContent = App.currentIndex + 1;
+    this.elements.totalWords.textContent = App.words.length;
+  },
+  
+  renderSynonyms(synonyms) {
+    this.elements.synonyms.innerHTML = '';
+    
+    if (!synonyms || synonyms.length === 0) {
+      this.elements.synonyms.innerHTML = '<span class="synonym-tag">None</span>';
+      return;
     }
-
-    displayCurrentWord() {
-        if (this.words.length === 0) return;
-
-        const word = this.words[this.currentWordIndex];
-        document.getElementById('word-display').textContent = word.word;
-        document.getElementById('pos-display').textContent = word.part_of_speech || '';
-        
-        // Reset flashcard state
-        const flashcard = document.getElementById('flashcard');
-        flashcard.classList.remove('flipped');
-        
-        // Reset buttons
-        document.getElementById('show-meaning-btn').style.display = 'block';
-        document.getElementById('mark-learned-btn').style.display = 'block';
-        document.getElementById('mark-learned-btn').disabled = false;
-        
-        // Update progress text
-        document.getElementById('show-meaning-btn').textContent = 'Show Meaning';
+    
+    synonyms.forEach(syn => {
+      const tag = document.createElement('span');
+      tag.className = 'synonym-tag';
+      tag.textContent = syn;
+      this.elements.synonyms.appendChild(tag);
+    });
+  },
+  
+  updateLearnedButton(word) {
+    const isLearned = App.isLearned(word);
+    const btn = this.elements.learnedBtn;
+    
+    if (isLearned) {
+      btn.innerHTML = '✓ Learned';
+      btn.classList.remove('btn-success');
+      btn.classList.add('btn-danger');
+      this.elements.learnedStatus.textContent = 'LEARNED';
+      this.elements.learnedStatus.style.color = 'var(--neon-green)';
+    } else {
+      btn.innerHTML = '+ Mark as Learned';
+      btn.classList.remove('btn-danger');
+      btn.classList.add('btn-success');
+      this.elements.learnedStatus.textContent = 'NEW';
+      this.elements.learnedStatus.style.color = 'var(--neon-cyan)';
     }
-
-    showMeaning() {
-        const flashcard = document.getElementById('flashcard');
-        flashcard.classList.add('flipped');
-        
-        const word = this.words[this.currentWordIndex];
-        document.getElementById('meaning-display').textContent = word.definition_bn;
-        document.getElementById('definition-display').textContent = `Definition: ${word.definition_en}`;
-        document.getElementById('example-display').textContent = `Example: ${word.example_en}`;
-        document.getElementById('example-display').textContent += ` (${word.example_bn})`;
-        document.getElementById('synonyms-display').textContent = `Synonyms: ${word.synonyms.join(', ')}`;
-        
-        document.getElementById('show-meaning-btn').textContent = 'Hide Meaning';
+  },
+  
+  updateNavigation() {
+    this.elements.prevBtn.disabled = App.currentIndex === 0;
+    this.elements.nextBtn.disabled = App.currentIndex === App.words.length - 1;
+  },
+  
+  prevWord() {
+    if (App.currentIndex > 0) {
+      App.currentIndex--;
+      this.render();
     }
-
-    markAsLearned() {
-        if (this.words.length === 0) return;
-        
-        const word = this.words[this.currentWordIndex];
-        Progress.markWordAsLearned(word.word);
-        UI.showToast(`${word.word} marked as learned!`);
-        document.getElementById('mark-learned-btn').disabled = true;
+  },
+  
+  nextWord() {
+    if (App.currentIndex < App.words.length - 1) {
+      App.currentIndex++;
+      this.render();
     }
-
-    nextWord() {
-        this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
-        this.displayCurrentWord();
+  },
+  
+  toggleLearned() {
+    const word = App.words[App.currentIndex];
+    const isLearned = App.isLearned(word.word);
+    
+    if (isLearned) {
+      App.unmarkAsLearned(word.word);
+    } else {
+      App.markAsLearned(word.word);
     }
-}
+    
+    this.updateLearnedButton(word.word);
+    App.updateHUD();
+    
+    // Visual feedback
+    this.flashNotification(isLearned ? 'Removed from learned' : 'Marked as learned!');
+  },
+  
+  flashNotification(message) {
+    const notif = document.createElement('div');
+    notif.style.cssText = `
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(0, 240, 255, 0.2);
+      border: 1px solid var(--neon-cyan);
+      color: var(--neon-cyan);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      font-family: var(--font-hud);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 10000;
+      animation: slideIn 0.3s ease;
+    `;
+    notif.textContent = message;
+    document.body.appendChild(notif);
+    
+    setTimeout(() => {
+      notif.style.animation = 'fadeOut 0.3s ease';
+      setTimeout(() => notif.remove(), 300);
+    }, 2000);
+  },
+  
+  showLoading() {
+    this.elements.wordDisplay.innerHTML = `
+      <div class="loading">
+        <div class="loading-spinner"></div>
+        <p>Loading vocabulary database...</p>
+      </div>
+    `;
+  }
+};
 
-// Initialize learn page when DOM is loaded
+// Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    new LearnPage();
+  LearnPage.init();
 });
