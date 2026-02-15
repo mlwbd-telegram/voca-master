@@ -1,1 +1,542 @@
-
+[
+ {
+   "word": "abandon",
+   "part_of_speech": "verb",
+   "definition_en": "to leave someone or something behind",
+   "definition_bn": "ছেড়ে চলে যাওয়া",
+   "example_en": "Don't abandon your friends when they need help.",
+   "example_bn": "বন্ধুর যখন সাহায্য দরকার তখন ছেড়ে চলে যেও না।",
+   "synonyms": ["leave", "desert", "forsake"],
+   "level": 1
+ },
+ {
+   "word": "ability",
+   "part_of_speech": "noun",
+   "definition_en": "the power to do something",
+   "definition_bn": "ক্ষমতা",
+   "example_en": "She has the ability to solve difficult problems.",
+   "example_bn": "কঠিন সমস্যা সমাধান করার ক্ষমতা তার আছে।",
+   "synonyms": ["skill", "talent", "capability"],
+   "level": 1
+ },
+ {
+   "word": "accept",
+   "part_of_speech": "verb",
+   "definition_en": "to say yes to something offered",
+   "definition_bn": "গ্রহণ করা",
+   "example_en": "I accept your apology.",
+   "example_bn": "আমি তোমার ক্ষমা চাওয়া গ্রহণ করলাম।",
+   "synonyms": ["receive", "agree", "approve"],
+   "level": 1
+ },
+ {
+   "word": "accident",
+   "part_of_speech": "noun",
+   "definition_en": "something bad that happens unexpectedly",
+   "definition_bn": "দুর্ঘটনা",
+   "example_en": "There was a car accident on the highway.",
+   "example_bn": "হাইওয়েতে একটা গাড়ি দুর্ঘটনা হয়েছে।",
+   "synonyms": ["crash", "mishap", "collision"],
+   "level": 1
+ },
+ {
+   "word": "accurate",
+   "part_of_speech": "adjective",
+   "definition_en": "correct and without mistakes",
+   "definition_bn": "ঠিকঠাক",
+   "example_en": "The weather forecast was accurate today.",
+   "example_bn": "আবহাওয়ার পূর্বাভাস আজ ঠিকঠাক ছিল।",
+   "synonyms": ["precise", "exact", "correct"],
+   "level": 1
+ },
+ {
+   "word": "achieve",
+   "part_of_speech": "verb",
+   "definition_en": "to succeed in doing something",
+   "definition_bn": "অর্জন করা",
+   "example_en": "You can achieve your goals with hard work.",
+   "example_bn": "কঠোর পরিশ্রম দিয়ে তুমি তোমার লক্ষ্য অর্জন করতে পারবে।",
+   "synonyms": ["accomplish", "attain", "reach"],
+   "level": 1
+ },
+ {
+   "word": "active",
+   "part_of_speech": "adjective",
+   "definition_en": "always moving or doing things",
+   "definition_bn": "সক্রিয়",
+   "example_en": "The children are very active in the playground.",
+   "example_bn": "বাচ্চারা খেলার মাঠে খুব সক্রিয়।",
+   "synonyms": ["energetic", "lively", "busy"],
+   "level": 1
+ },
+ {
+   "word": "admire",
+   "part_of_speech": "verb",
+   "definition_en": "to think someone or something is very good",
+   "definition_bn": "শ্রদ্ধা করা",
+   "example_en": "I admire her courage to speak the truth.",
+   "example_bn": "সত্যি কথা বলার সাহসের জন্য আমি তাকে শ্রদ্ধা করি।",
+   "synonyms": ["respect", "appreciate", "praise"],
+   "level": 1
+ },
+ {
+   "word": "admit",
+   "part_of_speech": "verb",
+   "definition_en": "to say something is true, especially something bad",
+   "definition_bn": "স্বীকার করা",
+   "example_en": "He had to admit that he made a mistake.",
+   "example_bn": "ভুল করেছেন সেটা তাকে স্বীকার করতে হলো।",
+   "synonyms": ["confess", "acknowledge", "accept"],
+   "level": 1
+ },
+ {
+   "word": "adult",
+   "part_of_speech": "noun",
+   "definition_en": "a fully grown person",
+   "definition_bn": "প্রাপ্তবয়স্ক",
+   "example_en": "Only adults can vote in the election.",
+   "example_bn": "নির্বাচনে শুধু প্রাপ্তবয়স্করা ভোট দিতে পারে।",
+   "synonyms": ["grown-up", "mature person"],
+   "level": 1
+ },
+ {
+   "word": "advantage",
+   "part_of_speech": "noun",
+   "definition_en": "something that helps you do better",
+   "definition_bn": "সুবিধা",
+   "example_en": "Speaking English is an advantage for this job.",
+   "example_bn": "ইংরেজি বলতে পারা এই চাকরির জন্য একটা সুবিধা।",
+   "synonyms": ["benefit", "edge", "plus"],
+   "level": 1
+ },
+ {
+   "word": "adventure",
+   "part_of_speech": "noun",
+   "definition_en": "an exciting and unusual experience",
+   "definition_bn": "দুঃসাহসিক কাজ",
+   "example_en": "Traveling alone was a big adventure for her.",
+   "example_bn": "একা একা ঘুরতে যাওয়া তার জন্য বড় একটা দুঃসাহসিক কাজ ছিল।",
+   "synonyms": ["journey", "expedition", "venture"],
+   "level": 1
+ },
+ {
+   "word": "affect",
+   "part_of_speech": "verb",
+   "definition_en": "to change or influence something",
+   "definition_bn": "প্রভাব ফেলা",
+   "example_en": "The weather can affect your mood.",
+   "example_bn": "আবহাওয়া তোমার মনের ওপর প্রভাব ফেলতে পারে।",
+   "synonyms": ["influence", "impact", "change"],
+   "level": 1
+ },
+ {
+   "word": "afraid",
+   "part_of_speech": "adjective",
+   "definition_en": "feeling fear or worry",
+   "definition_bn": "ভয় পাওয়া",
+   "example_en": "Don't be afraid of the dark.",
+   "example_bn": "অন্ধকারের ভয় পেয়ো না।",
+   "synonyms": ["scared", "frightened", "terrified"],
+   "level": 1
+ },
+ {
+   "word": "agree",
+   "part_of_speech": "verb",
+   "definition_en": "to have the same opinion",
+   "definition_bn": "রাজি হওয়া",
+   "example_en": "I agree with your suggestion.",
+   "example_bn": "তোমার পরামর্শে আমি রাজি।",
+   "synonyms": ["consent", "approve", "accept"],
+   "level": 1
+ },
+ {
+   "word": "alarm",
+   "part_of_speech": "noun",
+   "definition_en": "a warning sound or signal",
+   "definition_bn": "সতর্কতা সংকেত",
+   "example_en": "The fire alarm woke everyone up.",
+   "example_bn": "আগুনের সতর্কতা সংকেতে সবাই জেগে উঠল।",
+   "synonyms": ["alert", "warning", "siren"],
+   "level": 1
+ },
+ {
+   "word": "allow",
+   "part_of_speech": "verb",
+   "definition_en": "to let someone do something",
+   "definition_bn": "অনুমতি দেওয়া",
+   "example_en": "My parents don't allow me to stay out late.",
+   "example_bn": "আমার বাবা-মা আমাকে দেরি করে বাইরে থাকতে অনুমতি দেন না।",
+   "synonyms": ["permit", "let", "authorize"],
+   "level": 1
+ },
+ {
+   "word": "alone",
+   "part_of_speech": "adjective",
+   "definition_en": "without anyone else",
+   "definition_bn": "একা",
+   "example_en": "She lives alone in a small apartment.",
+   "example_bn": "সে একা একটা ছোট ফ্ল্যাটে থাকে।",
+   "synonyms": ["by oneself", "solitary", "unaccompanied"],
+   "level": 1
+ },
+ {
+   "word": "amazing",
+   "part_of_speech": "adjective",
+   "definition_en": "very surprising and wonderful",
+   "definition_bn": "অসাধারণ",
+   "example_en": "The sunset was absolutely amazing.",
+   "example_bn": "সূর্যাস্তটা একদম অসাধারণ ছিল।",
+   "synonyms": ["incredible", "astonishing", "wonderful"],
+   "level": 1
+ },
+ {
+   "word": "ancient",
+   "part_of_speech": "adjective",
+   "definition_en": "very old, from long ago",
+   "definition_bn": "প্রাচীন",
+   "example_en": "We visited ancient ruins in Greece.",
+   "example_bn": "আমরা গ্রিসের প্রাচীন ধ্বংসাবশেষ দেখতে গিয়েছিলাম।",
+   "synonyms": ["old", "antique", "historic"],
+   "level": 1
+ },
+ {
+   "word": "angry",
+   "part_of_speech": "adjective",
+   "definition_en": "feeling strong displeasure",
+   "definition_bn": "রাগান্বিত",
+   "example_en": "He got angry when he heard the news.",
+   "example_bn": "খবরটা শুনে সে রাগান্বিত হয়ে গেল।",
+   "synonyms": ["mad", "furious", "irritated"],
+   "level": 1
+ },
+ {
+   "word": "announce",
+   "part_of_speech": "verb",
+   "definition_en": "to tell people something officially",
+   "definition_bn": "ঘোষণা করা",
+   "example_en": "They will announce the winner tomorrow.",
+   "example_bn": "কাল তারা বিজয়ীর নাম ঘোষণা করবে।",
+   "synonyms": ["declare", "proclaim", "publish"],
+   "level": 1
+ },
+ {
+   "word": "annoy",
+   "part_of_speech": "verb",
+   "definition_en": "to make someone slightly angry",
+   "definition_bn": "বিরক্ত করা",
+   "example_en": "The loud noise started to annoy me.",
+   "example_bn": "জোরে শব্দটি আমাকে বিরক্ত করতে শুরু করল।",
+   "synonyms": ["irritate", "bother", "disturb"],
+   "level": 1
+ },
+ {
+   "word": "anxious",
+   "part_of_speech": "adjective",
+   "definition_en": "worried and nervous",
+   "definition_bn": "উদ্বিগ্ন",
+   "example_en": "She felt anxious before the exam.",
+   "example_bn": "পরীক্ষার আগে সে উদ্বিগ্ন বোধ করল।",
+   "synonyms": ["worried", "nervous", "concerned"],
+   "level": 1
+ },
+ {
+   "word": "apologize",
+   "part_of_speech": "verb",
+   "definition_en": "to say sorry for something wrong",
+   "definition_bn": "ক্ষমা চাওয়া",
+   "example_en": "I want to apologize for being late.",
+   "example_bn": "দেরি করার জন্য আমি ক্ষমা চাইতে চাই।",
+   "synonyms": ["say sorry", "regret", "ask forgiveness"],
+   "level": 1
+ },
+ {
+   "word": "appear",
+   "part_of_speech": "verb",
+   "definition_en": "to come into sight or seem",
+   "definition_bn": "দেখা দেওয়া",
+   "example_en": "The sun appeared from behind the clouds.",
+   "example_bn": "মেঘের আড়াল থেকে সূর্য দেখা দিল।",
+   "synonyms": ["seem", "look", "emerge"],
+   "level": 1
+ },
+ {
+   "word": "appreciate",
+   "part_of_speech": "verb",
+   "definition_en": "to be grateful for something",
+   "definition_bn": "কৃতজ্ঞতা প্রকাশ করা",
+   "example_en": "I really appreciate your help.",
+   "example_bn": "তোমার সাহায্যের জন্য আমি সত্যিই কৃতজ্ঞ।",
+   "synonyms": ["value", "thank", "recognize"],
+   "level": 1
+ },
+ {
+   "word": "approach",
+   "part_of_speech": "verb",
+   "definition_en": "to come near to someone or something",
+   "definition_bn": "কাছে আসা",
+   "example_en": "The dog started to approach the stranger.",
+   "example_bn": "কুকুরটি অজানা লোকটির কাছে আসতে শুরু করল।",
+   "synonyms": ["near", "advance", "come closer"],
+   "level": 1
+ },
+ {
+   "word": "argue",
+   "part_of_speech": "verb",
+   "definition_en": "to disagree with words",
+   "definition_bn": "তর্ক করা",
+   "example_en": "They always argue about money.",
+   "example_bn": "টাকা নিয়ে তারা সবসময় তর্ক করে।",
+   "synonyms": ["quarrel", "debate", "dispute"],
+   "level": 1
+ },
+ {
+   "word": "arrange",
+   "part_of_speech": "verb",
+   "definition_en": "to organize or plan something",
+   "definition_bn": "ব্যবস্থা করা",
+   "example_en": "I need to arrange a meeting with my boss.",
+   "example_bn": "বসের সাথে একটা মিটিং এর ব্যবস্থা করতে হবে।",
+   "synonyms": ["organize", "plan", "prepare"],
+   "level": 1
+ },
+ {
+   "word": "arrive",
+   "part_of_speech": "verb",
+   "definition_en": "to reach a place",
+   "definition_bn": "পৌঁছানো",
+   "example_en": "We will arrive at the airport at noon.",
+   "example_bn": "দুপুরে আমরা বিমানবন্দরে পৌঁছাব।",
+   "synonyms": ["reach", "get to", "come"],
+   "level": 1
+ },
+ {
+   "word": "ashamed",
+   "part_of_speech": "adjective",
+   "definition_en": "feeling guilty or embarrassed",
+   "definition_bn": "লজ্জিত",
+   "example_en": "He was ashamed of his behavior.",
+   "example_bn": "নিজের আচরণে সে লজ্জিত ছিল।",
+   "synonyms": ["embarrassed", "guilty", "humiliated"],
+   "level": 1
+ },
+ {
+   "word": "assist",
+   "part_of_speech": "verb",
+   "definition_en": "to help someone",
+   "definition_bn": "সাহায্য করা",
+   "example_en": "Can you assist me with this task?",
+   "example_bn": "এই কাজে তুমি কি আমাকে সাহায্য করতে পারবে?",
+   "synonyms": ["help", "aid", "support"],
+   "level": 1
+ },
+ {
+   "word": "assume",
+   "part_of_speech": "verb",
+   "definition_en": "to think something is true without proof",
+   "definition_bn": "ধরে নেওয়া",
+   "example_en": "Don't assume that I know everything.",
+   "example_bn": "ধরে নিও না যে আমি সব জানি।",
+   "synonyms": ["suppose", "presume", "guess"],
+   "level": 1
+ },
+ {
+   "word": "attach",
+   "part_of_speech": "verb",
+   "definition_en": "to fasten or join one thing to another",
+   "definition_bn": "যুক্ত করা",
+   "example_en": "Please attach your photo to the form.",
+   "example_bn": "ফর্মে তোমার ছবি যুক্ত করো।",
+   "synonyms": ["connect", "fasten", "join"],
+   "level": 1
+ },
+ {
+   "word": "attack",
+   "part_of_speech": "verb",
+   "definition_en": "to use violence against someone",
+   "definition_bn": "আক্রমণ করা",
+   "example_en": "The dog might attack if it feels scared.",
+   "example_bn": "কুকুরটি ভয় পেলে আক্রমণ করতে পারে।",
+   "synonyms": ["assault", "strike", "charge"],
+   "level": 1
+ },
+ {
+   "word": "attempt",
+   "part_of_speech": "verb",
+   "definition_en": "to try to do something",
+   "definition_bn": "চেষ্টা করা",
+   "example_en": "I will attempt to finish this today.",
+   "example_bn": "আজ এটা শেষ করার চেষ্টা করব।",
+   "synonyms": ["try", "endeavor", "strive"],
+   "level": 1
+ },
+ {
+   "word": "attend",
+   "part_of_speech": "verb",
+   "definition_en": "to be present at an event",
+   "definition_bn": "অংশ নেওয়া",
+   "example_en": "I cannot attend the meeting tomorrow.",
+   "example_bn": "আমি কাল মিটিং এ অংশ নিতে পারব না।",
+   "synonyms": ["go to", "be present", "participate"],
+   "level": 1
+ },
+ {
+   "word": "attract",
+   "part_of_speech": "verb",
+   "definition_en": "to cause interest or attention",
+   "definition_bn": "আকর্ষণ করা",
+   "example_en": "Bright colors attract children.",
+   "example_bn": "উজ্জ্বল রং বাচ্চাদের আকর্ষণ করে।",
+   "synonyms": ["draw", "appeal", "interest"],
+   "level": 1
+ },
+ {
+   "word": "avoid",
+   "part_of_speech": "verb",
+   "definition_en": "to keep away from something",
+   "definition_bn": "এড়িয়ে চলা",
+   "example_en": "You should avoid eating too much sugar.",
+   "example_bn": "বেশি চিনি খাওয়া এড়িয়ে চলা উচিত।",
+   "synonyms": ["prevent", "evade", "stay away from"],
+   "level": 1
+ },
+ {
+   "word": "awake",
+   "part_of_speech": "adjective",
+   "definition_en": "not sleeping",
+   "definition_bn": "জেগে থাকা",
+   "example_en": "I was still awake at midnight.",
+   "example_bn": "রাত বারোটায়ও আমি জেগে ছিলাম।",
+   "synonyms": ["conscious", "alert", "wakeful"],
+   "level": 1
+ },
+ {
+   "word": "award",
+   "part_of_speech": "noun",
+   "definition_en": "a prize for doing something well",
+   "definition_bn": "পুরস্কার",
+   "example_en": "She won an award for best actress.",
+   "example_bn": "সে সেরা অভিনেত্রীর পুরস্কার জিতেছে।",
+   "synonyms": ["prize", "trophy", "honor"],
+   "level": 1
+ },
+ {
+   "word": "aware",
+   "part_of_speech": "adjective",
+   "definition_en": "knowing that something exists",
+   "definition_bn": "সচেতন",
+   "example_en": "Are you aware of the new rules?",
+   "example_bn": "তুমি কি নতুন নিয়মের বিষয়ে সচেতন?",
+   "synonyms": ["conscious", "informed", "mindful"],
+   "level": 1
+ },
+ {
+   "word": "awful",
+   "part_of_speech": "adjective",
+   "definition_en": "very bad or unpleasant",
+   "definition_bn": "ভয়াবহ",
+   "example_en": "The weather was awful yesterday.",
+   "example_bn": "গতকাল আবহাওয়া ভয়াবহ ছিল।",
+   "synonyms": ["terrible", "horrible", "dreadful"],
+   "level": 1
+ },
+ {
+   "word": "balance",
+   "part_of_speech": "noun",
+   "definition_en": "equal amounts of different things",
+   "definition_bn": "সাম্য",
+   "example_en": "You need balance between work and rest.",
+   "example_bn": "কাজ এবং বিশ্রামের মধ্যে সাম্য রাখতে হবে।",
+   "synonyms": ["equilibrium", "stability", "equality"],
+   "level": 1
+ },
+ {
+   "word": "ban",
+   "part_of_speech": "verb",
+   "definition_en": "to officially forbid something",
+   "definition_bn": "নিষিদ্ধ করা",
+   "example_en": "The government decided to ban plastic bags.",
+   "example_bn": "সরকার পলিথিন ব্যাগ নিষিদ্ধ করার সিদ্ধান্ত নিল।",
+   "synonyms": ["prohibit", "forbid", "outlaw"],
+   "level": 1
+ },
+ {
+   "word": "base",
+   "part_of_speech": "noun",
+   "definition_en": "the bottom part of something",
+   "definition_bn": "ভিত্তি",
+   "example_en": "The statue has a strong stone base.",
+   "example_bn": "মূর্তিটির শক্তিশালী পাথরের ভিত্তি আছে।",
+   "synonyms": ["foundation", "bottom", "ground"],
+   "level": 1
+ },
+ {
+   "word": "battle",
+   "part_of_speech": "noun",
+   "definition_en": "a fight between armies",
+   "definition_bn": "যুদ্ধ",
+   "example_en": "The battle lasted for three days.",
+   "example_bn": "যুদ্ধটি তিন দিন ধরে চলেছিল।",
+   "synonyms": ["fight", "war", "combat"],
+   "level": 1
+ },
+ {
+   "word": "behave",
+   "part_of_speech": "verb",
+   "definition_en": "to act in a particular way",
+   "definition_bn": "আচরণ করা",
+   "example_en": "Please behave well at the party.",
+   "example_bn": "পার্টিতে ভালোভাবে আচরণ করো।",
+   "synonyms": ["act", "conduct oneself", "perform"],
+   "level": 1
+ },
+ {
+   "word": "belong",
+   "part_of_speech": "verb",
+   "definition_en": "to be owned by someone",
+   "definition_bn": "অন্তর্ভুক্ত হওয়া",
+   "example_en": "This book belongs to the library.",
+   "example_bn": "এই বই লাইব্রেরির অন্তর্ভুক্ত।",
+   "synonyms": ["be owned by", "pertain to", "fit"],
+   "level": 1
+ },
+ {
+   "word": "benefit",
+   "part_of_speech": "noun",
+   "definition_en": "something good that helps you",
+   "definition_bn": "উপকার",
+   "example_en": "Exercise has many health benefits.",
+   "example_bn": "ব্যায়ামের অনেক স্বাস্থ্য উপকার আছে।",
+   "synonyms": ["advantage", "gain", "profit"],
+   "level": 1
+ },
+ {
+   "word": "blame",
+   "part_of_speech": "verb",
+   "definition_en": "to say someone did something wrong",
+   "definition_bn": "দোষ দেওয়া",
+   "example_en": "Don't blame me for your mistakes.",
+   "example_bn": "তোমার ভুলের জন্য আমাকে দোষ দিও না।",
+   "synonyms": ["accuse", "fault", "criticize"],
+   "level": 1
+ },
+ {
+   "word": "blank",
+   "part_of_speech": "adjective",
+   "definition_en": "empty or without writing",
+   "definition_bn": "ফাঁকা",
+   "example_en": "Please fill in the blank spaces.",
+   "example_bn": "ফাঁকা জায়গাগুলো পূরণ করো।",
+   "synonyms": ["empty", "clear", "unfilled"],
+   "level": 1
+ },
+ {
+   "word": "blind",
+   "part_of_speech": "adjective",
+   "definition_en": "unable to see",
+   "definition_bn": "অন্ধ",
+   "example_en": "He became blind at the age of ten.",
+   "example_bn": "দশ বছর বয়সে সে অন্ধ হয়ে গেল।",
+   "synonyms": ["sightless", "visually impaired", "unseeing"],
+   "level": 1
+ }
+]
