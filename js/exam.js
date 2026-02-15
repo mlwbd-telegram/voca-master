@@ -3,11 +3,11 @@
  */
 
 const ExamPage = {
-  mode: null, // 'learned' or 'full'
+  mode: null,
   questions: [],
   currentQuestion: 0,
   score: 0,
-  answers: [],
+  selected: false,
   
   init() {
     if (App.words.length === 0) {
@@ -28,19 +28,13 @@ const ExamPage = {
       modeSelection: document.getElementById('mode-selection'),
       quizContainer: document.getElementById('quiz-container'),
       resultsContainer: document.getElementById('results-container'),
-      
-      // Mode buttons
       modeLearned: document.getElementById('mode-learned'),
       modeFull: document.getElementById('mode-full'),
-      
-      // Quiz elements
       questionCounter: document.getElementById('question-counter'),
       quizWord: document.getElementById('quiz-word'),
       optionsGrid: document.getElementById('options-grid'),
       feedback: document.getElementById('feedback'),
       nextBtn: document.getElementById('next-btn'),
-      
-      // Results elements
       scoreCircle: document.getElementById('score-circle'),
       scoreNumber: document.getElementById('score-number'),
       scoreTotal: document.getElementById('score-total'),
@@ -74,21 +68,20 @@ const ExamPage = {
     this.mode = mode;
     this.currentQuestion = 0;
     this.score = 0;
-    this.answers = [];
+    this.selected = false;
     
-    // Generate questions
     if (mode === 'learned') {
       const learnedWords = App.getLearnedWordsData();
-      if (learnedWords.length === 0) {
-        alert('No learned words yet! Go to Learn page and mark some words as learned first.');
-        return;
-      }
       if (learnedWords.length < 4) {
-        alert('Please learn at least 4 words before taking this quiz.');
+        alert('Please learn at least 4 words first!');
         return;
       }
       this.questions = this.generateQuestions(learnedWords, Math.min(10, learnedWords.length));
     } else {
+      if (App.words.length < 4) {
+        alert('Need at least 4 words in database!');
+        return;
+      }
       this.questions = this.generateQuestions(App.words, 10);
     }
     
@@ -101,44 +94,61 @@ const ExamPage = {
   
   generateQuestions(wordList, count) {
     const shuffled = App.shuffleArray([...wordList]);
-    const selected = shuffled.slice(0, count);
+    const selected = shuffled.slice(0, Math.min(count, shuffled.length));
     
-    return selected.map(word => ({
-      word: word,
-      options: App.generateOptions(word, 4),
-      correct: word.meaning_bn
-    }));
+    return selected.map(word => {
+      const wrongOptions = [];
+      const otherWords = App.words.filter(w => w.word !== word.word);
+      const shuffledOthers = App.shuffleArray([...otherWords]);
+      
+      for (let w of shuffledOthers) {
+        if (wrongOptions.length >= 3) break;
+        if (!wrongOptions.find(o => o.meaning_bn === w.meaning_bn) && w.meaning_bn !== word.meaning_bn) {
+          wrongOptions.push(w);
+        }
+      }
+      
+      const options = App.shuffleArray([word, ...wrongOptions]);
+      
+      return {
+        word: word,
+        options: options,
+        correct: word.meaning_bn
+      };
+    });
   },
   
   showQuestion() {
+    this.selected = false;
     const q = this.questions[this.currentQuestion];
     
-    // Update counter
-    this.elements.questionCounter.innerHTML = `
-      Question <span>${this.currentQuestion + 1}</span> / ${this.questions.length}
-    `;
-    
-    // Show word
+    this.elements.questionCounter.innerHTML = `Question <span>${this.currentQuestion + 1}</span> / ${this.questions.length}`;
     this.elements.quizWord.textContent = q.word.word;
     
-    // Clear previous state
     this.elements.feedback.classList.remove('show', 'correct', 'wrong');
     this.elements.feedback.textContent = '';
     this.elements.nextBtn.classList.add('hidden');
     
-    // Generate options
     this.elements.optionsGrid.innerHTML = '';
-    q.options.forEach(option => {
+    
+    q.options.forEach((option, index) => {
       const btn = document.createElement('button');
       btn.className = 'option-btn';
       btn.textContent = option.meaning_bn;
-      btn.addEventListener('click', () => this.selectAnswer(btn, option, q));
+      
+      btn.addEventListener('click', () => {
+        if (!this.selected) {
+          this.selectAnswer(btn, option, q);
+        }
+      });
+      
       this.elements.optionsGrid.appendChild(btn);
     });
   },
   
   selectAnswer(button, selectedOption, question) {
-    // Disable all buttons
+    this.selected = true;
+    
     const buttons = this.elements.optionsGrid.querySelectorAll('.option-btn');
     buttons.forEach(btn => btn.disabled = true);
     
@@ -149,10 +159,8 @@ const ExamPage = {
       this.elements.feedback.textContent = '✓ Correct!';
       this.elements.feedback.classList.add('correct');
       this.score++;
-      this.answers.push({ correct: true, word: question.word.word });
     } else {
       button.classList.add('wrong');
-      // Highlight correct answer
       buttons.forEach(btn => {
         if (btn.textContent === question.correct) {
           btn.classList.add('reveal-correct');
@@ -160,13 +168,11 @@ const ExamPage = {
       });
       this.elements.feedback.textContent = `✗ Wrong! Correct: ${question.correct}`;
       this.elements.feedback.classList.add('wrong');
-      this.answers.push({ correct: false, word: question.word.word, correctAnswer: question.correct });
     }
     
     this.elements.feedback.classList.add('show');
     this.elements.nextBtn.classList.remove('hidden');
     
-    // Auto advance after delay if not last question
     if (this.currentQuestion < this.questions.length - 1) {
       setTimeout(() => this.nextQuestion(), 1500);
     }
@@ -191,25 +197,22 @@ const ExamPage = {
     const wrong = total - correct;
     const percentage = Math.round((correct / total) * 100);
     
-    // Update score display
     this.elements.scoreNumber.textContent = correct;
     this.elements.scoreTotal.textContent = `/${total}`;
     this.elements.accuracy.textContent = `${percentage}% Accuracy`;
     
-    // Set circle color based on performance
     this.elements.scoreCircle.className = 'score-circle';
     if (percentage >= 80) {
       this.elements.scoreCircle.classList.add('excellent');
-      this.elements.performanceMsg.textContent = 'Outstanding performance! You\'re mastering these words!';
+      this.elements.performanceMsg.textContent = 'Outstanding performance!';
     } else if (percentage >= 60) {
       this.elements.scoreCircle.classList.add('good');
-      this.elements.performanceMsg.textContent = 'Good job! Keep practicing to improve further.';
+      this.elements.performanceMsg.textContent = 'Good job! Keep practicing!';
     } else {
       this.elements.scoreCircle.classList.add('needs-practice');
-      this.elements.performanceMsg.textContent = 'Keep practicing! Review the words and try again.';
+      this.elements.performanceMsg.textContent = 'Keep practicing! Review the words!';
     }
     
-    // Update stats
     this.elements.correctCount.textContent = correct;
     this.elements.wrongCount.textContent = wrong;
     this.elements.percentage.textContent = percentage + '%';
@@ -220,7 +223,6 @@ const ExamPage = {
   }
 };
 
-// Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   ExamPage.init();
 });
