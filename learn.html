@@ -7,38 +7,34 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Background Effects -->
   <div class="bg-grid"></div>
   <div class="bg-radial"></div>
   <div class="scanlines"></div>
   <div class="scanline-bar"></div>
 
   <div class="container">
-    <!-- Header -->
     <header>
-      <div class="logo glitch-text" data-text="VOCAB MASTER">VOCAB MASTER</div>
+      <div class="logo">VOCAB MASTER</div>
       <nav class="nav-links">
         <a href="learn.html" class="nav-link active">Learn</a>
         <a href="exam.html" class="nav-link">Exam</a>
       </nav>
     </header>
 
-    <!-- Progress HUD -->
     <div class="progress-hud">
       <span class="progress-text">Word <span id="current-index">1</span> / <span id="total-words">0</span></span>
       <span class="learned-count">Learned: <span id="learned-counter">0</span></span>
       <span id="learned-status" style="color: var(--neon-cyan);">NEW</span>
     </div>
 
-    <!-- Main Word Display Panel -->
-    <div class="hud-panel" id="word-display">
+    <div class="hud-panel">
       <div class="corner corner-tl"></div>
       <div class="corner corner-tr"></div>
       <div class="corner corner-bl"></div>
       <div class="corner corner-br"></div>
 
       <div class="word-display">
-        <h1 class="word-main glitch-text" id="word-main" data-text="Loading...">Loading...</h1>
+        <h1 class="word-main" id="word-main">Loading...</h1>
         <span class="word-pos" id="word-pos">...</span>
         <div class="word-bangla" id="word-bangla">...</div>
       </div>
@@ -46,12 +42,12 @@
       <div class="info-grid">
         <div class="info-section">
           <div class="info-label">Definition</div>
-          <div class="info-content" id="definition">Loading definition...</div>
+          <div class="info-content" id="definition">Loading...</div>
         </div>
 
         <div class="info-section">
           <div class="info-label">Example</div>
-          <div class="info-content" id="example">Loading example...</div>
+          <div class="info-content" id="example">Loading...</div>
         </div>
 
         <div class="info-section bangla-section">
@@ -67,17 +63,15 @@
         </div>
       </div>
 
-      <!-- Control Buttons -->
       <div class="btn-container">
-        <button class="btn nav-btn" id="prev-btn" title="Previous (←)">◀</button>
-        <button class="btn btn-success" id="learned-btn">+ Mark as Learned</button>
-        <button class="btn btn-primary" id="exam-btn">Go to Exam</button>
-        <button class="btn nav-btn" id="next-btn" title="Next (→)">▶</button>
+        <button class="btn nav-btn" id="prev-btn" title="Previous">◀</button>
+        <button class="btn btn-success" id="learned-btn">+ MARK AS LEARNED</button>
+        <button class="btn btn-primary" id="exam-btn">GO TO EXAM</button>
+        <button class="btn nav-btn" id="next-btn" title="Next">▶</button>
       </div>
     </div>
   </div>
 
-  <!-- Scripts -->
   <script src="js/app.js"></script>
   <script src="js/learn.js"></script>
 </body>
