@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn - Vocab Master</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <header class="header">
+            <a href="index.html" class="back-btn">← Back</a>
+            <h1 class="logo">Vocab Master</h1>
+        </header>
+
+        <main class="main">
+            <section class="learn-section">
+                <div class="flashcard-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <h3 id="word-display">Loading...</h3>
+                                <p id="pos-display" class="part-of-speech"></p>
+                            </div>
+                            <div class="flashcard-back">
+                                <div class="word-details">
+                                    <h3 id="meaning-display"></h3>
+                                    <p id="definition-display" class="definition"></p>
+                                    <p id="example-display" class="example"></p>
+                                    <p id="synonyms-display" class="synonyms"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button id="show-meaning-btn" class="btn btn-primary">Show Meaning</button>
+                        <button id="mark-learned-btn" class="btn btn-success" disabled>Mark as Learned</button>
+                        <button id="next-word-btn" class="btn btn-secondary">Next Word</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2026 Vocab Master - Learn English with Bangla Meanings</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/dataLoader.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/learn.js"></script>
+</body>
+</html>
