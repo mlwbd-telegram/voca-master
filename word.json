@@ -7,5 +7,32 @@
     "example_en": "The crew had to abandon the sinking ship.",
     "example_bn": "দলকে ডুবে যাওয়া জাহাজ পরিত্যাগ করতে হয়েছিল।",
     "synonyms": ["desert", "forsake", "leave"]
+  },
+  {
+    "word": "ability",
+    "pos": "noun",
+    "meaning_bn": "সামর্থ্য",
+    "definition": "The power or capacity to do something",
+    "example_en": "She has the ability to solve complex problems.",
+    "example_bn": "তার জটিল সমস্যা সমাধান করার সামর্থ্য আছে।",
+    "synonyms": ["capability", "skill", "talent"]
+  },
+  {
+    "word": "accurate",
+    "pos": "adjective",
+    "meaning_bn": "নির্ভুল",
+    "definition": "Correct in all details; exact",
+    "example_en": "The weather forecast was surprisingly accurate.",
+    "example_bn": "আবহাওয়ার পূর্বাভাস আশ্চর্যজনকভাবে নির্ভুল ছিল।",
+    "synonyms": ["precise", "exact", "correct"]
+  },
+  {
+    "word": "achieve",
+    "pos": "verb",
+    "meaning_bn": "অর্জন করা",
+    "definition": "Successfully bring about or reach a desired objective",
+    "example_en": "He worked hard to achieve his goals.",
+    "example_bn": "তিনি তার লক্ষ্য অর্জন করতে কঠোর পরিশ্রম করেছিলেন।",
+    "synonyms": ["accomplish", "attain", "reach"]
   }
 ]
