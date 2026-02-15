@@ -1,0 +1,108 @@
+.hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px var(--primary-color);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+}
+
+.learn-section, .practice-section, .quiz-section, .review-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question-container {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.options-container {
+    margin-bottom: 2rem;
+}
+
+.feedback-container {
+    text-align: center;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-stats {
+    background: var(--surface-dark);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 2rem 0;
+    text-align: center;
+    border: 1px solid rgba(0, 255, 157, 0.1);
+}
+.result-stats p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.words-list-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.words-list-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.words-list-container::-webkit-scrollbar-track {
+    background: var(--surface-darker);
+}
+
+.words-list-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    background: var(--surface-dark);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+    z-index: 1000;
+    transform: translateX(120%);
+    transition: transform 0.3s ease;
+}
+
+.toast.show {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;    }
+    
+    .flashcard {
+        height: 250px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
