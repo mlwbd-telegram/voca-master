@@ -1,0 +1,11 @@
+[
+  {
+    "word": "abandon",
+    "pos": "verb",
+    "meaning_bn": "পরিত্যাগ করা",
+    "definition": "To leave behind, to desert",
+    "example_en": "The crew had to abandon the sinking ship.",
+    "example_bn": "দলকে ডুবে যাওয়া জাহাজ পরিত্যাগ করতে হয়েছিল।",
+    "synonyms": ["desert", "forsake", "leave"]
+  }
+]
