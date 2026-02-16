@@ -6,9 +6,11 @@ const App = {
   words: [],
   learnedWords: [],
   currentIndex: 0,
+  usedExamWords: [], // Track used words for exam rotation
   
   init() {
     this.loadLearnedWords();
+    this.loadUsedExamWords();
     return this.loadWords();
   },
   
@@ -42,6 +44,21 @@ const App = {
     localStorage.setItem('learned_words', JSON.stringify(this.learnedWords));
   },
   
+  loadUsedExamWords() {
+    const stored = localStorage.getItem('used_exam_words');
+    if (stored) {
+      try {
+        this.usedExamWords = JSON.parse(stored);
+      } catch (e) {
+        this.usedExamWords = [];
+      }
+    }
+  },
+  
+  saveUsedExamWords() {
+    localStorage.setItem('used_exam_words', JSON.stringify(this.usedExamWords));
+  },
+  
   isLearned(word) {
     return this.learnedWords.includes(word);
   },
@@ -67,6 +84,41 @@ const App = {
   
   getLearnedWordsData() {
     return this.words.filter(w => this.isLearned(w.word));
+  },
+  
+  getUnlearnedWords() {
+    return this.words.filter(w => !this.isLearned(w.word));
+  },
+  
+  // Get exam words - 50+ words, no repetition until all used
+  getExamWords(count = 50) {
+    // If all words used, reset
+    if (this.usedExamWords.length >= this.words.length - 5) {
+      this.usedExamWords = [];
+    }
+    
+    // Get unused words
+    let available = this.words.filter(w => !this.usedExamWords.includes(w.word));
+    
+    // If not enough unused, reset and try again
+    if (available.length < count) {
+      this.usedExamWords = [];
+      available = [...this.words];
+    }
+    
+    // Shuffle and select
+    const shuffled = this.shuffleArray([...available]);
+    const selected = shuffled.slice(0, Math.min(count, shuffled.length));
+    
+    // Mark as used
+    selected.forEach(w => {
+      if (!this.usedExamWords.includes(w.word)) {
+        this.usedExamWords.push(w.word);
+      }
+    });
+    this.saveUsedExamWords();
+    
+    return selected;
   },
   
   shuffleArray(array) {
