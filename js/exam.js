@@ -8,6 +8,7 @@ const ExamPage = {
   currentQuestion: 0,
   score: 0,
   selected: false,
+  wrongAnswers: [],
   
   init() {
     if (App.words.length === 0) {
@@ -44,7 +45,9 @@ const ExamPage = {
       wrongCount: document.getElementById('wrong-count'),
       percentage: document.getElementById('percentage'),
       restartBtn: document.getElementById('restart-btn'),
-      homeBtn: document.getElementById('home-btn')
+      homeBtn: document.getElementById('home-btn'),
+      wrongWordsSection: document.getElementById('wrong-words-section'),
+      wrongWordsList: document.getElementById('wrong-words-list')
     };
   },
   
@@ -69,6 +72,7 @@ const ExamPage = {
     this.currentQuestion = 0;
     this.score = 0;
     this.selected = false;
+    this.wrongAnswers = [];
     
     if (mode === 'learned') {
       const learnedWords = App.getLearnedWordsData();
@@ -76,13 +80,14 @@ const ExamPage = {
         alert('Please learn at least 4 words first!');
         return;
       }
-      this.questions = this.generateQuestions(learnedWords, Math.min(10, learnedWords.length));
+      // Use 50 or all learned words
+      const count = Math.min(50, learnedWords.length);
+      const shuffled = App.shuffleArray([...learnedWords]);
+      this.questions = this.generateQuestions(shuffled.slice(0, count), count);
     } else {
-      if (App.words.length < 4) {
-        alert('Need at least 4 words in database!');
-        return;
-      }
-      this.questions = this.generateQuestions(App.words, 10);
+      // Get 50+ words with no repetition
+      const examWords = App.getExamWords(50);
+      this.questions = this.generateQuestions(examWords, examWords.length);
     }
     
     this.elements.modeSelection.classList.add('hidden');
@@ -93,8 +98,7 @@ const ExamPage = {
   },
   
   generateQuestions(wordList, count) {
-    const shuffled = App.shuffleArray([...wordList]);
-    const selected = shuffled.slice(0, Math.min(count, shuffled.length));
+    const selected = wordList.slice(0, Math.min(count, wordList.length));
     
     return selected.map(word => {
       const wrongOptions = [];
@@ -168,14 +172,18 @@ const ExamPage = {
       });
       this.elements.feedback.textContent = `✗ Wrong! Correct: ${question.correct}`;
       this.elements.feedback.classList.add('wrong');
+      
+      // Save wrong answer
+      this.wrongAnswers.push({
+        word: question.word.word,
+        meaning: question.word.meaning_bn,
+        yourAnswer: selectedOption.meaning_bn
+      });
     }
     
     this.elements.feedback.classList.add('show');
-    
-    // Show next button - NO AUTO ADVANCE
     this.elements.nextBtn.classList.remove('hidden');
     
-    // Change button text for last question
     if (this.currentQuestion === this.questions.length - 1) {
       this.elements.nextBtn.textContent = 'See Results →';
     } else {
@@ -221,6 +229,30 @@ const ExamPage = {
     this.elements.correctCount.textContent = correct;
     this.elements.wrongCount.textContent = wrong;
     this.elements.percentage.textContent = percentage + '%';
+    
+    // Show wrong words list
+    this.renderWrongWords();
+  },
+  
+  renderWrongWords() {
+    this.elements.wrongWordsList.innerHTML = '';
+    
+    if (this.wrongAnswers.length === 0) {
+      this.elements.wrongWordsSection.classList.add('hidden');
+      return;
+    }
+    
+    this.elements.wrongWordsSection.classList.remove('hidden');
+    
+    this.wrongAnswers.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'wrong-word-item';
+      div.innerHTML = `
+        <span class="wrong-word-en">${item.word}</span>
+        <span class="wrong-word-bn">${item.meaning}</span>
+      `;
+      this.elements.wrongWordsList.appendChild(div);
+    });
   },
   
   restart() {
