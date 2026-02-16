@@ -22,6 +22,16 @@
       </nav>
     </header>
 
+    <!-- Filter Buttons -->
+    <div class="filter-hud">
+      <button class="filter-btn active" id="filter-all">
+        📋 All Words <span class="count" id="word-count">0</span>
+      </button>
+      <button class="filter-btn" id="filter-learned">
+        ✓ Learned <span class="count" id="learned-count-btn">0</span>
+      </button>
+    </div>
+
     <div class="progress-hud">
       <span class="progress-text">Word <span id="current-index">1</span> / <span id="total-words">0</span></span>
       <span class="learned-count">Learned: <span id="learned-counter">0</span></span>
@@ -70,6 +80,28 @@
         <button class="btn btn-primary" id="exam-btn">GO TO EXAM</button>
         <button class="btn nav-btn" id="next-btn" title="Next">▶</button>
       </div>
+    </div>
+  </div>
+
+  <!-- Word List Modal -->
+  <div class="modal-overlay" id="word-list-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title">📋 All Words</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="word-list-container"></div>
+    </div>
+  </div>
+
+  <!-- Learned List Modal -->
+  <div class="modal-overlay" id="learned-list-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title">✓ Learned Words</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="learned-list-container"></div>
     </div>
   </div>
 
