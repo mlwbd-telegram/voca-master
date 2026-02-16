@@ -1,332 +1,3602 @@
 [
-  {
-"word": "achieve",
-"part_of_speech": "verb",
-"definition_en": "to successfully complete something or reach a goal",
-"definition_bn": "কোনো লক্ষ্য অর্জন করা বা কিছু সফলভাবে সম্পন্ন করা",
-"example_en": "She worked hard to achieve her goals.",
-"example_bn": "সে তার লক্ষ্য অর্জনের জন্য কঠোর পরিশ্রম করেছে।",
-"synonyms": ["accomplish", "attain", "reach"],
-"level": "basic"
-},
-{
-"word": "benefit",
-"part_of_speech": "noun",
-"definition_en": "an advantage or good thing that comes from something",
-"definition_bn": "কোনো কিছুর থেকে পাওয়া উপকার বা সুবিধা",
-"example_en": "Regular exercise has many health benefits.",
-"example_bn": "নিয়মিত ব্যায়ামের অনেক স্বাস্থ্যগত সুবিধা রয়েছে।",
-"synonyms": ["advantage", "gain", "profit"],
-"level": "basic"
-},
-{
-"word": "create",
-"part_of_speech": "verb",
-"definition_en": "to make something new or bring something into existence",
-"definition_bn": "কিছু নতুন তৈরি করা বা অস্তিত্বে আনা",
-"example_en": "Artists create beautiful paintings.",
-"example_bn": "শিল্পীরা সুন্দর চিত্র তৈরি করেন।",
-"synonyms": ["make", "produce", "develop"],
-"level": "basic"
-},
-{
-"word": "decide",
-"part_of_speech": "verb",
-"definition_en": "to make a choice or come to a conclusion",
-"definition_bn": "একটি সিদ্ধান্ত নেওয়া বা চূড়ান্ত করা",
-"example_en": "We need to decide where to go for dinner.",
-"example_bn": "আমাদের রাতের খাবারের জন্য কোথায় যাব তা সিদ্ধান্ত নিতে হবে।",
-"synonyms": ["choose", "determine", "resolve"],
-"level": "basic"
-},
-{
-"word": "explain",
-"part_of_speech": "verb",
-"definition_en": "to make something clear by giving details or reasons",
-"definition_bn": "বিস্তারিত বা কারণ দেখিয়ে কিছু স্পষ্ট করা",
-"example_en": "Can you explain how this machine works?",
-"example_bn": "আপনি কি ব্যাখ্যা করতে পারেন মেশিনটি কীভাবে কাজ করে?",
-"synonyms": ["describe", "clarify", "illustrate"],
-"level": "basic"
-},
-{
-"word": "follow",
-"part_of_speech": "verb",
-"definition_en": "to go after someone or move in the same direction",
-"definition_bn": "কাউকে অনুসরণ করা বা একই দিকে যাওয়া",
-"example_en": "Please follow the instructions carefully.",
-"example_bn": "দয়া করে নির্দেশাবলী মনোযোগ সহকারে অনুসরণ করুন।",
-"synonyms": ["pursue", "track", "obey"],
-"level": "basic"
-},
-{
-"word": "improve",
-"part_of_speech": "verb",
-"definition_en": "to make something better or become better",
-"definition_bn": "কিছু ভালো করা বা ভালো হওয়া",
-"example_en": "He practices every day to improve his skills.",
-"example_bn": "সে তার দক্ষতা উন্নত করতে প্রতিদিন অনুশীলন করে।",
-"synonyms": ["enhance", "upgrade", "develop"],
-"level": "basic"
-},
-{
-"word": "increase",
-"part_of_speech": "verb",
-"definition_en": "to make something larger in amount or size",
-"definition_bn": "পরিমাণ বা আকার বাড়ানো",
-"example_en": "The company plans to increase its workforce.",
-"example_bn": "কোম্পানি তার শ্রমিক বাড়াতে পরিকল্পনা করছে।",
-"synonyms": ["grow", "expand", "raise"],
-"level": "basic"
-},
-{
-"word": "protect",
-"part_of_speech": "verb",
-"definition_en": "to keep someone or something safe from harm",
-"definition_bn": "কাউকে বা কিছুকে ক্ষতি থেকে নিরাপদ রাখা",
-"example_en": "We must protect the environment for future generations.",
-"example_bn": "আমাদের ভবিষ্যৎ প্রজন্মের জন্য পরিবেশ রক্ষা করতে হবে।",
-"synonyms": ["guard", "defend", "shield"],
-"level": "basic"
-},
-{
-"word": "provide",
-"part_of_speech": "verb",
-"definition_en": "to give or supply something needed",
-"definition_bn": "প্রয়োজনীয় কিছু দেওয়া বা সরবরাহ করা",
-"example_en": "The government provides free education to children.",
-"example_bn": "সরকার শিশুদের জন্য বিনামূল্যে শিক্ষা প্রদান করে।",
-"synonyms": ["supply", "offer", "furnish"],
-"level": "basic"
-},
-{
-"word": "receive",
-"part_of_speech": "verb",
-"definition_en": "to get or be given something",
-"definition_bn": "কিছু পাওয়া বা দেওয়া হওয়া",
-"example_en": "She received a gift from her friend.",
-"example_bn": "সে তার বন্ধুর কাছ থেকে একটি উপহার পেয়েছে।",
-"synonyms": ["get", "obtain", "accept"],
-"level": "basic"
-},
-{
-"word": "support",
-"part_of_speech": "verb",
-"definition_en": "to help or encourage someone",
-"definition_bn": "কাউকে সাহায্য বা উৎসাহ দেওয়া",
-"example_en": "Her family always supports her dreams.",
-"example_bn": "তার পরিবার সবসময় তার স্বপ্নকে সমর্থন করে।",
-"synonyms": ["assist", "back", "aid"],
-"level": "basic"
-},
-{
-"word": "understand",
-"part_of_speech": "verb",
-"definition_en": "to know what someone means or how something works",
-"definition_bn": "কারও মানে বা কিছু কীভাবে কাজ করে তা বোঝা",
-"example_en": "I don't understand this math problem.",
-"example_bn": "আমি এই গণিতের সমস্যাটি বুঝতে পারছি না।",
-"synonyms": ["comprehend", "grasp", "realize"],
-"level": "basic"
-},
 {
 "word": "ability",
-"part_of_speech": "noun",
-"definition_en": "the skill or power to do something",
-"definition_bn": "কিছু করার দক্ষতা বা ক্ষমতা",
-"example_en": "His ability to solve problems is impressive.",
-"example_bn": "সমস্যা সমাধানের তার ক্ষমতা অসাধারণ।",
-"synonyms": ["skill", "capacity", "talent"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "ক্ষমতা",
+"definition": "power to do something",
+"example_en": "She has the ability to solve hard problems.",
+"example_bn": "তার কঠিন সমস্যা সমাধানের ক্ষমতা আছে।",
+"synonyms": ["capacity", "skill", "talent"]
 },
 {
-"word": "action",
-"part_of_speech": "noun",
-"definition_en": "something that is done or happens",
-"definition_bn": "যে কাজটি করা হয় বা ঘটে",
-"example_en": "Quick action saved many lives during the emergency.",
-"example_bn": "জরুরি অবস্থায় দ্রুত কর্ম অনেক জীবন বাঁচিয়েছে।",
-"synonyms": ["activity", "step", "measure"],
-"level": "basic"
+"word": "achieve",
+"pos": "verb",
+"meaning_bn": "অর্জন করা",
+"definition": "to reach a goal successfully",
+"example_en": "He worked hard to achieve his dreams today.",
+"example_bn": "সে আজ তার স্বপ্ন অর্জন করতে কঠোর পরিশ্রম করেছে।",
+"synonyms": ["attain", "reach", "gain"]
 },
 {
-"word": "activity",
-"part_of_speech": "noun",
-"definition_en": "something that people do or a task they perform",
-"definition_bn": "মানুষ যে কাজটি করে বা যে কার্য সম্পাদন করে",
-"example_en": "Swimming is a popular activity in summer.",
-"example_bn": "গ্রীষ্মে সাঁতার একটি জনপ্রিয় কার্যকলাপ।",
-"synonyms": ["task", "exercise", "work"],
-"level": "basic"
+"word": "active",
+"pos": "adjective",
+"meaning_bn": "সক্রিয়",
+"definition": "engaging in action or movement",
+"example_en": "You should stay active to keep your body healthy.",
+"example_bn": "সুস্থ থাকতে তোমার সক্রিয় থাকা উচিত।",
+"synonyms": ["busy", "lively", "energetic"]
+},
+{
+"word": "actual",
+"pos": "adjective",
+"meaning_bn": "প্রকৃত",
+"definition": "existing in fact or reality",
+"example_en": "The actual cost was higher than we expected.",
+"example_bn": "প্রকৃত খরচ আমাদের প্রত্যাশার চেয়ে বেশি ছিল।",
+"synonyms": ["real", "true", "genuine"]
+},
+{
+"word": "adapt",
+"pos": "verb",
+"meaning_bn": "খাপ খাওয়ানো",
+"definition": "to change to suit new conditions",
+"example_en": "Animals must adapt to survive in changing environments.",
+"example_bn": "পরিবর্তিত পরিবেশে বেঁচে থাকতে প্রাণীদের খাপ খাওয়াতে হয়।",
+"synonyms": ["adjust", "modify", "change"]
+},
+{
+"word": "address",
+"pos": "verb",
+"meaning_bn": "সম্বোধন করা",
+"definition": "to speak to or deal with",
+"example_en": "The manager will address the staff meeting soon.",
+"example_bn": "ম্যানেজার শীঘ্রই স্টাফ মিটিং সম্বোধন করবেন।",
+"synonyms": ["speak", "tackle", "handle"]
+},
+{
+"word": "adjust",
+"pos": "verb",
+"meaning_bn": "সামঞ্জস্য করা",
+"definition": "to change slightly for better fit",
+"example_en": "Please adjust the seat to your comfortable height.",
+"example_bn": "দয়া করে সিটটি তোমার আরামদায়ক উচ্চতায় সামঞ্জস্য করো।",
+"synonyms": ["adapt", "alter", "fix"]
+},
+{
+"word": "admit",
+"pos": "verb",
+"meaning_bn": "স্বীকার করা",
+"definition": "to confess or allow entry",
+"example_en": "He did not want to admit his mistake publicly.",
+"example_bn": "সে তার ভুল publicly স্বীকার করতে চায়নি।",
+"synonyms": ["confess", "accept", "acknowledge"]
+},
+{
+"word": "adopt",
+"pos": "verb",
+"meaning_bn": "গ্রহণ করা",
+"definition": "to take up or start using",
+"example_en": "They decided to adopt a new strategy for work.",
+"example_bn": "তারা কাজের জন্য নতুন কৌশল গ্রহণ করতে চেয়েছিল।",
+"synonyms": ["choose", "take", "embrace"]
 },
 {
 "word": "adult",
-"part_of_speech": "noun",
-"definition_en": "a fully grown person who is no longer a child",
-"definition_bn": "পূর্ণ বয়স্ক ব্যক্তি যে আর শিশু নয়",
-"example_en": "Adults should take responsibility for their actions.",
-"example_bn": "প্রাপ্তবয়স্কদের তাদের কর্মের জন্য দায়িত্ব নিতে হবে।",
-"synonyms": ["grown-up", "mature person", "elder"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "প্রাপ্তবয়স্ক",
+"definition": "a fully grown person",
+"example_en": "Only adults are allowed to enter this specific club.",
+"example_bn": "শুধুমাত্র প্রাপ্তবয়স্কদের এই নির্দিষ্ট ক্লাবে প্রবেশের অনুমতি আছে।",
+"synonyms": ["grownup", "mature", "senior"]
+},
+{
+"word": "advance",
+"pos": "verb",
+"meaning_bn": "এগিয়ে যাওয়া",
+"definition": "to move forward in position",
+"example_en": "The army will advance towards the enemy lines now.",
+"example_bn": "সেনাবাহিনী এখন শত্রুপক্ষের দিকে এগিয়ে যাবে।",
+"synonyms": ["progress", "move", "proceed"]
+},
+{
+"word": "advantage",
+"pos": "noun",
+"meaning_bn": "সুবিধা",
+"definition": "a condition giving greater chance",
+"example_en": "Speaking English gives you a huge advantage in jobs.",
+"example_bn": "ইংরেজি বলা তোমাকে চাকরিতে огромное সুবিধা দেয়।",
+"synonyms": ["benefit", "profit", "gain"]
+},
+{
+"word": "affect",
+"pos": "verb",
+"meaning_bn": "প্রভাবিত করা",
+"definition": "to produce a change in something",
+"example_en": "Bad weather can affect our travel plans significantly.",
+"example_bn": "খারাপ আবহাওয়া আমাদের ভ্রমণ পরিকল্পনাকে উল্লেখযোগ্যভাবে প্রভাবিত করতে পারে।",
+"synonyms": ["influence", "impact", "change"]
+},
+{
+"word": "afford",
+"pos": "verb",
+"meaning_bn": "সামর্থ্য থাকা",
+"definition": "to have enough money for",
+"example_en": "I cannot afford to buy such an expensive car.",
+"example_bn": "আমার এমন দামী গাড়ি কেনার সামর্থ্য নেই।",
+"synonyms": ["pay", "bear", "manage"]
+},
+{
+"word": "afraid",
+"pos": "adjective",
+"meaning_bn": "ভীত",
+"definition": "feeling fear or worry",
+"example_en": "She is afraid of walking alone at night.",
+"example_bn": "সে রাতে একা হাঁটতে ভীত হয়।",
+"synonyms": ["scared", "fearful", "nervous"]
+},
+{
+"word": "agency",
+"pos": "noun",
+"meaning_bn": "সংস্থা",
+"definition": "a business providing a service",
+"example_en": "He found a job through a local employment agency.",
+"example_bn": "সে একটি স্থানীয় কর্মসংস্থান সংস্থার মাধ্যমে চাকরি পেয়েছে।",
+"synonyms": ["firm", "bureau", "organization"]
+},
+{
+"word": "agent",
+"pos": "noun",
+"meaning_bn": "প্রতিনিধি",
+"definition": "a person acting for another",
+"example_en": "You should talk to the travel agent for tickets.",
+"example_bn": "টিকিটের জন্য তোমার ভ্রমণ প্রতিনিধির সাথে কথা বলা উচিত।",
+"synonyms": ["representative", "broker", "delegate"]
+},
+{
+"word": "agree",
+"pos": "verb",
+"meaning_bn": "একমত হওয়া",
+"definition": "to have the same opinion",
+"example_en": "I agree with your plan for the project.",
+"example_bn": "প্রকল্পের জন্য তোমার পরিকল্পনার সাথে আমি একমত।",
+"synonyms": ["consent", "accept", "concur"]
+},
+{
+"word": "agreement",
+"pos": "noun",
+"meaning_bn": "চুক্তি",
+"definition": "a negotiated arrangement between parties",
+"example_en": "Both sides signed the agreement yesterday morning.",
+"example_bn": "উভয় পক্ষ গতকাল সকালে চুক্তিতে স্বাক্ষর করেছে।",
+"synonyms": ["contract", "pact", "deal"]
+},
+{
+"word": "aim",
+"pos": "verb",
+"meaning_bn": "লক্ষ্য করা",
+"definition": "to point or direct towards",
+"example_en": "We aim to finish the work by Friday.",
+"example_bn": "আমরা শুক্রবারের মধ্যে কাজ শেষ করার লক্ষ্য রাখি।",
+"synonyms": ["target", "plan", "intend"]
+},
+{
+"word": "allow",
+"pos": "verb",
+"meaning_bn": "অনুমতি দেওয়া",
+"definition": "to let someone do something",
+"example_en": "My parents do not allow me to stay out late.",
+"example_bn": "আমার বাবা-মা আমাকে রাতে поздно থাকতে অনুমতি দেয় না।",
+"synonyms": ["permit", "let", "authorize"]
+},
+{
+"word": "almost",
+"pos": "adverb",
+"meaning_bn": "প্রায়",
+"definition": "very nearly but not completely",
+"example_en": "I have almost finished reading the entire book.",
+"example_bn": "আমি প্রায় পুরো বইটি পড়া শেষ করে ফেলেছি।",
+"synonyms": ["nearly", "virtually", "practically"]
+},
+{
+"word": "alone",
+"pos": "adjective",
+"meaning_bn": "একা",
+"definition": "having no one else present",
+"example_en": "She prefers to work alone in her room.",
+"example_bn": "সে তার ঘরে একা কাজ করতে পছন্দ করে।",
+"synonyms": ["solo", "lonely", "isolated"]
+},
+{
+"word": "along",
+"pos": "preposition",
+"meaning_bn": "বরাবর",
+"definition": "in a line matching something",
+"example_en": "We walked along the river bank for hours.",
+"example_bn": "আমরা ঘণ্টার পর ঘণ্টা নদীর তীর বরাবর হেঁটেছি।",
+"synonyms": ["beside", "across", "through"]
+},
+{
+"word": "already",
+"pos": "adverb",
+"meaning_bn": "ইতিমধ্যে",
+"definition": "before now or by this time",
+"example_en": "They have already left for the airport today.",
+"example_bn": "তারা আজ ইতিমধ্যেই বিমানবন্দরের জন্য রওনা দিয়েছে।",
+"synonyms": ["previously", "before", "earlier"]
+},
+{
+"word": "also",
+"pos": "adverb",
+"meaning_bn": "এছাড়াও",
+"definition": "in addition or too",
+"example_en": "She speaks French and also knows Spanish well.",
+"example_bn": "সে ফরাসি বলে এবং এছাড়াও স্প্যানিশ ভালো জানে।",
+"synonyms": ["too", "besides", "additionally"]
+},
+{
+"word": "alter",
+"pos": "verb",
+"meaning_bn": "পরিবর্তন করা",
+"definition": "to change or make different",
+"example_en": "You need to alter the dress to fit better.",
+"example_bn": "পোশাকটি ভালোভাবে ফিট করতে তোমার এটি পরিবর্তন করতে হবে।",
+"synonyms": ["change", "modify", "adjust"]
+},
+{
+"word": "alternative",
+"pos": "noun",
+"meaning_bn": "বিকল্প",
+"definition": "one of two possible choices",
+"example_en": "We need to find an alternative route for traffic.",
+"example_bn": "আমাদের ট্রাফিকের জন্য একটি বিকল্প রুট খুঁজে বের করতে হবে।",
+"synonyms": ["option", "choice", "substitute"]
+},
+{
+"word": "although",
+"pos": "conjunction",
+"meaning_bn": "যদিও",
+"definition": "in spite of the fact that",
+"example_en": "Although it rained, we enjoyed the picnic much.",
+"example_bn": "যদিও বৃষ্টি হয়েছিল, আমরা পিকনিকটি খুব উপভোগ করেছি।",
+"synonyms": ["though", "despite", "whereas"]
+},
+{
+"word": "always",
+"pos": "adverb",
+"meaning_bn": "সর্বদা",
+"definition": "at all times or forever",
+"example_en": "He always arrives early for the morning meetings.",
+"example_bn": "সে সকালের মিটিংয়ের জন্য সর্বদা তাড়াতাড়ি পৌঁছায়।",
+"synonyms": ["forever", "constantly", "ever"]
+},
+{
+"word": "amazing",
+"pos": "adjective",
+"meaning_bn": "আশ্চর্যজনক",
+"definition": "causing great surprise or wonder",
+"example_en": "The view from the top was truly amazing.",
+"example_bn": "চূড়া থেকে দৃশ্যটি সত্যিই আশ্চর্যজনক ছিল।",
+"synonyms": ["wonderful", "great", "incredible"]
+},
+{
+"word": "among",
+"pos": "preposition",
+"meaning_bn": "মধ্যে",
+"definition": "surrounded by or in the middle",
+"example_en": "She felt comfortable among her friendly colleagues.",
+"example_bn": "সে তার বন্ধুত্বপূর্ণ সহকর্মীদের মধ্যে স্বাচ্ছন্দ্য বোধ করেছিল।",
+"synonyms": ["amid", "between", "within"]
 },
 {
 "word": "amount",
-"part_of_speech": "noun",
-"definition_en": "how much of something there is",
-"definition_bn": "কোনো জিনিসের পরিমাণ কতটুকু আছে",
-"example_en": "The amount of rainfall was higher than expected.",
-"example_bn": "বৃষ্টিপাতের পরিমাণ প্রত্যাশার চেয়ে বেশি ছিল।",
-"synonyms": ["quantity", "number", "sum"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "পরিমাণ",
+"definition": "a quantity of something",
+"example_en": "The total amount of money was quite large.",
+"example_bn": "টাকার মোট পরিমাণ বেশ বড় ছিল।",
+"synonyms": ["quantity", "sum", "total"]
+},
+{
+"word": "analyze",
+"pos": "verb",
+"meaning_bn": "বিশ্লেষণ করা",
+"definition": "to examine in detail",
+"example_en": "Scientists analyze data to find new patterns.",
+"example_bn": "বিজ্ঞানীরা নতুন প্যাটার্ন খুঁজে পেতে ডেটা বিশ্লেষণ করেন।",
+"synonyms": ["examine", "study", "inspect"]
+},
+{
+"word": "ancient",
+"pos": "adjective",
+"meaning_bn": "প্রাচীন",
+"definition": "belonging to the very distant past",
+"example_en": "We visited an ancient temple during our trip.",
+"example_bn": "আমরা আমাদের ভ্রমণের সময় একটি প্রাচীন মন্দির পরিদর্শন করেছি।",
+"synonyms": ["old", "historic", "antique"]
+},
+{
+"word": "anger",
+"pos": "noun",
+"meaning_bn": "রাগ",
+"definition": "a strong feeling of displeasure",
+"example_en": "He could not control his anger during the argument.",
+"example_bn": "তর্কের সময় সে তার রাগ সামলাতে পারেনি।",
+"synonyms": ["rage", "fury", "wrath"]
+},
+{
+"word": "angle",
+"pos": "noun",
+"meaning_bn": "কোণ",
+"definition": "the space between two lines",
+"example_en": "You need to change the angle of the camera.",
+"example_bn": "তোমার ক্যামেরার কোণ পরিবর্তন করা দরকার।",
+"synonyms": ["view", "corner", "aspect"]
+},
+{
+"word": "angry",
+"pos": "adjective",
+"meaning_bn": "রাগান্বিত",
+"definition": "feeling or showing strong annoyance",
+"example_en": "The teacher was angry because students were late.",
+"example_bn": "শিক্ষক রাগান্বিত ছিলেন কারণ ছাত্ররা দেরি করেছিল।",
+"synonyms": ["mad", "upset", "furious"]
+},
+{
+"word": "animal",
+"pos": "noun",
+"meaning_bn": "প্রাণী",
+"definition": "a living creature that moves",
+"example_en": "The lion is a very powerful wild animal.",
+"example_bn": "সিংহ একটি খুব শক্তিশালী বন্য প্রাণী।",
+"synonyms": ["creature", "beast", "wildlife"]
+},
+{
+"word": "announce",
+"pos": "verb",
+"meaning_bn": "ঘোষণা করা",
+"definition": "to make something known publicly",
+"example_en": "They will announce the results tomorrow morning.",
+"example_bn": "তারা আগামীকাল সকালে ফলাফল ঘোষণা করবে।",
+"synonyms": ["declare", "state", "proclaim"]
+},
+{
+"word": "annual",
+"pos": "adjective",
+"meaning_bn": "বার্ষিক",
+"definition": "occurring once every year",
+"example_en": "The company holds an annual meeting for shareholders.",
+"example_bn": "কোম্পানি শেয়ারহোল্ডারদের জন্য একটি বার্ষিক সভা আয়োজন করে।",
+"synonyms": ["yearly", "periodic", "regular"]
+},
+{
+"word": "another",
+"pos": "determiner",
+"meaning_bn": "আরেকটি",
+"definition": "one more person or thing",
+"example_en": "Can I have another cup of coffee please?",
+"example_bn": "আমি কি দয়া করে আরেক কাপ কফি পেতে পারি?",
+"synonyms": ["additional", "extra", "more"]
 },
 {
 "word": "answer",
-"part_of_speech": "noun",
-"definition_en": "a response to a question",
-"definition_bn": "প্রশ্নের উত্তর",
-"example_en": "She gave the correct answer to the difficult question.",
-"example_bn": "সে কঠিন প্রশ্নটির সঠিক উত্তর দিয়েছে।",
-"synonyms": ["reply", "response", "solution"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "উত্তর",
+"definition": "a reply to a question",
+"example_en": "She gave the correct answer to the question.",
+"example_bn": "সে প্রশ্নের সঠিক উত্তর দিয়েছিল।",
+"synonyms": ["reply", "response", "solution"]
+},
+{
+"word": "anxiety",
+"pos": "noun",
+"meaning_bn": "উদ্বেগ",
+"definition": "a feeling of worry or nervousness",
+"example_en": "He felt great anxiety before the important exam.",
+"example_bn": "গুরুত্বপূর্ণ পরীক্ষার আগে সে খুব উদ্বেগ অনুভব করেছিল।",
+"synonyms": ["worry", "fear", "nervousness"]
+},
+{
+"word": "anxious",
+"pos": "adjective",
+"meaning_bn": "উদ্বিগ্ন",
+"definition": "feeling worried or eager",
+"example_en": "I am anxious about the results of the test.",
+"example_bn": "আমি পরীক্ষার ফলাফল নিয়ে উদ্বিগ্ন।",
+"synonyms": ["worried", "nervous", "uneasy"]
+},
+{
+"word": "apart",
+"pos": "adverb",
+"meaning_bn": "আলাদা",
+"definition": "separated by a distance",
+"example_en": "The two buildings stand far apart from each other.",
+"example_bn": "দুটি ভবন একে অপরের থেকে অনেক দূরে আলাদাভাবে দাঁড়িয়ে আছে।",
+"synonyms": ["separate", "away", "aside"]
+},
+{
+"word": "apartment",
+"pos": "noun",
+"meaning_bn": "অ্যাপার্টমেন্ট",
+"definition": "a suite of rooms in a building",
+"example_en": "They rent a small apartment in the city.",
+"example_bn": "তারা শহরে একটি ছোট অ্যাপার্টমেন্ট ভাড়া নেয়।",
+"synonyms": ["flat", "unit", "housing"]
+},
+{
+"word": "apologize",
+"pos": "verb",
+"meaning_bn": "দুঃখ প্রকাশ করা",
+"definition": "to say sorry for a mistake",
+"example_en": "You should apologize for being late to class.",
+"example_bn": "ক্লাসে দেরি করার জন্য তোমার দুঃখ প্রকাশ করা উচিত।",
+"synonyms": ["regret", "excuse", "pardon"]
+},
+{
+"word": "appear",
+"pos": "verb",
+"meaning_bn": "উপস্থিত হওয়া",
+"definition": "to become visible or present",
+"example_en": "He did not appear at the meeting yesterday.",
+"example_bn": "সে গতকালের মিটিংয়ে উপস্থিত হয়নি।",
+"synonyms": ["show", "arrive", "emerge"]
+},
+{
+"word": "appearance",
+"pos": "noun",
+"meaning_bn": "চেহারা",
+"definition": "the way someone or something looks",
+"example_en": "Her sudden appearance surprised everyone in the room.",
+"example_bn": "তার হঠাৎ উপস্থিতি ঘরের সবাইকে অবাক করে দিয়েছিল।",
+"synonyms": ["look", "image", "presence"]
+},
+{
+"word": "apply",
+"pos": "verb",
+"meaning_bn": "আবেদন করা",
+"definition": "to make a formal request",
+"example_en": "Many students apply for this scholarship every year.",
+"example_bn": "প্রতি বছর অনেক ছাত্র এই বৃত্তির জন্য আবেদন করে।",
+"synonyms": ["request", "seek", "submit"]
+},
+{
+"word": "appoint",
+"pos": "verb",
+"meaning_bn": "নিয়োগ করা",
+"definition": "to assign a job or role",
+"example_en": "They decided to appoint him as the new manager.",
+"example_bn": "তারা তাকে নতুন ম্যানেজার হিসেবে নিয়োগ করতে চেয়েছিল।",
+"synonyms": ["assign", "name", "designate"]
+},
+{
+"word": "approach",
+"pos": "verb",
+"meaning_bn": "এগিয়ে যাওয়া",
+"definition": "to come near or nearer to",
+"example_en": "Please do not approach the wild animals closely.",
+"example_bn": "দয়া করে বন্য প্রাণীদের কাছে ঘেঁষে এগিয়ে যেয়ো না।",
+"synonyms": ["near", "advance", "reach"]
+},
+{
+"word": "approve",
+"pos": "verb",
+"meaning_bn": "অনুমোদন করা",
+"definition": "to officially agree to something",
+"example_en": "The bank did not approve his loan application.",
+"example_bn": "ব্যাংক তার ঋণের আবেদন অনুমোদন করেনি।",
+"synonyms": ["accept", "allow", "authorize"]
+},
+{
+"word": "area",
+"pos": "noun",
+"meaning_bn": "এলাকা",
+"definition": "a region or part of a place",
+"example_en": "This area is known for its beautiful gardens.",
+"example_bn": "এই এলাকাটি তার সুন্দর বাগানগুলোর জন্য পরিচিত।",
+"synonyms": ["region", "zone", "place"]
+},
+{
+"word": "argue",
+"pos": "verb",
+"meaning_bn": "তর্ক করা",
+"definition": "to exchange diverging views angrily",
+"example_en": "They often argue about small things at home.",
+"example_bn": "তারা প্রায়ই বাড়িতে ছোট ছোট বিষয় নিয়ে তর্ক করে।",
+"synonyms": ["fight", "debate", "quarrel"]
+},
+{
+"word": "argument",
+"pos": "noun",
+"meaning_bn": "তর্ক",
+"definition": "a reason given in support",
+"example_en": "He made a strong argument for the new policy.",
+"example_bn": "সে নতুন নীতির পক্ষে একটি শক্তিশালী তর্ক উপস্থাপন করেছিল।",
+"synonyms": ["debate", "dispute", "reason"]
+},
+{
+"word": "arise",
+"pos": "verb",
+"meaning_bn": "উদ্ভব হওয়া",
+"definition": "to emerge or become apparent",
+"example_en": "New problems may arise during the project implementation.",
+"example_bn": "প্রকল্প বাস্তবায়নের সময় নতুন সমস্যা উদ্ভব হতে পারে।",
+"synonyms": ["occur", "happen", "emerge"]
+},
+{
+"word": "arrange",
+"pos": "verb",
+"meaning_bn": "ব্যবস্থা করা",
+"definition": "to put in a particular order",
+"example_en": "Can you arrange the chairs in a circle?",
+"example_bn": "তুমি কি চেয়ারগুলো একটি বৃত্তে সাজাতে পারো?",
+"synonyms": ["order", "organize", "plan"]
+},
+{
+"word": "arrest",
+"pos": "verb",
+"meaning_bn": "গ্রেপ্তার করা",
+"definition": "to seize by legal authority",
+"example_en": "The police decided to arrest the suspect today.",
+"example_bn": "পুলিশ আজ সন্দেহভাজনকে গ্রেপ্তার করতে চেয়েছিল।",
+"synonyms": ["catch", "capture", "detain"]
+},
+{
+"word": "arrive",
+"pos": "verb",
+"meaning_bn": "পৌঁছানো",
+"definition": "to reach a destination",
+"example_en": "We expect to arrive at the station by noon.",
+"example_bn": "আমরা দুপুরের মধ্যে স্টেশনে পৌঁছানোর আশা করি।",
+"synonyms": ["reach", "come", "land"]
+},
+{
+"word": "article",
+"pos": "noun",
+"meaning_bn": "প্রবন্ধ",
+"definition": "a piece of writing in a publication",
+"example_en": "She wrote an interesting article for the magazine.",
+"example_bn": "সে ম্যাগাজিনের জন্য একটি ενδιαещат প্রবন্ধ লিখেছিল।",
+"synonyms": ["essay", "report", "story"]
+},
+{
+"word": "artist",
+"pos": "noun",
+"meaning_bn": "শিল্পী",
+"definition": "a person who creates art",
+"example_en": "The artist painted a beautiful landscape yesterday.",
+"example_bn": "শিল্পী গতকাল একটি সুন্দর ল্যান্ডস্কেপ আঁকেছিলেন।",
+"synonyms": ["painter", "creator", "designer"]
+},
+{
+"word": "aspect",
+"pos": "noun",
+"meaning_bn": "দিক",
+"definition": "a particular part or feature",
+"example_en": "We need to consider every aspect of the problem.",
+"example_bn": "আমাদের সমস্যার প্রতিটি দিক বিবেচনা করা দরকার।",
+"synonyms": ["feature", "side", "facet"]
+},
+{
+"word": "assess",
+"pos": "verb",
+"meaning_bn": "মূল্যায়ন করা",
+"definition": "to evaluate or estimate nature",
+"example_en": "Teachers assess students based on their performance.",
+"example_bn": "শিক্ষকরা শিক্ষার্থীদের পারফরম্যান্সের ওপর ভিত্তি করে মূল্যায়ন করেন।",
+"synonyms": ["evaluate", "judge", "estimate"]
+},
+{
+"word": "asset",
+"pos": "noun",
+"meaning_bn": "সম্পদ",
+"definition": "a useful or valuable thing",
+"example_en": "Good communication skills are a great asset.",
+"example_bn": "ভালো যোগাযোগ দক্ষতা একটি মহান সম্পদ।",
+"synonyms": ["property", "wealth", "resource"]
+},
+{
+"word": "assign",
+"pos": "verb",
+"meaning_bn": "নির্ধারণ করা",
+"definition": "to allocate a task or duty",
+"example_en": "The teacher will assign homework to the class.",
+"example_bn": "শিক্ষক ক্লাসকে হোমওয়ার্ক নির্ধারণ করবেন।",
+"synonyms": ["allocate", "give", "designate"]
+},
+{
+"word": "assist",
+"pos": "verb",
+"meaning_bn": "সাহায্য করা",
+"definition": "to help someone do something",
+"example_en": "Volunteers assist the poor people in the city.",
+"example_bn": "স্বেচ্ছাসেবকরা শহরের গরিব মানুষদের সাহায্য করে।",
+"synonyms": ["help", "aid", "support"]
+},
+{
+"word": "assume",
+"pos": "verb",
+"meaning_bn": "ধরে নেওয়া",
+"definition": "to suppose to be the case",
+"example_en": "I assume you have finished the report already.",
+"example_bn": "আমি ধরে নিচ্ছি তুমি ইতিমধ্যে রিপোর্টটি শেষ করেছ।",
+"synonyms": ["suppose", "believe", "presume"]
+},
+{
+"word": "assure",
+"pos": "verb",
+"meaning_bn": "নিশ্চিত করা",
+"definition": "to tell someone positively",
+"example_en": "He tried to assure her that everything was fine.",
+"example_bn": "সে তাকে নিশ্চিত করার চেষ্টা করেছিল যে সব ঠিক আছে।",
+"synonyms": ["promise", "guarantee", "confirm"]
+},
+{
+"word": "atmosphere",
+"pos": "noun",
+"meaning_bn": "পরিবেশ",
+"definition": "the envelope of gases surrounding earth",
+"example_en": "The atmosphere at the party was very lively.",
+"example_bn": "পার্টিতে পরিবেশটি খুব প্রাণবন্ত ছিল।",
+"synonyms": ["air", "environment", "mood"]
+},
+{
+"word": "attach",
+"pos": "verb",
+"meaning_bn": "সংযুক্ত করা",
+"definition": "to join or fasten something",
+"example_en": "Please attach the file to your email message.",
+"example_bn": "দয়া করে তোমার ইমেইল বার্তায় ফাইলটি সংযুক্ত করো।",
+"synonyms": ["join", "connect", "fix"]
 },
 {
 "word": "attack",
-"part_of_speech": "verb",
-"definition_en": "to start fighting against someone or something",
-"definition_bn": "কাউকে বা কিছুকে আক্রমণ করা",
-"example_en": "The soldiers were ordered to attack the enemy camp.",
-"example_bn": "সৈনিকদের শত্রু শিবিরে আক্রমণ করার নির্দেশ দেওয়া হয়েছিল।",
-"synonyms": ["assault", "assail", "strike"],
-"level": "basic"
+"pos": "verb",
+"meaning_bn": "আক্রমণ করা",
+"definition": "to act aggressively against",
+"example_en": "The enemy plans to attack the base tonight.",
+"example_bn": "শত্রু আজ রাতে ঘাঁটিটি আক্রমণ করার পরিকল্পনা করছে।",
+"synonyms": ["assault", "strike", "hit"]
+},
+{
+"word": "attempt",
+"pos": "verb",
+"meaning_bn": "চেষ্টা করা",
+"definition": "to make an effort to achieve",
+"example_en": "He will attempt to climb the high mountain.",
+"example_bn": "সে উঁচু পাহাড়টি আরোহণ করার চেষ্টা করবে।",
+"synonyms": ["try", "endeavor", "seek"]
+},
+{
+"word": "attend",
+"pos": "verb",
+"meaning_bn": "উপস্থিত থাকা",
+"definition": "to be present at an event",
+"example_en": "All students must attend the morning assembly.",
+"example_bn": "সব শিক্ষার্থীকে সকালের assemblyতে উপস্থিত থাকতে হবে।",
+"synonyms": ["join", "visit", "participate"]
 },
 {
 "word": "attention",
-"part_of_speech": "noun",
-"definition_en": "the act of focusing on something",
-"definition_bn": "কোনো কিছুতে মনোযোগ দেওয়া",
-"example_en": "Students need to pay attention during class.",
-"example_bn": "শিক্ষার্থীদের ক্লাসে মনোযোগ দিতে হবে।",
-"synonyms": ["focus", "concentration", "notice"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "মনোযোগ",
+"definition": "notice taken of someone or something",
+"example_en": "Please pay attention to the instructions carefully.",
+"example_bn": "দয়া করে নির্দেশাবলীগুলো মনোযোগ সহকারে শোনো।",
+"synonyms": ["focus", "care", "notice"]
+},
+{
+"word": "attitude",
+"pos": "noun",
+"meaning_bn": "মনোভাব",
+"definition": "a settled way of thinking",
+"example_en": "His positive attitude helps him succeed in life.",
+"example_bn": "তার ইতিবাচক মনোভাব তাকে জীবনে সফল হতে সাহায্য করে।",
+"synonyms": ["mindset", "view", "approach"]
+},
+{
+"word": "attract",
+"pos": "verb",
+"meaning_bn": "আকৃষ্ট করা",
+"definition": "to draw interest or attention",
+"example_en": "Bright colors attract many customers to the store.",
+"example_bn": "উজ্জ্বল রং দোকানে অনেক ক্রেতাকে আকৃষ্ট করে।",
+"synonyms": ["draw", "pull", "lure"]
+},
+{
+"word": "audience",
+"pos": "noun",
+"meaning_bn": "দর্শক",
+"definition": "the assembled spectators or listeners",
+"example_en": "The audience clapped loudly after the show.",
+"example_bn": "শোয়ের পর দর্শকরা জোরে করতালি দিয়েছিল।",
+"synonyms": ["crowd", "viewers", "spectators"]
+},
+{
+"word": "author",
+"pos": "noun",
+"meaning_bn": "লেখক",
+"definition": "the writer of a book or article",
+"example_en": "The author signed copies of his new book.",
+"example_bn": "লেখক তার নতুন বইয়ের কপিগুলোতে স্বাক্ষর করেছিলেন।",
+"synonyms": ["writer", "creator", "novelist"]
+},
+{
+"word": "authority",
+"pos": "noun",
+"meaning_bn": "কর্তৃপক্ষ",
+"definition": "the power to give orders",
+"example_en": "You need permission from the local authority.",
+"example_bn": "তোমার স্থানীয় কর্তৃপক্ষের অনুমতি প্রয়োজন।",
+"synonyms": ["power", "control", "command"]
+},
+{
+"word": "available",
+"pos": "adjective",
+"meaning_bn": "উপলব্ধ",
+"definition": "able to be used or obtained",
+"example_en": "Is the manager available for a short meeting?",
+"example_bn": "ম্যানেজার কি একটি ছোট মিটিংয়ের জন্য উপলব্ধ?",
+"synonyms": ["free", "accessible", "ready"]
+},
+{
+"word": "average",
+"pos": "noun",
+"meaning_bn": "গড়",
+"definition": "a typical amount or level",
+"example_en": "The average temperature is high in summer.",
+"example_bn": "গ্রীষ্মকালে গড় তাপমাত্রা বেশি থাকে।",
+"synonyms": ["mean", "normal", "standard"]
+},
+{
+"word": "avoid",
+"pos": "verb",
+"meaning_bn": "এড়ানো",
+"definition": "to keep away from something",
+"example_en": "You should avoid eating too much sugar daily.",
+"example_bn": "তোমার প্রতিদিন বেশি চিনি খাওয়া এড়ানো উচিত।",
+"synonyms": ["escape", "shun", "dodge"]
+},
+{
+"word": "awake",
+"pos": "adjective",
+"meaning_bn": "জাগ্রত",
+"definition": "not sleeping",
+"example_en": "I was awake all night studying for exams.",
+"example_bn": "আমি পরীক্ষার জন্য পুরো রাত জাগ্রত ছিলাম।",
+"synonyms": ["alert", "up", "conscious"]
+},
+{
+"word": "award",
+"pos": "noun",
+"meaning_bn": "পুরস্কার",
+"definition": "a prize given for achievement",
+"example_en": "She received an award for her excellent work.",
+"example_bn": "সে তার চমৎকার কাজের জন্য একটি পুরস্কার পেয়েছিল।",
+"synonyms": ["prize", "reward", "honor"]
+},
+{
+"word": "aware",
+"pos": "adjective",
+"meaning_bn": "সচেতন",
+"definition": "having knowledge or perception",
+"example_en": "Are you aware of the new rules here?",
+"example_bn": "তুমি কি এখানকার নতুন নিয়মগুলো সম্পর্কে সচেতন?",
+"synonyms": ["conscious", "knowing", "mindful"]
+},
+{
+"word": "balance",
+"pos": "noun",
+"meaning_bn": "ভারসাম্য",
+"definition": "an even distribution of weight",
+"example_en": "It is hard to keep balance on one leg.",
+"example_bn": "এক পায়ে ভারসাম্য বজায় রাখা কঠিন।",
+"synonyms": ["stability", "equilibrium", "poise"]
+},
+{
+"word": "ban",
+"pos": "verb",
+"meaning_bn": "নিষিদ্ধ করা",
+"definition": "to officially forbid something",
+"example_en": "The government decided to ban plastic bags.",
+"example_bn": "সরকার প্লাস্টিকের ব্যাগ নিষিদ্ধ করার সিদ্ধান্ত নিয়েছে।",
+"synonyms": ["prohibit", "forbid", "block"]
+},
+{
+"word": "band",
+"pos": "noun",
+"meaning_bn": "দল",
+"definition": "a group of musicians",
+"example_en": "The band played music at the wedding party.",
+"example_bn": "দলটি বিয়ের অনুষ্ঠানে বাজনা পরিবেশন করেছিল।",
+"synonyms": ["group", "team", "crew"]
+},
+{
+"word": "barrier",
+"pos": "noun",
+"meaning_bn": "বাধা",
+"definition": "a fence or obstacle",
+"example_en": "Language can be a barrier to communication.",
+"example_bn": "ভাষা যোগাযোগের একটি বাধা হতে পারে।",
+"synonyms": ["obstacle", "block", "hurdle"]
+},
+{
+"word": "base",
+"pos": "noun",
+"meaning_bn": "ভিত্তি",
+"definition": "the bottom support of something",
+"example_en": "The statue stands on a marble base.",
+"example_bn": "মূর্তিটি একটি মার্বেল ভিত্তির ওপর দাঁড়িয়ে আছে।",
+"synonyms": ["foundation", "bottom", "basis"]
+},
+{
+"word": "basic",
+"pos": "adjective",
+"meaning_bn": "মৌলিক",
+"definition": "forming an essential foundation",
+"example_en": "You need to learn the basic rules first.",
+"example_bn": "তোমার প্রথমে মৌলিক নিয়মগুলো শেখা দরকার।",
+"synonyms": ["fundamental", "primary", "simple"]
+},
+{
+"word": "basis",
+"pos": "noun",
+"meaning_bn": "ভিত্তি",
+"definition": "the underlying support or foundation",
+"example_en": "Trust is the basis of a good relationship.",
+"example_bn": "বিশ্বাস একটি ভালো সম্পর্কের ভিত্তি।",
+"synonyms": ["foundation", "ground", "core"]
+},
+{
+"word": "battle",
+"pos": "noun",
+"meaning_bn": "যুদ্ধ",
+"definition": "a sustained fight or conflict",
+"example_en": "The soldiers fought a brave battle yesterday.",
+"example_bn": "সৈন্যরা গতকাল একটি সাহসী যুদ্ধ করেছিল।",
+"synonyms": ["fight", "war", "conflict"]
+},
+{
+"word": "bear",
+"pos": "verb",
+"meaning_bn": "বহন করা",
+"definition": "to carry or support weight",
+"example_en": "This bridge cannot bear heavy trucks.",
+"example_bn": "এই সেতুটি ভারী ট্রাক বহন করতে পারবে না।",
+"synonyms": ["carry", "hold", "support"]
+},
+{
+"word": "beat",
+"pos": "verb",
+"meaning_bn": "হারানো",
+"definition": "to defeat in a competition",
+"example_en": "Our team managed to beat the champions.",
+"example_bn": "আমাদের দল চ্যাম্পিয়নদের হারাতে পেরেছিল।",
+"synonyms": ["defeat", "win", "conquer"]
+},
+{
+"word": "beautiful",
+"pos": "adjective",
+"meaning_bn": "সুন্দর",
+"definition": "pleasing the senses or mind",
+"example_en": "The sunset over the ocean was beautiful.",
+"example_bn": "সমুদ্রের ওপর সূর্যাস্তটি সুন্দর ছিল।",
+"synonyms": ["pretty", "lovely", "gorgeous"]
+},
+{
+"word": "beauty",
+"pos": "noun",
+"meaning_bn": "সৌন্দর্য",
+"definition": "a combination of qualities that pleases",
+"example_en": "The beauty of the garden attracted many visitors.",
+"example_bn": "বাগানের সৌন্দর্য অনেক দর্শককে আকৃষ্ট করেছিল।",
+"synonyms": ["charm", "grace", "elegance"]
+},
+{
+"word": "become",
+"pos": "verb",
+"meaning_bn": "হওয়া",
+"definition": "to begin to be",
+"example_en": "She wants to become a doctor in future.",
+"example_bn": "সে ভবিষ্যতে একজন ডাক্তার হতে চায়।",
+"synonyms": ["turn", "grow", "get"]
+},
+{
+"word": "behave",
+"pos": "verb",
+"meaning_bn": "আচরণ করা",
+"definition": "to act in a specified way",
+"example_en": "Children should behave well in the classroom.",
+"example_bn": "বাচ্চাদের ক্লাসরুমে ভালো আচরণ করা উচিত।",
+"synonyms": ["act", "conduct", "perform"]
 },
 {
 "word": "behavior",
-"part_of_speech": "noun",
-"definition_en": "the way someone acts or behaves",
-"definition_bn": "কেউ কীভাবে আচরণ করে",
-"example_en": "Good behavior is important in school.",
-"example_bn": "স্কুলে ভালো আচরণ গুরুত্বপূর্ণ।",
-"synonyms": ["conduct", "action", "manners"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "আচরণ",
+"definition": "the way one acts or conducts oneself",
+"example_en": "His bad behavior caused trouble in school.",
+"example_bn": "তার খারাপ আচরণ স্কুলে ঝামেলা সৃষ্টি করেছিল।",
+"synonyms": ["conduct", "action", "manner"]
+},
+{
+"word": "behind",
+"pos": "preposition",
+"meaning_bn": "পেছনে",
+"definition": "at or to the far side of",
+"example_en": "The cat is hiding behind the large tree.",
+"example_bn": "বিড়ালটি বড় গাছটির পেছনে লুকিয়ে আছে।",
+"synonyms": ["back", "rear", "after"]
 },
 {
 "word": "believe",
-"part_of_speech": "verb",
-"definition_en": "to think that something is true",
-"definition_bn": "কিছু সত্য বলে মনে করা",
-"example_en": "I believe in the power of positive thinking.",
-"example_bn": "আমি ইতিবাচক চিন্তার ক্ষমতায় বিশ্বাস করি।",
-"synonyms": ["trust", "think", "accept"],
-"level": "basic"
+"pos": "verb",
+"meaning_bn": "বিশ্বাস করা",
+"definition": "to accept something as true",
+"example_en": "I believe you can succeed if you try.",
+"example_bn": "আমি বিশ্বাস করি তুমি চেষ্টা করলে সফল হতে পারবে।",
+"synonyms": ["trust", "accept", "think"]
+},
+{
+"word": "belong",
+"pos": "verb",
+"meaning_bn": "অন্তর্ভুক্ত হওয়া",
+"definition": "to be the property of",
+"example_en": "This book does not belong to me.",
+"example_bn": "এই বইটি আমার অন্তর্ভুক্ত নয়।",
+"synonyms": ["own", "fit", "part"]
+},
+{
+"word": "below",
+"pos": "preposition",
+"meaning_bn": "নিচে",
+"definition": "at a lower level than",
+"example_en": "Please sign your name below the line.",
+"example_bn": "দয়া করে লাইনের নিচে তোমার নাম স্বাক্ষর করো।",
+"synonyms": ["under", "beneath", "lower"]
+},
+{
+"word": "benefit",
+"pos": "noun",
+"meaning_bn": "সুবিধা",
+"definition": "an advantage or profit gained",
+"example_en": "Regular exercise provides many health benefits.",
+"example_bn": "নিয়মিত ব্যায়াম অনেক স্বাস্থ্য সুবিধা প্রদান করে।",
+"synonyms": ["gain", "profit", "advantage"]
+},
+{
+"word": "beside",
+"pos": "preposition",
+"meaning_bn": "পাশে",
+"definition": "at the side of",
+"example_en": "She sat beside her friend during the movie.",
+"example_bn": "সে সিনেমার সময় তার বন্ধুর পাশে বসেছিল।",
+"synonyms": ["next", "alongside", "near"]
+},
+{
+"word": "best",
+"pos": "adjective",
+"meaning_bn": "সেরা",
+"definition": "of the most excellent quality",
+"example_en": "This is the best restaurant in the city.",
+"example_bn": "এটি শহরের সেরা রেস্তোরাঁ।",
+"synonyms": ["top", "finest", "prime"]
+},
+{
+"word": "better",
+"pos": "adjective",
+"meaning_bn": "ভালো",
+"definition": "of higher quality than before",
+"example_en": "I hope you feel better tomorrow morning.",
+"example_bn": "আমি আশা করি তুমি আগামীকাল সকালে ভালো অনুভব করবে।",
+"synonyms": ["improved", "superior", "finer"]
+},
+{
+"word": "between",
+"pos": "preposition",
+"meaning_bn": "মধ্যে",
+"definition": "at a point in space separating",
+"example_en": "The shop is located between the bank and park.",
+"example_bn": "দোকানটি ব্যাংক এবং পার্কের মধ্যে অবস্থিত।",
+"synonyms": ["amid", "among", "within"]
+},
+{
+"word": "beyond",
+"pos": "preposition",
+"meaning_bn": "ওপারে",
+"definition": "at or to the further side of",
+"example_en": "The mountains lie beyond the green valley.",
+"example_bn": "পাহাড়গুলো সবুজ উপত্যকার ওপারে অবস্থিত।",
+"synonyms": ["past", "across", "over"]
+},
+{
+"word": "bill",
+"pos": "noun",
+"meaning_bn": "বিল",
+"definition": "a statement of money owed",
+"example_en": "Can we please get the bill now?",
+"example_bn": "আমরা কি দয়া করে এখন বিলটি পেতে পারি?",
+"synonyms": ["invoice", "check", "statement"]
+},
+{
+"word": "bind",
+"pos": "verb",
+"meaning_bn": "বাঁধা",
+"definition": "to tie or fasten tightly",
+"example_en": "They used rope to bind the boxes together.",
+"example_bn": "তারা বাক্সগুলো একসাথে বাঁধতে দড়ি ব্যবহার করেছিল।",
+"synonyms": ["tie", "fasten", "secure"]
+},
+{
+"word": "biological",
+"pos": "adjective",
+"meaning_bn": "জৈবিক",
+"definition": "relating to biology or living organisms",
+"example_en": "The study focuses on biological processes in cells.",
+"example_bn": "অধ্যয়নটি কোষে জৈবিক প্রক্রিয়ার ওপর কেন্দ্রীভূত।",
+"synonyms": ["organic", "natural", "living"]
+},
+{
+"word": "birth",
+"pos": "noun",
+"meaning_bn": "জন্ম",
+"definition": "the emergence of a baby from womb",
+"example_en": "They celebrated the birth of their baby girl.",
+"example_bn": "তারা তাদের মেয়ে সন্তানের জন্ম উদযাপন করেছিল।",
+"synonyms": ["delivery", "origin", "beginning"]
+},
+{
+"word": "blame",
+"pos": "verb",
+"meaning_bn": "দোষ দেওয়া",
+"definition": "to assign responsibility for a fault",
+"example_en": "Do not blame others for your own mistakes.",
+"example_bn": "নিজের ভুলের জন্য অন্যকে দোষ দিও না।",
+"synonyms": ["accuse", "fault", "charge"]
+},
+{
+"word": "blank",
+"pos": "adjective",
+"meaning_bn": "ফাঁকা",
+"definition": "not written or printed on",
+"example_en": "Please fill in the blank spaces on the form.",
+"example_bn": "দয়া করে ফর্মের ফাঁকা জায়গাগুলো পূরণ করো।",
+"synonyms": ["empty", "void", "clear"]
+},
+{
+"word": "blast",
+"pos": "noun",
+"meaning_bn": "বিস্ফোরণ",
+"definition": "a strong gust of wind or air",
+"example_en": "A loud blast shook the windows nearby.",
+"example_bn": "একটি জোরে বিস্ফোরণ nearby জানালাগুলো কাঁপিয়েছিল।",
+"synonyms": ["explosion", "burst", "boom"]
+},
+{
+"word": "blind",
+"pos": "adjective",
+"meaning_bn": "অন্ধ",
+"definition": "unable to see",
+"example_en": "The organization helps blind people find jobs.",
+"example_bn": "সংস্থাটি অন্ধ মানুষদের চাকরি খুঁজে পেতে সাহায্য করে।",
+"synonyms": ["sightless", "unseeing", "dark"]
+},
+{
+"word": "block",
+"pos": "noun",
+"meaning_bn": "ব্লক",
+"definition": "a solid piece of hard material",
+"example_en": "The child played with a wooden building block.",
+"example_bn": "বাচ্চাটি একটি কাঠের বিল্ডিং ব্লক নিয়ে খেলেছিল।",
+"synonyms": ["cube", "chunk", "piece"]
+},
+{
+"word": "blood",
+"pos": "noun",
+"meaning_bn": "রক্ত",
+"definition": "the red liquid circulating in arteries",
+"example_en": "Donating blood can save many lives.",
+"example_bn": "রক্ত দান অনেক জীবন বাঁচাতে পারে।",
+"synonyms": ["fluid", "life", "vein"]
+},
+{
+"word": "blow",
+"pos": "verb",
+"meaning_bn": "বাতাস দেওয়া",
+"definition": "to produce a current of air",
+"example_en": "The wind began to blow strongly outside.",
+"example_bn": "বাইরে বাতাস জোরে বইতে শুরু করেছিল।",
+"synonyms": ["breathe", "puff", "gust"]
+},
+{
+"word": "board",
+"pos": "noun",
+"meaning_bn": "বোর্ড",
+"definition": "a long thin piece of wood",
+"example_en": "The teacher wrote the date on the board.",
+"example_bn": "শিক্ষক বোর্ডে তারিখটি লিখেছিলেন।",
+"synonyms": ["panel", "plank", "slab"]
+},
+{
+"word": "bold",
+"pos": "adjective",
+"meaning_bn": "সাহসী",
+"definition": "showing a willingness to take risks",
+"example_en": "He made a bold decision to start business.",
+"example_bn": "সে ব্যবসা শুরু করার একটি সাহসী সিদ্ধান্ত নিয়েছিল।",
+"synonyms": ["brave", "daring", "fearless"]
+},
+{
+"word": "bond",
+"pos": "noun",
+"meaning_bn": "বন্ধন",
+"definition": "a thing that binds people together",
+"example_en": "There is a strong bond between the twins.",
+"example_bn": "যমজদের মধ্যে একটি শক্তিশালী বন্ধন আছে।",
+"synonyms": ["link", "tie", "connection"]
+},
+{
+"word": "bone",
+"pos": "noun",
+"meaning_bn": "হাড়",
+"definition": "hard tissue forming the skeleton",
+"example_en": "The dog buried a bone in the garden.",
+"example_bn": "কুকুরটি বাগানে একটি হাড় পুঁতে রেখেছিল।",
+"synonyms": ["skeleton", "frame", "structure"]
+},
+{
+"word": "border",
+"pos": "noun",
+"meaning_bn": "সীমান্ত",
+"definition": "the line separating two countries",
+"example_en": "They crossed the border early in morning.",
+"example_bn": "তারা সকাল সকাল সীমান্ত পার হয়েছিল।",
+"synonyms": ["edge", "boundary", "limit"]
+},
+{
+"word": "bore",
+"pos": "verb",
+"meaning_bn": "বিরক্ত করা",
+"definition": "to make someone feel weary",
+"example_en": "Long lectures often bore the students.",
+"example_bn": "দীর্ঘ лекция প্রায়ই শিক্ষার্থীদের বিরক্ত করে।",
+"synonyms": ["tired", "weary", "drain"]
+},
+{
+"word": "born",
+"pos": "verb",
+"meaning_bn": "জন্মগ্রহণ করা",
+"definition": "brought into existence by birth",
+"example_en": "She was born in a small village.",
+"example_bn": "সে একটি ছোট গ্রামে জন্মগ্রহণ করেছিল।",
+"synonyms": ["delivered", "created", "started"]
+},
+{
+"word": "borrow",
+"pos": "verb",
+"meaning_bn": "ধার করা",
+"definition": "to take and use with permission",
+"example_en": "Can I borrow your pen for a minute?",
+"example_bn": "আমি কি এক মিনিটের জন্য তোমার কলম ধার করতে পারি?",
+"synonyms": ["lend", "take", "use"]
+},
+{
+"word": "boss",
+"pos": "noun",
+"meaning_bn": "বস",
+"definition": "a person in charge of workers",
+"example_en": "My boss asked me to finish the report.",
+"example_bn": "আমার বস আমাকে রিপোর্টটি শেষ করতে বলেছিল।",
+"synonyms": ["manager", "chief", "head"]
+},
+{
+"word": "bottle",
+"pos": "noun",
+"meaning_bn": "বোতল",
+"definition": "a container for holding liquids",
+"example_en": "Please bring a bottle of water for me.",
+"example_bn": "দয়া করে আমার জন্য একটি বোতল পানি নিয়ে এসো।",
+"synonyms": ["container", "flask", "jug"]
+},
+{
+"word": "bottom",
+"pos": "noun",
+"meaning_bn": "তলা",
+"definition": "the lowest point or part",
+"example_en": "He signed his name at the bottom of page.",
+"example_bn": "সে পৃষ্ঠার তলায় তার নাম স্বাক্ষর করেছিল।",
+"synonyms": ["base", "floor", "end"]
+},
+{
+"word": "bound",
+"pos": "adjective",
+"meaning_bn": "বাধ্য",
+"definition": "certain or very likely to happen",
+"example_en": "It is bound to rain later today.",
+"example_bn": "আজ পরে বৃষ্টি হওয়া বাধ্য।",
+"synonyms": ["sure", "certain", "destined"]
+},
+{
+"word": "bowl",
+"pos": "noun",
+"meaning_bn": "বাটি",
+"definition": "a round open container for food",
+"example_en": "She served soup in a large white bowl.",
+"example_bn": "সে একটি বড় সাদা বাটিতে স্যুপ পরিবেশন করেছিল।",
+"synonyms": ["dish", "basin", "container"]
+},
+{
+"word": "brain",
+"pos": "noun",
+"meaning_bn": "মস্তিষ্ক",
+"definition": "the organ of thought in head",
+"example_en": "Reading books exercises your brain effectively.",
+"example_bn": "বই পড়া তোমার মস্তিষ্ককে কার্যকরভাবে অনুশীলন করে।",
+"synonyms": ["mind", "head", "intellect"]
+},
+{
+"word": "branch",
+"pos": "noun",
+"meaning_bn": "শাখা",
+"definition": "a division of a tree or organization",
+"example_en": "The bank opened a new branch downtown.",
+"example_bn": "ব্যাংকটি শহরের কেন্দ্রে একটি নতুন শাখা খুলেছে।",
+"synonyms": ["division", "wing", "arm"]
+},
+{
+"word": "brand",
+"pos": "noun",
+"meaning_bn": "ব্র্যান্ড",
+"definition": "a type of product made by company",
+"example_en": "This brand is known for high quality shoes.",
+"example_bn": "এই ব্র্যান্ডটি উচ্চ মানের জুতার জন্য পরিচিত।",
+"synonyms": ["make", "label", "mark"]
+},
+{
+"word": "brave",
+"pos": "adjective",
+"meaning_bn": "সাহসী",
+"definition": "ready to face danger or pain",
+"example_en": "The brave firefighter saved the child.",
+"example_bn": "সাহসী দমকলকর্মী শিশুটিকে উদ্ধার করেছিল।",
+"synonyms": ["courageous", "bold", "fearless"]
+},
+{
+"word": "bread",
+"pos": "noun",
+"meaning_bn": "রুটি",
+"definition": "food made of flour and water",
+"example_en": "We bought fresh bread from the bakery.",
+"example_bn": "আমরা বেকারি থেকে তাজা রুটি কিনেছিলাম।",
+"synonyms": ["loaf", "food", "staple"]
+},
+{
+"word": "break",
+"pos": "verb",
+"meaning_bn": "ভাঙা",
+"definition": "to separate into pieces",
+"example_en": "Be careful not to break the glass vase.",
+"example_bn": "কাচের ফুলদানিটি যেন না ভাঙে সেদিকে সাবধান থাকো।",
+"synonyms": ["crack", "smash", "shatter"]
+},
+{
+"word": "breath",
+"pos": "noun",
+"meaning_bn": "শ্বাস",
+"definition": "the air taken into lungs",
+"example_en": "Take a deep breath before you speak.",
+"example_bn": "বোলার আগে একটি গভীর শ্বাস নাও।",
+"synonyms": ["air", "breeze", "gasp"]
+},
+{
+"word": "breathe",
+"pos": "verb",
+"meaning_bn": "শ্বাস নেওয়া",
+"definition": "to inhale and exhale air",
+"example_en": "It is hard to breathe in this smoky room.",
+"example_bn": "এই ধোঁয়াটে ঘরে শ্বাস নেওয়া কঠিন।",
+"synonyms": ["inhale", "respire", "pant"]
+},
+{
+"word": "breed",
+"pos": "verb",
+"meaning_bn": "প্রজনন করা",
+"definition": "to produce offspring",
+"example_en": "Farmers breed cows for milk production.",
+"example_bn": "কৃষকরা দুধ উৎপাদনের জন্য গরু প্রজনন করে।",
+"synonyms": ["raise", "produce", "grow"]
+},
+{
+"word": "brief",
+"pos": "adjective",
+"meaning_bn": "সংক্ষিপ্ত",
+"definition": "lasting for a short time",
+"example_en": "We had a brief meeting before lunch.",
+"example_bn": "আমাদের দুপুরের খাবারের আগে একটি সংক্ষিপ্ত মিটিং হয়েছিল।",
+"synonyms": ["short", "quick", "concise"]
+},
+{
+"word": "bright",
+"pos": "adjective",
+"meaning_bn": "উজ্জ্বল",
+"definition": "giving out much light",
+"example_en": "The sun was very bright this morning.",
+"example_bn": "আজ সকালে সূর্য খুব উজ্জ্বল ছিল।",
+"synonyms": ["shiny", "brilliant", "radiant"]
+},
+{
+"word": "brilliant",
+"pos": "adjective",
+"meaning_bn": "চমৎকার",
+"definition": "exceptionally clever or talented",
+"example_en": "She gave a brilliant performance on stage.",
+"example_bn": "সে মঞ্চে একটি চমৎকার পারফরম্যান্স দিয়েছিল।",
+"synonyms": ["smart", "great", "excellent"]
+},
+{
+"word": "bring",
+"pos": "verb",
+"meaning_bn": "আনা",
+"definition": "to carry to a place",
+"example_en": "Please bring your notebook to the class.",
+"example_bn": "দয়া করে তোমার নোটবইটি ক্লাসে নিয়ে এসো।",
+"synonyms": ["carry", "fetch", "take"]
+},
+{
+"word": "broad",
+"pos": "adjective",
+"meaning_bn": "প্রশস্ত",
+"definition": "having a large width",
+"example_en": "The river is too broad to swim across.",
+"example_bn": "নদীটি সাঁতার কেটে পার হওয়ার জন্য খুব প্রশস্ত।",
+"synonyms": ["wide", "large", "extensive"]
+},
+{
+"word": "broadcast",
+"pos": "verb",
+"meaning_bn": "সম্প্রচার করা",
+"definition": "to transmit by radio or television",
+"example_en": "The news will broadcast at eight tonight.",
+"example_bn": "খবরটি আজ রাত আটটায় সম্প্রচার হবে।",
+"synonyms": ["air", "transmit", "show"]
+},
+{
+"word": "brother",
+"pos": "noun",
+"meaning_bn": "ভাই",
+"definition": "a male sibling",
+"example_en": "My brother plays football every weekend.",
+"example_bn": "আমার ভাই প্রতি সপ্তাহান্তে ফুটবল খেলে।",
+"synonyms": ["sibling", "kin", "relative"]
+},
+{
+"word": "brush",
+"pos": "verb",
+"meaning_bn": "ব্রাশ করা",
+"definition": "to clean with a brush",
+"example_en": "You should brush your teeth twice daily.",
+"example_bn": "তোমার প্রতিদিন দুবার দাঁত ব্রাশ করা উচিত।",
+"synonyms": ["clean", "scrub", "sweep"]
+},
+{
+"word": "budget",
+"pos": "noun",
+"meaning_bn": "বাজেট",
+"definition": "an estimate of income and expenditure",
+"example_en": "We need to plan our monthly budget carefully.",
+"example_bn": "আমাদের মাসিক বাজেট সাবধানে পরিকল্পনা করা দরকার।",
+"synonyms": ["plan", "fund", "allowance"]
+},
+{
+"word": "build",
+"pos": "verb",
+"meaning_bn": "তৈরি করা",
+"definition": "to construct something",
+"example_en": "They plan to build a new house soon.",
+"example_bn": "তারা শীঘ্রই একটি নতুন বাড়ি তৈরি করার পরিকল্পনা করছে।",
+"synonyms": ["construct", "make", "erect"]
+},
+{
+"word": "building",
+"pos": "noun",
+"meaning_bn": "ভবন",
+"definition": "a structure with a roof and walls",
+"example_en": "That tall building is an office complex.",
+"example_bn": "ওই উঁচু ভবনটি একটি অফিস কমপ্লেক্স।",
+"synonyms": ["structure", "edifice", "construction"]
+},
+{
+"word": "bulk",
+"pos": "noun",
+"meaning_bn": "বৃহদাংশ",
+"definition": "the major part of something",
+"example_en": "The bulk of the work is already done.",
+"example_bn": "কাজের বৃহদাংশ ইতিমধ্যেই সম্পন্ন হয়েছে।",
+"synonyms": ["mass", "majority", "body"]
+},
+{
+"word": "burn",
+"pos": "verb",
+"meaning_bn": "পোড়ানো",
+"definition": "to be on fire or consume fuel",
+"example_en": "Do not burn the dry leaves in garden.",
+"example_bn": "বাগানের শুকনো পাতা পোড়িও না।",
+"synonyms": ["fire", "scorch", "ignite"]
+},
+{
+"word": "burst",
+"pos": "verb",
+"meaning_bn": "ফেটে যাওয়া",
+"definition": "to break open suddenly",
+"example_en": "The balloon will burst if you blow more.",
+"example_bn": "তুমি আরও ফুঁ দিলে বেলুনটি ফেটে যাবে।",
+"synonyms": ["explode", "break", "pop"]
+},
+{
+"word": "bury",
+"pos": "verb",
+"meaning_bn": "কবর দেওয়া",
+"definition": "to put underground",
+"example_en": "They decided to bury the time capsule.",
+"example_bn": "তারা টাইম ক্যাপসুলটি কবর দেওয়ার সিদ্ধান্ত নিয়েছিল।",
+"synonyms": ["hide", "cover", "inter"]
+},
+{
+"word": "business",
+"pos": "noun",
+"meaning_bn": "ব্যবসা",
+"definition": "a person's regular occupation",
+"example_en": "He started his own business last year.",
+"example_bn": "সে গত বছর নিজের ব্যবসা শুরু করেছিল।",
+"synonyms": ["trade", "commerce", "work"]
+},
+{
+"word": "busy",
+"pos": "adjective",
+"meaning_bn": "ব্যস্ত",
+"definition": "having a great deal to do",
+"example_en": "I am too busy to talk right now.",
+"example_bn": "আমি এখন কথা বলার জন্য খুব ব্যস্ত।",
+"synonyms": ["occupied", "active", "engaged"]
+},
+{
+"word": "calculate",
+"pos": "verb",
+"meaning_bn": "গণনা করা",
+"definition": "to determine mathematically",
+"example_en": "You need to calculate the total cost first.",
+"example_bn": "তোমার প্রথমে মোট খরচ গণনা করা দরকার।",
+"synonyms": ["compute", "count", "estimate"]
+},
+{
+"word": "campaign",
+"pos": "noun",
+"meaning_bn": "অভিযান",
+"definition": "a series of organized activities",
+"example_en": "The election campaign started last week.",
+"example_bn": "নির্বাচনী অভিযান গত সপ্তাহে শুরু হয়েছিল।",
+"synonyms": ["drive", "movement", "cause"]
+},
+{
+"word": "calm",
+"pos": "adjective",
+"meaning_bn": "শান্ত",
+"definition": "not showing or feeling nervousness",
+"example_en": "Please stay calm during the emergency.",
+"example_bn": "দয়া করে জরুরী অবস্থার সময় শান্ত থাকো।",
+"synonyms": ["quiet", "peaceful", "still"]
+},
+{
+"word": "camera",
+"pos": "noun",
+"meaning_bn": "ক্যামেরা",
+"definition": "a device for recording images",
+"example_en": "She bought a new digital camera yesterday.",
+"example_bn": "সে গতকাল একটি নতুন ডিজিটাল ক্যামেরা কিনেছিল।",
+"synonyms": ["device", "lens", "recorder"]
+},
+{
+"word": "canal",
+"pos": "noun",
+"meaning_bn": "খাল",
+"definition": "an artificial waterway",
+"example_en": "Boats travel through the canal slowly.",
+"example_bn": "নৌকাগুলো খালের মধ্য দিয়ে ধীরে চলে।",
+"synonyms": ["channel", "waterway", "ditch"]
+},
+{
+"word": "cancel",
+"pos": "verb",
+"meaning_bn": "বাতিল করা",
+"definition": "to decide that something will not happen",
+"example_en": "They had to cancel the flight due to storm.",
+"example_bn": "ঝড়ের কারণে তাদের ফ্লাইট বাতিল করতে হয়েছিল।",
+"synonyms": ["abort", "call off", "revoke"]
+},
+{
+"word": "cancer",
+"pos": "noun",
+"meaning_bn": "ক্যান্সার",
+"definition": "a disease of abnormal cell growth",
+"example_en": "Early detection helps treat cancer effectively.",
+"example_bn": "প্রাথমিক সনাক্তকরণ ক্যান্সার কার্যকরভাবে চিকিৎসা করতে সাহায্য করে।",
+"synonyms": ["tumor", "disease", "illness"]
+},
+{
+"word": "candidate",
+"pos": "noun",
+"meaning_bn": "প্রার্থী",
+"definition": "a person applying for a job",
+"example_en": "He is the best candidate for the position.",
+"example_bn": "সে এই পদের জন্য সেরা প্রার্থী।",
+"synonyms": ["applicant", "contender", "nominee"]
+},
+{
+"word": "capacity",
+"pos": "noun",
+"meaning_bn": "ক্ষমতা",
+"definition": "the maximum amount something can contain",
+"example_en": "The hall has a seating capacity of five hundred.",
+"example_bn": "হলটির পাঁচশত আসনের ক্ষমতা আছে।",
+"synonyms": ["ability", "volume", "capability"]
+},
+{
+"word": "capital",
+"pos": "noun",
+"meaning_bn": "রাজধানী",
+"definition": "the city serving as seat of government",
+"example_en": "Dhaka is the capital of Bangladesh.",
+"example_bn": "ঢাকা বাংলাদেশের রাজধানী।",
+"synonyms": ["city", "center", "hub"]
+},
+{
+"word": "cargo",
+"pos": "noun",
+"meaning_bn": "মালামাল",
+"definition": "goods carried on a ship or plane",
+"example_en": "The ship carried heavy cargo to the port.",
+"example_bn": "জাহাজটি বন্দরে ভারী মালামাল বহন করেছিল।",
+"synonyms": ["freight", "load", "shipment"]
+},
+{
+"word": "career",
+"pos": "noun",
+"meaning_bn": "ক্যারিয়ার",
+"definition": "an occupation undertaken for life",
+"example_en": "She wants to build a career in medicine.",
+"example_bn": "সে চিকিৎসাবিজ্ঞানে একটি ক্যারিয়ার গড়তে চায়।",
+"synonyms": ["profession", "job", "vocation"]
+},
+{
+"word": "careful",
+"pos": "adjective",
+"meaning_bn": "সতর্ক",
+"definition": "making sure of avoiding danger",
+"example_en": "Be careful when crossing the busy road.",
+"example_bn": "ব্যস্ত রাস্তা পার হওয়ার সময় সতর্ক থাকো।",
+"synonyms": ["cautious", "alert", "wary"]
+},
+{
+"word": "carpet",
+"pos": "noun",
+"meaning_bn": "কার্পেট",
+"definition": "a thick floor covering",
+"example_en": "They laid a red carpet in the hall.",
+"example_bn": "তারা হলে একটি লাল কার্পেট বিছিয়েছিল।",
+"synonyms": ["rug", "mat", "covering"]
+},
+{
+"word": "carry",
+"pos": "verb",
+"meaning_bn": "বহন করা",
+"definition": "to support and move someone",
+"example_en": "Can you help me carry this heavy box?",
+"example_bn": "তুমি কি এই ভারী বাক্সটি বহন করতে আমাকে সাহায্য করতে পারো?",
+"synonyms": ["bear", "hold", "transport"]
+},
+{
+"word": "case",
+"pos": "noun",
+"meaning_bn": "মামলা",
+"definition": "an instance of a particular situation",
+"example_en": "This is a rare case of success.",
+"example_bn": "এটি সাফল্যের একটি বিরল মামলা।",
+"synonyms": ["instance", "example", "situation"]
+},
+{
+"word": "cash",
+"pos": "noun",
+"meaning_bn": "নগদ",
+"definition": "money in coins or notes",
+"example_en": "Do you have enough cash for lunch?",
+"example_bn": "তোমার কি দুপুরের খাবারের জন্য পর্যাপ্ত নগদ আছে?",
+"synonyms": ["money", "currency", "fund"]
+},
+{
+"word": "cast",
+"pos": "verb",
+"meaning_bn": "ঢালাই করা",
+"definition": "to throw something forcefully",
+"example_en": "The fisherman cast his line into water.",
+"example_bn": "জেলেকে তার লাইনটি পানিতে ঢেলে দিয়েছিল।",
+"synonyms": ["throw", "toss", "hurl"]
+},
+{
+"word": "catch",
+"pos": "verb",
+"meaning_bn": "ধরা",
+"definition": "to capture something moving",
+"example_en": "He tried to catch the ball with hands.",
+"example_bn": "সে হাত দিয়ে বলটি ধরার চেষ্টা করেছিল।",
+"synonyms": ["capture", "grab", "seize"]
+},
+{
+"word": "cause",
+"pos": "noun",
+"meaning_bn": "কারণ",
+"definition": "a person or thing that gives rise",
+"example_en": "Smoking is a major cause of lung disease.",
+"example_bn": "ধূমপান ফুসফুসের রোগের একটি প্রধান কারণ।",
+"synonyms": ["reason", "source", "origin"]
+},
+{
+"word": "cell",
+"pos": "noun",
+"meaning_bn": "কোষ",
+"definition": "the smallest unit of life",
+"example_en": "The human body contains billions of cells.",
+"example_bn": "মানবদেহে কোটি কোটি কোষ থাকে।",
+"synonyms": ["unit", "compartment", "chamber"]
+},
+{
+"word": "center",
+"pos": "noun",
+"meaning_bn": "কেন্দ্র",
+"definition": "the point equally distant from boundaries",
+"example_en": "Meet me at the center of the park.",
+"example_bn": "পার্কের কেন্দ্রে আমার সাথে দেখা করো।",
+"synonyms": ["middle", "core", "hub"]
+},
+{
+"word": "central",
+"pos": "adjective",
+"meaning_bn": "কেন্দ্রীয়",
+"definition": "of primary importance",
+"example_en": "The hotel is in a central location.",
+"example_bn": "হোটেলটি একটি কেন্দ্রীয় অবস্থানে আছে।",
+"synonyms": ["main", "key", "primary"]
+},
+{
+"word": "century",
+"pos": "noun",
+"meaning_bn": "শতাব্দী",
+"definition": "a period of one hundred years",
+"example_en": "We live in the twenty-first century now.",
+"example_bn": "আমরা এখন একুশ শতকে বাস করি।",
+"synonyms": ["era", "age", "period"]
 },
 {
 "word": "certain",
-"part_of_speech": "adjective",
-"definition_en": "sure about something without doubt",
-"definition_bn": "কোনো কিছু সম্পর্কে নিশ্চিত বা সন্দেহহীন",
-"example_en": "I am certain that she will arrive on time.",
-"example_bn": "আমি নিশ্চিত যে সে সময়মতো আসবে।",
-"synonyms": ["sure", "confident", "positive"],
-"level": "basic"
+"pos": "adjective",
+"meaning_bn": "নিশ্চিত",
+"definition": "known for sure",
+"example_en": "I am certain that he will come today.",
+"example_bn": "আমি নিশ্চিত যে সে আজ আসবে।",
+"synonyms": ["sure", "positive", "confident"]
+},
+{
+"word": "chain",
+"pos": "noun",
+"meaning_bn": "চেইন",
+"definition": "a series of connected links",
+"example_en": "She wore a gold chain around her neck.",
+"example_bn": "সে তার গলায় একটি সোনার চেইন পরেছিল।",
+"synonyms": ["link", "series", "sequence"]
+},
+{
+"word": "chair",
+"pos": "noun",
+"meaning_bn": "চেয়ার",
+"definition": "a seat for one person",
+"example_en": "Please take a chair and sit down.",
+"example_bn": "দয়া করে একটি চেয়ার নাও এবং বসো।",
+"synonyms": ["seat", "stool", "bench"]
+},
+{
+"word": "challenge",
+"pos": "noun",
+"meaning_bn": "চ্যালেঞ্জ",
+"definition": "a task testing ability",
+"example_en": "Climbing the mountain was a big challenge.",
+"example_bn": "পাহাড়টি আরোহণ করা একটি বড় চ্যালেঞ্জ ছিল।",
+"synonyms": ["test", "trial", "obstacle"]
 },
 {
 "word": "chance",
-"part_of_speech": "noun",
-"definition_en": "a possibility or opportunity to do something",
-"definition_bn": "কিছু করার সম্ভাবনা বা সুযোগ",
-"example_en": "Winning the lottery was just a chance.",
-"example_bn": "লটারি জেতা ছিল শুধুমাত্র একটি সুযোগ।",
-"synonyms": ["opportunity", "possibility", "probability"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "সুযোগ",
+"definition": "a possibility of something happening",
+"example_en": "Give me a chance to explain myself.",
+"example_bn": "আমাকে নিজেকে ব্যাখ্যা করার একটি সুযোগ দাও।",
+"synonyms": ["opportunity", "possibility", "luck"]
 },
 {
 "word": "change",
-"part_of_speech": "noun",
-"definition_en": "the process of becoming different",
-"definition_bn": "ভিন্ন হওয়ার প্রক্রিয়া",
-"example_en": "Change is necessary for growth and development.",
-"example_bn": "বৃদ্ধি এবং উন্নয়নের জন্য পরিবর্তন প্রয়োজন।",
-"synonyms": ["transformation", "alteration", "shift"],
-"level": "basic"
+"pos": "verb",
+"meaning_bn": "পরিবর্তন করা",
+"definition": "to make different",
+"example_en": "You need to change your clothes now.",
+"example_bn": "তোমার এখন তোমার কাপড় পরিবর্তন করা দরকার।",
+"synonyms": ["alter", "modify", "shift"]
 },
 {
-"word": "choice",
-"part_of_speech": "noun",
-"definition_en": "the act of selecting or making a decision",
-"definition_bn": "নির্বাচন করা বা সিদ্ধান্ত নেওয়ার কাজ",
-"example_en": "Making the right choice requires careful consideration.",
-"example_bn": "সঠিক পছন্দ করতে মনোযোগ দিয়ে চিন্তা করা প্রয়োজন।",
-"synonyms": ["selection", "option", "preference"],
-"level": "basic"
+"word": "channel",
+"pos": "noun",
+"meaning_bn": "চ্যানেল",
+"definition": "a band of frequencies used broadcasting",
+"example_en": "Switch to the news channel please.",
+"example_bn": "দয়া করে নিউজ চ্যানেলে সুইচ করো।",
+"synonyms": ["station", "medium", "path"]
+},
+{
+"word": "chapter",
+"pos": "noun",
+"meaning_bn": "অধ্যায়",
+"definition": "a main division of a book",
+"example_en": "We finished the first chapter of the book.",
+"example_bn": "আমরা বইয়ের প্রথম অধ্যায়টি শেষ করেছি।",
+"synonyms": ["section", "part", "division"]
+},
+{
+"word": "character",
+"pos": "noun",
+"meaning_bn": "চরিত্র",
+"definition": "mental and moral qualities",
+"example_en": "Honesty is an important part of character.",
+"example_bn": "সততা চরিত্রের একটি গুরুত্বপূর্ণ অংশ।",
+"synonyms": ["nature", "personality", "trait"]
+},
+{
+"word": "choose",
+"pos": "verb",
+"meaning_bn": "বেছে নেওয়া",
+"definition": "to pick out or select from options",
+"example_en": "You can choose any color you like for the wall.",
+"example_bn": "তুমি দেয়ালের জন্য যেকোনো রঙ বেছে নিতে পারো।",
+"synonyms": ["select", "pick", "opt"]
+},
+{
+"word": "circle",
+"pos": "noun",
+"meaning_bn": "বৃত্ত",
+"definition": "a round plane figure with equal radius",
+"example_en": "The children stood in a circle during the game.",
+"example_bn": "বাচ্চারা খেলার সময় একটি বৃত্তে দাঁড়িয়েছিল।",
+"synonyms": ["ring", "round", "loop"]
+},
+{
+"word": "citizen",
+"pos": "noun",
+"meaning_bn": "নাগরিক",
+"definition": "a legally recognized subject of a state",
+"example_en": "Every citizen has the right to vote in elections.",
+"example_bn": "প্রতিটি নাগরিকের নির্বাচনে ভোট দেওয়ার অধিকার আছে।",
+"synonyms": ["resident", "national", "subject"]
+},
+{
+"word": "client",
+"pos": "noun",
+"meaning_bn": "ক্লায়েন্ট",
+"definition": "a person using services of a professional",
+"example_en": "The lawyer met with his client in the office.",
+"example_bn": "উকিল তার অফিসে ক্লায়েন্টের সাথে দেখা করেছিলেন।",
+"synonyms": ["customer", "patient", "consumer"]
+},
+{
+"word": "claim",
+"pos": "verb",
+"meaning_bn": "দাবি করা",
+"definition": "to state something is true without proof",
+"example_en": "He did not claim the money found on the table.",
+"example_bn": "সে টেবিলে পাওয়া টাকাটি দাবি করেনি।",
+"synonyms": ["assert", "declare", "state"]
+},
+{
+"word": "class",
+"pos": "noun",
+"meaning_bn": "শ্রেণী",
+"definition": "a group of students learning together",
+"example_en": "Our English class starts at nine every morning.",
+"example_bn": "আমাদের ইংরেজি ক্লাস প্রতিদিন সকাল নটায় শুরু হয়।",
+"synonyms": ["group", "grade", "course"]
+},
+{
+"word": "clean",
+"pos": "adjective",
+"meaning_bn": "পরিষ্কার",
+"definition": "free from dirt or marks",
+"example_en": "Please keep your room clean and tidy always.",
+"example_bn": "দয়া করে তোমার ঘর সবসময় পরিষ্কার ও গোছানো রাখো।",
+"synonyms": ["pure", "clear", "fresh"]
+},
+{
+"word": "clear",
+"pos": "adjective",
+"meaning_bn": "পরিষ্কার",
+"definition": "easy to see or understand",
+"example_en": "The water in the lake was very clear today.",
+"example_bn": "আজ হ্রদের পানি খুব পরিষ্কার ছিল।",
+"synonyms": ["transparent", "obvious", "plain"]
+},
+{
+"word": "click",
+"pos": "verb",
+"meaning_bn": "ক্লিক করা",
+"definition": "to press a button on a mouse",
+"example_en": "You need to click the button to submit form.",
+"example_bn": "ফর্ম জমা দিতে তোমার বাটনটি ক্লিক করা দরকার।",
+"synonyms": ["press", "tap", "hit"]
+},
+{
+"word": "clock",
+"pos": "noun",
+"meaning_bn": "ঘড়ি",
+"definition": "an instrument for measuring time",
+"example_en": "The wall clock stopped working yesterday evening.",
+"example_bn": "দেয়াল ঘড়িটি গতকাল সন্ধ্যায় বন্ধ হয়ে গিয়েছিল।",
+"synonyms": ["timepiece", "watch", "timer"]
+},
+{
+"word": "close",
+"pos": "verb",
+"meaning_bn": "বন্ধ করা",
+"definition": "to shut something tightly",
+"example_en": "Please close the window before leaving the room.",
+"example_bn": "ঘর থেকে বের হওয়ার আগে দয়া করে জানালা বন্ধ করো।",
+"synonyms": ["shut", "seal", "lock"]
+},
+{
+"word": "cloth",
+"pos": "noun",
+"meaning_bn": "কাপড়",
+"definition": "material used for making clothes",
+"example_en": "She bought some soft cloth for the new dress.",
+"example_bn": "সে নতুন পোশাকের জন্য কিছু নরম কাপড় কিনেছিল।",
+"synonyms": ["fabric", "material", "textile"]
+},
+{
+"word": "cloud",
+"pos": "noun",
+"meaning_bn": "মেঘ",
+"definition": "a visible mass of water vapor",
+"example_en": "Dark clouds gathered in the sky before rain.",
+"example_bn": "বৃষ্টির আগে আকাশে কালো মেঘ জমা হয়েছিল।",
+"synonyms": ["vapor", "mist", "fog"]
+},
+{
+"word": "club",
+"pos": "noun",
+"meaning_bn": "ক্লাব",
+"definition": "an association for shared interests",
+"example_en": "He joined the local football club last month.",
+"example_bn": "সে গত মাসে স্থানীয় ফুটবল ক্লাবে যোগ দিয়েছিল।",
+"synonyms": ["group", "society", "team"]
+},
+{
+"word": "coach",
+"pos": "noun",
+"meaning_bn": "কোচ",
+"definition": "a person who trains athletes",
+"example_en": "The coach taught us new strategies for game.",
+"example_bn": "কোচ আমাদের খেলার জন্য নতুন কৌশল শিখিয়েছিলেন।",
+"synonyms": ["trainer", "instructor", "mentor"]
+},
+{
+"word": "coast",
+"pos": "noun",
+"meaning_bn": "উপকূল",
+"definition": "the land near the sea",
+"example_en": "We drove along the coast to see the ocean.",
+"example_bn": "সমুদ্র দেখতে আমরা উপকূল বরাবর গাড়ি চালিয়েছিলাম।",
+"synonyms": ["shore", "beach", "seaside"]
+},
+{
+"word": "coat",
+"pos": "noun",
+"meaning_bn": "কোট",
+"definition": "an outer garment with sleeves",
+"example_en": "You should wear a warm coat in winter.",
+"example_bn": "শীতকালে তোমার একটি উষ্ণ কোট পরা উচিত।",
+"synonyms": ["jacket", "outerwear", "cloak"]
+},
+{
+"word": "code",
+"pos": "noun",
+"meaning_bn": "কোড",
+"definition": "a system of words for secrecy",
+"example_en": "The programmer wrote the code for the app.",
+"example_bn": "প্রোগ্রামার অ্যাপটির জন্য কোডটি লিখেছিলেন।",
+"synonyms": ["cipher", "key", "system"]
+},
+{
+"word": "coffee",
+"pos": "noun",
+"meaning_bn": "কফি",
+"definition": "a hot drink made from beans",
+"example_en": "I drink a cup of coffee every morning.",
+"example_bn": "আমি প্রতিদিন সকালে এক কাপ কফি খাই।",
+"synonyms": ["brew", "beverage", "drink"]
+},
+{
+"word": "coin",
+"pos": "noun",
+"meaning_bn": "মুদ্রা",
+"definition": "a flat piece of metal money",
+"example_en": "He found a silver coin on the street.",
+"example_bn": "সে রাস্তায় একটি রূপার মুদ্রা পেয়েছিল।",
+"synonyms": ["currency", "cash", "money"]
+},
+{
+"word": "cold",
+"pos": "adjective",
+"meaning_bn": "ঠান্ডা",
+"definition": "having a low temperature",
+"example_en": "The water was too cold for swimming today.",
+"example_bn": "আজ সাঁতার কাটার জন্য পানি খুব ঠান্ডা ছিল।",
+"synonyms": ["chilly", "freezing", "cool"]
+},
+{
+"word": "collect",
+"pos": "verb",
+"meaning_bn": "সংগ্রহ করা",
+"definition": "to bring things together",
+"example_en": "Students need to collect their books from library.",
+"example_bn": "শিক্ষার্থীদের লাইব্রেরি থেকে বই সংগ্রহ করা দরকার।",
+"synonyms": ["gather", "accumulate", "assemble"]
+},
+{
+"word": "college",
+"pos": "noun",
+"meaning_bn": "কলেজ",
+"definition": "an institution for higher education",
+"example_en": "She studies biology at the local college.",
+"example_bn": "সে স্থানীয় কলেজে জীববিজ্ঞান পড়াশোনা করে।",
+"synonyms": ["university", "institute", "academy"]
+},
+{
+"word": "color",
+"pos": "noun",
+"meaning_bn": "রঙ",
+"definition": "the property of reflecting light",
+"example_en": "What is your favorite color for painting?",
+"example_bn": "পেইন্টিংয়ের জন্য তোমার প্রিয় রঙ কোনটি?",
+"synonyms": ["hue", "shade", "tint"]
+},
+{
+"word": "column",
+"pos": "noun",
+"meaning_bn": "কলাম",
+"definition": "a vertical line of text or structure",
+"example_en": "Write your name in the first column please.",
+"example_bn": "দয়া করে তোমার নাম প্রথম কলামে লেখো।",
+"synonyms": ["pillar", "row", "stack"]
+},
+{
+"word": "combine",
+"pos": "verb",
+"meaning_bn": "একত্রিত করা",
+"definition": "to join two or more things",
+"example_en": "We combine sugar and flour to make cake.",
+"example_bn": "কেক বানাতে আমরা চিনি ও ময়দা একত্রিত করি।",
+"synonyms": ["merge", "mix", "unite"]
+},
+{
+"word": "come",
+"pos": "verb",
+"meaning_bn": "আসা",
+"definition": "to move towards the speaker",
+"example_en": "Please come to my house for dinner tonight.",
+"example_bn": "দয়া করে আজ রাতের খাবারের জন্য আমার বাড়িতে এসো।",
+"synonyms": ["arrive", "approach", "reach"]
+},
+{
+"word": "comfort",
+"pos": "noun",
+"meaning_bn": "আরাম",
+"definition": "a state of physical ease",
+"example_en": "The hotel room provided great comfort for us.",
+"example_bn": "হোটেল কক্ষটি আমাদের জন্য দুর্দান্ত আরাম প্রদান করেছিল।",
+"synonyms": ["ease", "relief", "luxury"]
+},
+{
+"word": "command",
+"pos": "verb",
+"meaning_bn": "আদেশ দেওয়া",
+"definition": "to give an official order",
+"example_en": "The officer will command the troops to move.",
+"example_bn": "অফিসার সৈন্যদের সরে যাওয়ার আদেশ দেবেন।",
+"synonyms": ["order", "direct", "instruct"]
+},
+{
+"word": "comment",
+"pos": "noun",
+"meaning_bn": "মন্তব্য",
+"definition": "a remark expressing an opinion",
+"example_en": "He made a funny comment during the meeting.",
+"example_bn": "সে মিটিংয়ের সময় একটি মজার মন্তব্য করেছিল।",
+"synonyms": ["remark", "note", "observation"]
+},
+{
+"word": "commercial",
+"pos": "adjective",
+"meaning_bn": "বাণিজ্যিক",
+"definition": "related to business or profit",
+"example_en": "This area is zoned for commercial use only.",
+"example_bn": "এই এলাকাটি শুধুমাত্র বাণিজ্যিক ব্যবহারের জন্য নির্ধারিত।",
+"synonyms": ["business", "trade", "profit"]
+},
+{
+"word": "commit",
+"pos": "verb",
+"meaning_bn": "প্রতিশ্রুত হওয়া",
+"definition": "to pledge or bind oneself",
+"example_en": "You must commit to finishing the project on time.",
+"example_bn": "তোমার সময়মতো প্রকল্প শেষ করার প্রতিশ্রুতি থাকতে হবে।",
+"synonyms": ["pledge", "promise", "dedicate"]
+},
+{
+"word": "committee",
+"pos": "noun",
+"meaning_bn": "কমিটি",
+"definition": "a group appointed for a function",
+"example_en": "The committee will decide the winner tomorrow.",
+"example_bn": "কমিটি আগামীকাল বিজয়ীকে নির্ধারণ করবে।",
+"synonyms": ["board", "panel", "council"]
+},
+{
+"word": "common",
+"pos": "adjective",
+"meaning_bn": "সাধারণ",
+"definition": "occurring or found often",
+"example_en": "It is common to see birds in the park.",
+"example_bn": "পার্কে পাখি দেখা সাধারণ বিষয়।",
+"synonyms": ["usual", "frequent", "ordinary"]
+},
+{
+"word": "communicate",
+"pos": "verb",
+"meaning_bn": "যোগাযোগ করা",
+"definition": "to share information with others",
+"example_en": "We communicate mostly by email at work.",
+"example_bn": "কাজে আমরা মূলত ইমেইলের মাধ্যমে যোগাযোগ করি।",
+"synonyms": ["talk", "connect", "convey"]
+},
+{
+"word": "community",
+"pos": "noun",
+"meaning_bn": "সম্প্রদায়",
+"definition": "a group of people living together",
+"example_en": "The local community organized a charity event.",
+"example_bn": "স্থানীয় সম্প্রদায় একটি দাতব্য অনুষ্ঠানের আয়োজন করেছিল।",
+"synonyms": ["society", "group", "public"]
+},
+{
+"word": "company",
+"pos": "noun",
+"meaning_bn": "কোম্পানি",
+"definition": "a business organization",
+"example_en": "She works for a large software company.",
+"example_bn": "সে একটি বড় সফটওয়্যার কোম্পানিতে কাজ করে।",
+"synonyms": ["firm", "business", "corporation"]
+},
+{
+"word": "compare",
+"pos": "verb",
+"meaning_bn": "তুলনা করা",
+"definition": "to examine similarities and differences",
+"example_en": "Compare the prices before you buy the phone.",
+"example_bn": "ফোন কেনার আগে দামগুলো তুলনা করো।",
+"synonyms": ["contrast", "match", "weigh"]
+},
+{
+"word": "compete",
+"pos": "verb",
+"meaning_bn": "প্রতিযোগিতা করা",
+"definition": "to strive to gain something",
+"example_en": "Many athletes compete for the gold medal.",
+"example_bn": "অনেক ক্রীড়াবিদ স্বর্ণপদকের জন্য প্রতিযোগিতা করে।",
+"synonyms": ["contest", "rival", "vie"]
+},
+{
+"word": "complain",
+"pos": "verb",
+"meaning_bn": "অভিযোগ করা",
+"definition": "to express dissatisfaction",
+"example_en": "Customers often complain about slow service here.",
+"example_bn": "গ্রাহকরা প্রায়ই এখানে ধীর সেবার অভিযোগ করে।",
+"synonyms": ["protest", "object", "grumble"]
+},
+{
+"word": "complete",
+"pos": "adjective",
+"meaning_bn": "সম্পূর্ণ",
+"definition": "having all necessary parts",
+"example_en": "The project is complete and ready for review.",
+"example_bn": "প্রকল্পটি সম্পূর্ণ এবং পর্যালোচনার জন্য প্রস্তুত।",
+"synonyms": ["finished", "whole", "total"]
+},
+{
+"word": "complex",
+"pos": "adjective",
+"meaning_bn": "জটিল",
+"definition": "consisting of many connected parts",
+"example_en": "The machine has a very complex internal system.",
+"example_bn": "মেশিনটির একটি খুব জটিল অভ্যন্তরীণ ব্যবস্থা আছে।",
+"synonyms": ["complicated", "intricate", "difficult"]
+},
+{
+"word": "component",
+"pos": "noun",
+"meaning_bn": "উপাদান",
+"definition": "a part or element of a whole",
+"example_en": "This component is essential for the computer.",
+"example_bn": "এই উপাদানটি কম্পিউটারের জন্য অপরিহার্য।",
+"synonyms": ["part", "element", "piece"]
+},
+{
+"word": "computer",
+"pos": "noun",
+"meaning_bn": "কম্পিউটার",
+"definition": "an electronic device for processing data",
+"example_en": "I use my computer for writing and research.",
+"example_bn": "আমি লেখালেখি ও গবেষণার জন্য আমার কম্পিউটার ব্যবহার করি।",
+"synonyms": ["device", "machine", "system"]
+},
+{
+"word": "concentrate",
+"pos": "verb",
+"meaning_bn": "মনোযোগ দেওয়া",
+"definition": "to focus all attention on something",
+"example_en": "You need to concentrate on your studies now.",
+"example_bn": "তোমার এখন তোমার পড়াশোনার ওপর মনোযোগ দেওয়া দরকার।",
+"synonyms": ["focus", "attend", "center"]
+},
+{
+"word": "concept",
+"pos": "noun",
+"meaning_bn": "ধারণা",
+"definition": "an abstract idea or general notion",
+"example_en": "The concept of time is hard to explain.",
+"example_bn": "সময়ের ধারণাটি ব্যাখ্যা করা কঠিন।",
+"synonyms": ["idea", "notion", "theory"]
+},
+{
+"word": "concern",
+"pos": "noun",
+"meaning_bn": "উদ্বেগ",
+"definition": "something that causes worry",
+"example_en": "Safety is a major concern for the parents.",
+"example_bn": "নিরাপত্তা বাবা-মাদের জন্য একটি প্রধান উদ্বেগ।",
+"synonyms": ["worry", "issue", "matter"]
+},
+{
+"word": "concert",
+"pos": "noun",
+"meaning_bn": "কনসার্ট",
+"definition": "a musical performance given in public",
+"example_en": "We bought tickets for the rock concert tonight.",
+"example_bn": "আমরা আজ রাতের রক কনসার্টের জন্য টিকিট কিনেছি।",
+"synonyms": ["show", "performance", "recital"]
+},
+{
+"word": "conclude",
+"pos": "verb",
+"meaning_bn": "সিদ্ধান্ত নেওয়া",
+"definition": "to arrive at a judgment by reasoning",
+"example_en": "We can conclude that the plan was successful.",
+"example_bn": "আমরা সিদ্ধান্ত নিতে পারি যে পরিকল্পনাটি সফল ছিল।",
+"synonyms": ["decide", "infer", "deduce"]
 },
 {
 "word": "condition",
-"part_of_speech": "noun",
-"definition_en": "the state or situation something is in",
-"definition_bn": "কোনো কিছু যে অবস্থায় আছে",
-"example_en": "The patient's condition improved after treatment.",
-"example_bn": "চিকিৎসার পরে রোগীর অবস্থার উন্নতি হয়েছে।",
-"synonyms": ["state", "situation", "status"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "অবস্থা",
+"definition": "the state of something",
+"example_en": "The car is in good condition for its age.",
+"example_bn": "গাড়িটি এর বয়সের তুলনায় ভালো অবস্থায় আছে।",
+"synonyms": ["state", "status", "shape"]
+},
+{
+"word": "conduct",
+"pos": "verb",
+"meaning_bn": "পরিচালনা করা",
+"definition": "to organize and carry out",
+"example_en": "They will conduct a survey next week.",
+"example_bn": "তারা আগামী সপ্তাহে একটি জরিপ পরিচালনা করবে।",
+"synonyms": ["manage", "run", "execute"]
+},
+{
+"word": "conference",
+"pos": "noun",
+"meaning_bn": "সম্মেলন",
+"definition": "a formal meeting for discussion",
+"example_en": "She attended an international conference last month.",
+"example_bn": "সে গত মাসে একটি আন্তর্জাতিক সম্মেলনে অংশ নিয়েছিল।",
+"synonyms": ["meeting", "summit", "convention"]
+},
+{
+"word": "confidence",
+"pos": "noun",
+"meaning_bn": "আত্মবিশ্বাস",
+"definition": "the feeling of self-assurance",
+"example_en": "He spoke with great confidence during interview.",
+"example_bn": "সে সাক্ষাৎকারের সময় খুব আত্মবিশ্বাসের সাথে কথা বলেছিল।",
+"synonyms": ["trust", "belief", "certainty"]
+},
+{
+"word": "confirm",
+"pos": "verb",
+"meaning_bn": "নিশ্চিত করা",
+"definition": "to establish the truth of something",
+"example_en": "Please confirm your appointment by email today.",
+"example_bn": "দয়া করে আজ ইমেইলের মাধ্যমে তোমার অ্যাপয়েন্টমেন্ট নিশ্চিত করো।",
+"synonyms": ["verify", "validate", "approve"]
+},
+{
+"word": "conflict",
+"pos": "noun",
+"meaning_bn": "দ্বন্দ্ব",
+"definition": "a serious disagreement or argument",
+"example_en": "There was a conflict between the two departments.",
+"example_bn": "দুটি বিভাগের মধ্যে একটি দ্বন্দ্ব ছিল।",
+"synonyms": ["fight", "clash", "dispute"]
+},
+{
+"word": "confuse",
+"pos": "verb",
+"meaning_bn": "বিভ্রান্ত করা",
+"definition": "to make someone unable to think clearly",
+"example_en": "Too many instructions can confuse the students.",
+"example_bn": "অনেক বেশি নির্দেশনা শিক্ষার্থীদের বিভ্রান্ত করতে পারে।",
+"synonyms": ["puzzle", "bewilder", "mix"]
+},
+{
+"word": "connect",
+"pos": "verb",
+"meaning_bn": "সংযুক্ত করা",
+"definition": "to join two things together",
+"example_en": "Connect the printer to the computer please.",
+"example_bn": "দয়া করে প্রিন্টারটি কম্পিউটারের সাথে সংযুক্ত করো।",
+"synonyms": ["link", "join", "attach"]
+},
+{
+"word": "consider",
+"pos": "verb",
+"meaning_bn": "বিবেচনা করা",
+"definition": "to think about carefully",
+"example_en": "We need to consider all options before deciding.",
+"example_bn": "সিদ্ধান্ত নেওয়ার আগে আমাদের সব বিকল্প বিবেচনা করা দরকার।",
+"synonyms": ["think", "ponder", "reflect"]
+},
+{
+"word": "consist",
+"pos": "verb",
+"meaning_bn": "গঠিত হওয়া",
+"definition": "to be composed or made up of",
+"example_en": "The team consists of five experienced members.",
+"example_bn": "দলটি পাঁচজন অভিজ্ঞ সদস্য নিয়ে গঠিত।",
+"synonyms": ["comprise", "compose", "include"]
+},
+{
+"word": "constant",
+"pos": "adjective",
+"meaning_bn": "ধ্রুবক",
+"definition": "occurring continuously over a period",
+"example_en": "The constant noise made it hard to sleep.",
+"example_bn": "ধ্রুবক শব্দের কারণে ঘুমানো কঠিন ছিল।",
+"synonyms": ["steady", "continuous", "fixed"]
+},
+{
+"word": "construct",
+"pos": "verb",
+"meaning_bn": "নির্মাণ করা",
+"definition": "to build or form something",
+"example_en": "They plan to construct a new bridge soon.",
+"example_bn": "তারা শীঘ্রই একটি নতুন সেতু নির্মাণ করার পরিকল্পনা করছে।",
+"synonyms": ["build", "create", "erect"]
+},
+{
+"word": "consult",
+"pos": "verb",
+"meaning_bn": "পরামর্শ করা",
+"definition": "to seek information or advice",
+"example_en": "You should consult a doctor for this pain.",
+"example_bn": "এই ব্যথার জন্য তোমার একজন ডাক্তারের পরামর্শ নেওয়া উচিত।",
+"synonyms": ["ask", "advise", "seek"]
+},
+{
+"word": "contact",
+"pos": "noun",
+"meaning_bn": "যোগাযোগ",
+"definition": "the state of touching or communicating",
+"example_en": "Keep in contact with your old friends regularly.",
+"example_bn": "নিয়মিত তোমার পুরনো বন্ধুদের সাথে যোগাযোগ রাখো।",
+"synonyms": ["touch", "connection", "link"]
+},
+{
+"word": "contain",
+"pos": "verb",
+"meaning_bn": "ধারণ করা",
+"definition": "to have or hold within",
+"example_en": "This box can contain many small items easily.",
+"example_bn": "এই বাক্সটি সহজেই অনেক ছোট জিনিস ধারণ করতে পারে।",
+"synonyms": ["hold", "include", "carry"]
+},
+{
+"word": "content",
+"pos": "noun",
+"meaning_bn": "বিষয়বস্তু",
+"definition": "the things held or included",
+"example_en": "The content of the book is very interesting.",
+"example_bn": "বইয়ের বিষয়বস্তু খুব ενδιαещат।",
+"synonyms": ["material", "subject", "substance"]
+},
+{
+"word": "contest",
+"pos": "noun",
+"meaning_bn": "প্রতিযোগিতা",
+"definition": "an event where people compete",
+"example_en": "She won the first prize in the singing contest.",
+"example_bn": "সে গানের প্রতিযোগিতায় প্রথম পুরস্কার জিতেছিল।",
+"synonyms": ["competition", "match", "tournament"]
+},
+{
+"word": "context",
+"pos": "noun",
+"meaning_bn": "প্রসঙ্গ",
+"definition": "the circumstances forming a setting",
+"example_en": "You must understand the context of the story.",
+"example_bn": "তোমার অবশ্যই গল্পটির প্রসঙ্গ বুঝতে হবে।",
+"synonyms": ["setting", "background", "scene"]
 },
 {
 "word": "continue",
-"part_of_speech": "verb",
-"definition_en": "to keep doing something without stopping",
-"definition_bn": "থামার ছাড়া কিছু করতে থাকা",
-"example_en": "Despite the rain, the match continued.",
-"example_bn": "বৃষ্টি সত্ত্বেও খেলা চলতে থাকে।",
-"synonyms": ["proceed", "carry on", "persist"],
-"level": "basic"
+"pos": "verb",
+"meaning_bn": "চালিয়ে যাওয়া",
+"definition": "to persist in an activity",
+"example_en": "Please continue reading the next chapter now.",
+"example_bn": "দয়া করে এখন পরের অধ্যায়টি পড়া চালিয়ে যাও।",
+"synonyms": ["proceed", "carry on", "resume"]
+},
+{
+"word": "contract",
+"pos": "noun",
+"meaning_bn": "চুক্তি",
+"definition": "a written or spoken agreement",
+"example_en": "They signed a contract for the new house.",
+"example_bn": "তারা নতুন বাড়ির জন্য একটি চুক্তি স্বাক্ষর করেছিল।",
+"synonyms": ["agreement", "deal", "pact"]
 },
 {
 "word": "control",
-"part_of_speech": "verb",
-"definition_en": "to manage or have power over something",
-"definition_bn": "কোনো কিছু পরিচালনা বা নিয়ন্ত্রণ করা",
-"example_en": "Parents try to control their children's behavior.",
-"example_bn": "পিতামাতা তাদের শিশুদের আচরণ নিয়ন্ত্রণ করার চেষ্টা করে।",
-"synonyms": ["manage", "govern", "regulate"],
-"level": "basic"
+"pos": "verb",
+"meaning_bn": "নিয়ন্ত্রণ করা",
+"definition": "to have power over something",
+"example_en": "It is hard to control anger sometimes.",
+"example_bn": "মাঝে মাঝে রাগ নিয়ন্ত্রণ করা কঠিন।",
+"synonyms": ["manage", "rule", "command"]
+},
+{
+"word": "convert",
+"pos": "verb",
+"meaning_bn": "রূপান্তর করা",
+"definition": "to change form or function",
+"example_en": "We need to convert dollars into local currency.",
+"example_bn": "আমাদের ডলার স্থানীয় মুদ্রায় রূপান্তর করা দরকার।",
+"synonyms": ["change", "transform", "switch"]
+},
+{
+"word": "cooperate",
+"pos": "verb",
+"meaning_bn": "সহযোগিতা করা",
+"definition": "to work together for a purpose",
+"example_en": "Everyone must cooperate to finish the task.",
+"example_bn": "কাজটি শেষ করতে সবাইকে সহযোগিতা করতে হবে।",
+"synonyms": ["collaborate", "help", "assist"]
+},
+{
+"word": "cope",
+"pos": "verb",
+"meaning_bn": "সামলা করা",
+"definition": "to deal effectively with something",
+"example_en": "It is difficult to cope with stress alone.",
+"example_bn": "একা একা চাপ সামলা করা কঠিন।",
+"synonyms": ["manage", "handle", "deal"]
+},
+{
+"word": "core",
+"pos": "noun",
+"meaning_bn": "মূল",
+"definition": "the central or most important part",
+"example_en": "Honesty is the core value of our company.",
+"example_bn": "সততা আমাদের কোম্পানির মূল মূল্য।",
+"synonyms": ["center", "heart", "essence"]
+},
+{
+"word": "corner",
+"pos": "noun",
+"meaning_bn": "কোণ",
+"definition": "a place where two lines meet",
+"example_en": "The shop is located on the street corner.",
+"example_bn": "দোকানটি রাস্তার মোড়ে অবস্থিত।",
+"synonyms": ["angle", "bend", "turn"]
+},
+{
+"word": "correct",
+"pos": "adjective",
+"meaning_bn": "সঠিক",
+"definition": "free from error or mistake",
+"example_en": "Please give the correct answer to the question.",
+"example_bn": "দয়া করে প্রশ্নের সঠিক উত্তর দাও।",
+"synonyms": ["right", "accurate", "true"]
+},
+{
+"word": "cost",
+"pos": "noun",
+"meaning_bn": "খরচ",
+"definition": "the price paid for something",
+"example_en": "The cost of living is rising every year.",
+"example_bn": "জীবনযাত্রার খরচ প্রতি বছর বাড়ছে।",
+"synonyms": ["price", "expense", "charge"]
+},
+{
+"word": "count",
+"pos": "verb",
+"meaning_bn": "গণনা করা",
+"definition": "to determine the number of",
+"example_en": "Count the number of people in the room.",
+"example_bn": "ঘরে থাকা মানুষের সংখ্যা গণনা করো।",
+"synonyms": ["calculate", "number", "tally"]
+},
+{
+"word": "country",
+"pos": "noun",
+"meaning_bn": "দেশ",
+"definition": "a nation with its own government",
+"example_en": "Bangladesh is a beautiful country in Asia.",
+"example_bn": "বাংলাদেশ এশিয়ার একটি সুন্দর দেশ।",
+"synonyms": ["nation", "land", "state"]
+},
+{
+"word": "county",
+"pos": "noun",
+"meaning_bn": "কাউন্টি",
+"definition": "a territorial division of a state",
+"example_en": "He lives in a rural county far from city.",
+"example_bn": "সে শহর থেকে দূরে একটি গ্রামীণ কাউন্টিতে বাস করে।",
+"synonyms": ["district", "region", "area"]
 },
 {
 "word": "couple",
-"part_of_speech": "noun",
-"definition_en": "two people who are together as partners",
-"definition_bn": "দুজন মানুষ যারা অংশীদার হিসেবে একসাথে আছে",
-"example_en": "The young couple walked hand in hand.",
-"example_bn": "তরুণ দম্পতি হাত ধরে হাঁটছিল।",
-"synonyms": ["pair", "twosome", "duo"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "দম্পতি",
+"definition": "two people married or paired",
+"example_en": "The couple walked together in the park.",
+"example_bn": "দম্পতিটি পার্কে একসাথে হেঁটেছিল।",
+"synonyms": ["pair", "duo", "twosome"]
+},
+{
+"word": "courage",
+"pos": "noun",
+"meaning_bn": "সাহস",
+"definition": "the ability to do something frightening",
+"example_en": "It takes courage to speak in public.",
+"example_bn": "প্রকাশ্যে কথা বলতে সাহসের প্রয়োজন হয়।",
+"synonyms": ["bravery", "valor", "fearlessness"]
+},
+{
+"word": "course",
+"pos": "noun",
+"meaning_bn": "কোর্স",
+"definition": "a series of lessons or lectures",
+"example_en": "She enrolled in an online coding course.",
+"example_bn": "সে একটি অনলাইন কোডিং কোর্সে ভর্তি হয়েছিল।",
+"synonyms": ["class", "program", "curriculum"]
+},
+{
+"word": "court",
+"pos": "noun",
+"meaning_bn": "আদালত",
+"definition": "a place where justice is administered",
+"example_en": "The case will be heard in court tomorrow.",
+"example_bn": "মামলাটি আগামীকাল আদালতে শোনা হবে।",
+"synonyms": ["tribunal", "judiciary", "bench"]
+},
+{
+"word": "cousin",
+"pos": "noun",
+"meaning_bn": "চাচাতো ভাই",
+"definition": "a child of one's uncle or aunt",
+"example_en": "My cousin is coming to visit us next week.",
+"example_bn": "আমার চাচাতো ভাই আগামী সপ্তাহে আমাদের দেখতে আসছে।",
+"synonyms": ["relative", "kin", "family"]
+},
+{
+"word": "cover",
+"pos": "verb",
+"meaning_bn": "ঢাকা",
+"definition": "to place something over something",
+"example_en": "Cover the pot while cooking the rice.",
+"example_bn": "ভাত রান্নার সময় হাঁড়িটি ঢেকে রাখো।",
+"synonyms": ["hide", "shield", "wrap"]
+},
+{
+"word": "coil",
+"pos": "noun",
+"meaning_bn": "কুণ্ডলী",
+"definition": "a series of loops of wire",
+"example_en": "The electric heater has a heating coil inside.",
+"example_bn": "ইলেকট্রিক হিটারের ভিতরে একটি হিটিং কুণ্ডলী আছে।",
+"synonyms": ["spiral", "loop", "curl"]
+},
+{
+"word": "crack",
+"pos": "noun",
+"meaning_bn": "ফাটল",
+"definition": "a line on a surface without separation",
+"example_en": "There is a small crack in the glass window.",
+"example_bn": "কাচের জানালায় একটি ছোট ফাটল আছে।",
+"synonyms": ["split", "fracture", "break"]
+},
+{
+"word": "craft",
+"pos": "noun",
+"meaning_bn": "শিল্পকর্ম",
+"definition": "an activity involving skill in making",
+"example_en": "She sells handmade craft at the market.",
+"example_bn": "সে বাজারে হাতে তৈরি শিল্পকর্ম বিক্রি করে।",
+"synonyms": ["art", "skill", "trade"]
+},
+{
+"word": "crash",
+"pos": "verb",
+"meaning_bn": "ধাক্কা লাগা",
+"definition": "to collide violently with something",
+"example_en": "The car did crash into the wall yesterday.",
+"example_bn": "গাড়িটি গতকাল দেয়ালে ধাক্কা লেগেছিল।",
+"synonyms": ["collide", "smash", "hit"]
+},
+{
+"word": "crazy",
+"pos": "adjective",
+"meaning_bn": "পাগল",
+"definition": "mentally deranged or foolish",
+"example_en": "It was a crazy idea to jump off roof.",
+"example_bn": "ছাদ থেকে লাফ দেওয়া একটি পাগলামী идея ছিল।",
+"synonyms": ["mad", "insane", "wild"]
+},
+{
+"word": "cream",
+"pos": "noun",
+"meaning_bn": "ক্রিম",
+"definition": "the thick yellowish liquid from milk",
+"example_en": "She put some cream on her cake.",
+"example_bn": "সে তার কেকের ওপর কিছু ক্রিম দিয়েছিল।",
+"synonyms": ["dairy", "paste", "lotion"]
+},
+{
+"word": "create",
+"pos": "verb",
+"meaning_bn": "তৈরি করা",
+"definition": "to bring something into existence",
+"example_en": "Artists create beautiful things for people.",
+"example_bn": "শিল্পীরা মানুষের জন্য সুন্দর জিনিস তৈরি করে।",
+"synonyms": ["make", "produce", "design"]
+},
+{
+"word": "credit",
+"pos": "noun",
+"meaning_bn": "ঋণ",
+"definition": "the ability to obtain goods before payment",
+"example_en": "He bought the phone on monthly credit plan.",
+"example_bn": "সে মাসিক ঋণ পরিকল্পনায় ফোনটি কিনেছিল।",
+"synonyms": ["loan", "debt", "finance"]
+},
+{
+"word": "crew",
+"pos": "noun",
+"meaning_bn": "ক্রু",
+"definition": "a group of people working on a ship",
+"example_en": "The ship crew prepared for the long journey.",
+"example_bn": "জাহাজের ক্রু দীর্ঘ যাত্রার জন্য প্রস্তুত হয়েছিল।",
+"synonyms": ["team", "staff", "group"]
+},
+{
+"word": "crime",
+"pos": "noun",
+"meaning_bn": "অপরাধ",
+"definition": "an action punishable by law",
+"example_en": "Stealing is a serious crime in every country.",
+"example_bn": "চুরি প্রতিটি দেশে একটি গুরুতর অপরাধ।",
+"synonyms": ["offense", "sin", "violation"]
+},
+{
+"word": "crisis",
+"pos": "noun",
+"meaning_bn": "সঙ্কট",
+"definition": "a time of intense difficulty",
+"example_en": "The company faced a financial crisis last year.",
+"example_bn": "কোম্পানিটি গত বছর একটি আর্থিক সঙ্কটের মুখোমুখি হয়েছিল।",
+"synonyms": ["emergency", "disaster", "trouble"]
+},
+{
+"word": "critic",
+"pos": "noun",
+"meaning_bn": "সমালোচক",
+"definition": "a person who judges merits of works",
+"example_en": "The film critic gave a negative review.",
+"example_bn": "চলচ্চিত্র সমালোচক একটি নেতিবাচক পর্যালোচনা দিয়েছিলেন।",
+"synonyms": ["judge", "reviewer", "evaluator"]
+},
+{
+"word": "crop",
+"pos": "noun",
+"meaning_bn": "ফসল",
+"definition": "a cultivated plant that is grown",
+"example_en": "Farmers harvest the wheat crop in summer.",
+"example_bn": "কৃষকরা গ্রীষ্মকালে গমের ফসল কাটে।",
+"synonyms": ["harvest", "produce", "yield"]
+},
+{
+"word": "cross",
+"pos": "verb",
+"meaning_bn": "পার হওয়া",
+"definition": "to go from one side to another",
+"example_en": "Be careful when you cross the busy street.",
+"example_bn": "ব্যস্ত রাস্তা পার হওয়ার সময় সাবধান থাকো।",
+"synonyms": ["traverse", "pass", "span"]
+},
+{
+"word": "crowd",
+"pos": "noun",
+"meaning_bn": "ভিড়",
+"definition": "a large number of people gathered",
+"example_en": "A huge crowd gathered at the concert venue.",
+"example_bn": "কনসার্ট ভেন্যুতে একটি বিশাল ভিড় জমা হয়েছিল।",
+"synonyms": ["mob", "throng", "multitude"]
+},
+{
+"word": "crown",
+"pos": "noun",
+"meaning_bn": "মুকুট",
+"definition": "a circular ornamental headdress worn by monarchs",
+"example_en": "The king wore a golden crown on his head.",
+"example_bn": "রাজা তার মাথায় একটি সোনালী মুকুট পরেছিলেন।",
+"synonyms": ["tiara", "diadem", "headgear"]
+},
+{
+"word": "crucial",
+"pos": "adjective",
+"meaning_bn": "গুরুত্বপূর্ণ",
+"definition": "decisive or critical especially in success",
+"example_en": "This meeting is crucial for the project success.",
+"example_bn": "এই মিটিংটি প্রকল্পের সাফল্যের জন্য গুরুত্বপূর্ণ।",
+"synonyms": ["vital", "essential", "key"]
+},
+{
+"word": "cry",
+"pos": "verb",
+"meaning_bn": "কাঁদা",
+"definition": "to shed tears from emotion",
+"example_en": "The baby started to cry loudly in night.",
+"example_bn": "বাচ্চাটি রাতে জোরে কাঁদতে শুরু করেছিল।",
+"synonyms": ["weep", "sob", "wail"]
+},
+{
+"word": "cultural",
+"pos": "adjective",
+"meaning_bn": "সাংস্কৃতিক",
+"definition": "relating to the arts or customs",
+"example_en": "We attended a cultural program at school.",
+"example_bn": "আমরা স্কুলে একটি সাংস্কৃতিক অনুষ্ঠানে অংশ নিয়েছিলাম।",
+"synonyms": ["social", "ethnic", "traditional"]
 },
 {
 "word": "culture",
-"part_of_speech": "noun",
-"definition_en": "the beliefs, customs, and arts of a group of people",
-"definition_bn": "একটি মানুষের দলের বিশ্বাস, রীতিনীতি এবং শিল্প",
-"example_en": "Each country has its own unique culture.",
-"example_bn": "প্রতিটি দেশের নিজস্ব অনন্য সংস্কৃতি আছে।",
-"synonyms": ["tradition", "custom", "heritage"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "সংস্কৃতি",
+"definition": "the customs and arts of a society",
+"example_en": "Bangladesh has a rich and diverse culture.",
+"example_bn": "বাংলাদেশের একটি সমৃদ্ধ ও বৈচিত্র্যময় সংস্কৃতি আছে।",
+"synonyms": ["tradition", "heritage", "civilization"]
+},
+{
+"word": "curtain",
+"pos": "noun",
+"meaning_bn": "পর্দা",
+"definition": "a piece of cloth covering a window",
+"example_en": "Please close the curtain to block the sun.",
+"example_bn": "সূর্যের আলো আটকাতে দয়া করে পর্দা বন্ধ করো।",
+"synonyms": ["drape", "blind", "screen"]
+},
+{
+"word": "cure",
+"pos": "verb",
+"meaning_bn": "নিরাময় করা",
+"definition": "to relieve a person of a disease",
+"example_en": "Doctors hope to cure the disease soon.",
+"example_bn": "ডাক্তাররা শীঘ্রই রোগটির নিরাময় করার আশা করছেন।",
+"synonyms": ["heal", "treat", "remedy"]
+},
+{
+"word": "curious",
+"pos": "adjective",
+"meaning_bn": "কৌতূহলী",
+"definition": "eager to know or learn something",
+"example_en": "Children are always curious about new things.",
+"example_bn": "বাচ্চারা সবসময় নতুন জিনিস সম্পর্কে কৌতূহলী হয়।",
+"synonyms": ["inquisitive", "interested", "eager"]
+},
+{
+"word": "current",
+"pos": "adjective",
+"meaning_bn": "বর্তমান",
+"definition": "belonging to the present time",
+"example_en": "The current situation requires immediate attention.",
+"example_bn": "বর্তমান পরিস্থিতি তাৎক্ষণিক মনোযোগ দাবি করে।",
+"synonyms": ["present", "modern", "existing"]
+},
+{
+"word": "curve",
+"pos": "noun",
+"meaning_bn": "বক্ররেখা",
+"definition": "a line that deviates from straightness",
+"example_en": "The road has a sharp curve ahead.",
+"example_bn": "রাস্তাটি সামনে একটি তীক্ষ্ণ বক্ররেখা আছে।",
+"synonyms": ["bend", "arc", "turn"]
+},
+{
+"word": "custom",
+"pos": "noun",
+"meaning_bn": "প্রথা",
+"definition": "a traditional way of behaving",
+"example_en": "It is a custom to greet elders respectfully.",
+"example_bn": "বড়দের সম্মানজনকভাবে অভিবাদন করা একটি প্রথা।",
+"synonyms": ["tradition", "habit", "practice"]
+},
+{
+"word": "customer",
+"pos": "noun",
+"meaning_bn": "গ্রাহক",
+"definition": "a person who buys goods or services",
+"example_en": "The customer was happy with the service.",
+"example_bn": "গ্রাহক সেবায় সন্তুষ্ট ছিলেন।",
+"synonyms": ["client", "buyer", "consumer"]
+},
+{
+"word": "cylinder",
+"pos": "noun",
+"meaning_bn": "সিলিন্ডার",
+"definition": "a solid geometric figure with circular ends",
+"example_en": "The engine has four cylinders for power.",
+"example_bn": "ইঞ্জিনে শক্তির জন্য চারটি সিলিন্ডার আছে।",
+"synonyms": ["tube", "pipe", "roller"]
+},
+{
+"word": "cycle",
+"pos": "noun",
+"meaning_bn": "চক্র",
+"definition": "a series of events that are repeated",
+"example_en": "The life cycle of a butterfly is fascinating.",
+"example_bn": "প্রজাপতির জীবন চক্রটি মোহনীয়।",
+"synonyms": ["circle", "loop", "round"]
+},
+{
+"word": "daily",
+"pos": "adjective",
+"meaning_bn": "দৈনিক",
+"definition": "done or occurring every day",
+"example_en": "Reading newspapers is part of my daily routine.",
+"example_bn": "সংবাদপত্র পড়া আমার দৈনিক রুটিনের অংশ।",
+"synonyms": ["everyday", "regular", "routine"]
+},
+{
+"word": "damage",
+"pos": "noun",
+"meaning_bn": "ক্ষতি",
+"definition": "physical harm impairing value",
+"example_en": "The storm caused severe damage to the house.",
+"example_bn": "ঝড়টি বাড়ির মারাত্মক ক্ষতি করেছিল।",
+"synonyms": ["harm", "injury", "destruction"]
+},
+{
+"word": "daring",
+"pos": "adjective",
+"meaning_bn": "সাহসী",
+"definition": "showing a willingness to take risks",
+"example_en": "It was a daring move to climb the cliff.",
+"example_bn": "চূড়াটি আরোহণ করা একটি সাহসী পদক্ষেপ ছিল।",
+"synonyms": ["bold", "brave", "audacious"]
+},
+{
+"word": "danger",
+"pos": "noun",
+"meaning_bn": "বিপদ",
+"definition": "the possibility of suffering harm",
+"example_en": "Swimming here is full of danger for kids.",
+"example_bn": "এখানে সাঁতার কাটা বাচ্চাদের জন্য বিপদপূর্ণ।",
+"synonyms": ["risk", "hazard", "threat"]
+},
+{
+"word": "dangerous",
+"pos": "adjective",
+"meaning_bn": "বিপজ্জনক",
+"definition": "able or likely to cause harm",
+"example_en": "Driving fast on wet roads is dangerous.",
+"example_bn": "ভেজা রাস্তায় দ্রুত গাড়ি চালানো বিপজ্জনক।",
+"synonyms": ["risky", "hazardous", "unsafe"]
+},
+{
+"word": "darkness",
+"pos": "noun",
+"meaning_bn": "অন্ধকার",
+"definition": "the absence of light",
+"example_en": "The room was filled with complete darkness.",
+"example_bn": "ঘরটি সম্পূর্ণ অন্ধকারে ভরে ছিল।",
+"synonyms": ["shadow", "gloom", "night"]
+},
+{
+"word": "data",
+"pos": "noun",
+"meaning_bn": "তথ্য",
+"definition": "facts and statistics collected together",
+"example_en": "Scientists analyze data to find patterns.",
+"example_bn": "বিজ্ঞানীরা প্যাটার্ন খুঁজে পেতে তথ্য বিশ্লেষণ করেন।",
+"synonyms": ["information", "facts", "details"]
+},
+{
+"word": "date",
+"pos": "noun",
+"meaning_bn": "তারিখ",
+"definition": "a particular day of the month",
+"example_en": "What is the date of your birth certificate?",
+"example_bn": "তোমার জন্ম নিবন্ধনের তারিখ কী?",
+"synonyms": ["day", "time", "appointment"]
+},
+{
+"word": "daughter",
+"pos": "noun",
+"meaning_bn": "মেয়ে",
+"definition": "a female child of a person",
+"example_en": "His daughter is studying at the university.",
+"example_bn": "তার মেয়ে বিশ্ববিদ্যালয়ে পড়াশোনা করছে।",
+"synonyms": ["child", "girl", "offspring"]
+},
+{
+"word": "dawn",
+"pos": "noun",
+"meaning_bn": "ভোর",
+"definition": "the first appearance of light in sky",
+"example_en": "We woke up at dawn to see the sunrise.",
+"example_bn": "সূর্যোদয় দেখতে আমরা ভোরে ঘুম থেকে উঠেছিলাম।",
+"synonyms": ["sunrise", "daybreak", "morning"]
+},
+{
+"word": "deadline",
+"pos": "noun",
+"meaning_bn": "শেষ সময়সীমা",
+"definition": "the latest time for finishing something",
+"example_en": "The deadline for submission is next Friday.",
+"example_bn": "জমা দেওয়ার শেষ সময়সীমা আগামী শুক্রবার।",
+"synonyms": ["limit", "cutoff", "end"]
+},
+{
+"word": "deal",
+"pos": "verb",
+"meaning_bn": "চুক্তি করা",
+"definition": "to distribute or agree on something",
+"example_en": "They managed to deal with the problem well.",
+"example_bn": "তারা সমস্যাটি ভালোভাবে সামলাতে পেরেছিল।",
+"synonyms": ["handle", "manage", "trade"]
+},
+{
+"word": "debris",
+"pos": "noun",
+"meaning_bn": "ধ্বংসাবশেষ",
+"definition": "scattered pieces of waste or remains",
+"example_en": "Workers cleared the debris after the storm.",
+"example_bn": "ঝড়ের পর কর্মীরা ধ্বংসাবশেষ পরিষ্কার করেছিল।",
+"synonyms": ["rubble", "waste", "remains"]
+},
+{
+"word": "death",
+"pos": "noun",
+"meaning_bn": "মৃত্যু",
+"definition": "the end of life",
+"example_en": "The death of the leader shocked the nation.",
+"example_bn": "নেতার মৃত্যু জাতিকে হতবাক করেছিল।",
+"synonyms": ["demise", "end", "passing"]
+},
+{
+"word": "debate",
+"pos": "noun",
+"meaning_bn": "বিতর্ক",
+"definition": "a formal discussion on a topic",
+"example_en": "Students participated in a heated debate today.",
+"example_bn": "শিক্ষার্থীরা আজ একটি উত্তপ্ত বিতর্কে অংশ নিয়েছিল।",
+"synonyms": ["argument", "discussion", "dispute"]
+},
+{
+"word": "debt",
+"pos": "noun",
+"meaning_bn": "ঋণ",
+"definition": "money owed to someone",
+"example_en": "He is trying to pay off his student debt.",
+"example_bn": "সে তার শিক্ষা ঋণ পরিশোধ করার চেষ্টা করছে।",
+"synonyms": ["loan", "obligation", "liability"]
+},
+{
+"word": "decade",
+"pos": "noun",
+"meaning_bn": "দশক",
+"definition": "a period of ten years",
+"example_en": "Technology has changed greatly in the last decade.",
+"example_bn": "গত দশকে প্রযুক্তি অনেক পরিবর্তিত হয়েছে।",
+"synonyms": ["period", "era", "time"]
+},
+{
+"word": "decide",
+"pos": "verb",
+"meaning_bn": "সিদ্ধান্ত নেওয়া",
+"definition": "to come to a resolution",
+"example_en": "You need to decide which color to buy.",
+"example_bn": "তোমার কোন রঙটি কিনবে তা সিদ্ধান্ত নেওয়া দরকার।",
+"synonyms": ["choose", "resolve", "determine"]
 },
 {
 "word": "decision",
-"part_of_speech": "noun",
-"definition_en": "a choice that is made after thinking",
-"definition_bn": "চিন্তা করে যে সিদ্ধান্ত নেওয়া হয়",
-"example_en": "Making an important decision takes time.",
-"example_bn": "গুরুত্বপূর্ণ সিদ্ধান্ত নিতে সময় লাগে।",
-"synonyms": ["choice", "resolution", "verdict"],
-"level": "basic"
+"pos": "noun",
+"meaning_bn": "সিদ্ধান্ত",
+"definition": "a conclusion or resolution reached",
+"example_en": "Making the right decision is not always easy.",
+"example_bn": "সঠিক সিদ্ধান্ত নেওয়া সবসময় সহজ নয়।",
+"synonyms": ["choice", "verdict", "resolution"]
+},
+{
+"word": "declare",
+"pos": "verb",
+"meaning_bn": "ঘোষণা করা",
+"definition": "to state formally or explicitly",
+"example_en": "The government will declare a holiday soon.",
+"example_bn": "সরকার শীঘ্রই একটি ছুটির দিন ঘোষণা করবে।",
+"synonyms": ["announce", "state", "proclaim"]
+},
+{
+"word": "decline",
+"pos": "verb",
+"meaning_bn": "প্রত্যাখ্যান করা",
+"definition": "to politely refuse something",
+"example_en": "He had to decline the invitation due to work.",
+"example_bn": "কাজের কারণে তাকে আমন্ত্রণটি প্রত্যাখ্যান করতে হয়েছিল।",
+"synonyms": ["refuse", "reject", "deny"]
+},
+{
+"word": "decorate",
+"pos": "verb",
+"meaning_bn": "সাজানো",
+"definition": "to make something look more attractive",
+"example_en": "We decorate the house for the New Year.",
+"example_bn": "আমরা নববর্ষের জন্য বাড়িটি সাজাই।",
+"synonyms": ["adorn", "embellish", "beautify"]
+},
+{
+"word": "decrease",
+"pos": "verb",
+"meaning_bn": "কমানো",
+"definition": "to make something smaller in size",
+"example_en": "The company decided to decrease prices today.",
+"example_bn": "কোম্পানি আজ দাম কমানোর সিদ্ধান্ত নিয়েছে।",
+"synonyms": ["reduce", "lower", "diminish"]
+},
+{
+"word": "deep",
+"pos": "adjective",
+"meaning_bn": "গভীর",
+"definition": "extending far down from the top",
+"example_en": "The water in the lake is very deep here.",
+"example_bn": "এখানে হ্রদের পানি খুব গভীর।",
+"synonyms": ["profound", "intense", "thick"]
+},
+{
+"word": "defeat",
+"pos": "verb",
+"meaning_bn": "পরাজিত করা",
+"definition": "to win a victory over someone",
+"example_en": "Our team managed to defeat the opponents.",
+"example_bn": "আমাদের দল প্রতিপক্ষকে পরাজিত করতে পেরেছিল।",
+"synonyms": ["beat", "conquer", "overcome"]
+},
+{
+"word": "defend",
+"pos": "verb",
+"meaning_bn": "রক্ষা করা",
+"definition": "to protect from harm or danger",
+"example_en": "Soldiers defend the country from enemies.",
+"example_bn": "সৈন্যরা শত্রুদের থেকে দেশ রক্ষা করে।",
+"synonyms": ["protect", "guard", "shield"]
+},
+{
+"word": "define",
+"pos": "verb",
+"meaning_bn": "সংজ্ঞায়িত করা",
+"definition": "to state the meaning of a word",
+"example_en": "Can you define this difficult word for me?",
+"example_bn": "তুমি কি আমার জন্য এই কঠিন শব্দটির সংজ্ঞা দিতে পারো?",
+"synonyms": ["explain", "describe", "clarify"]
+},
+{
+"word": "degree",
+"pos": "noun",
+"meaning_bn": "ডিগ্রি",
+"definition": "an academic title given by university",
+"example_en": "She earned a degree in computer science.",
+"example_bn": "সে কম্পিউটার বিজ্ঞানে একটি ডিগ্রি অর্জন করেছিল।",
+"synonyms": ["qualification", "diploma", "certification"]
+},
+{
+"word": "delay",
+"pos": "verb",
+"meaning_bn": "বিলম্ব করা",
+"definition": "to make something late or slow",
+"example_en": "Bad weather may delay the flight departure.",
+"example_bn": "খারাপ আবহাওয়া ফ্লাইট ছাড়ায় বিলম্ব করতে পারে।",
+"synonyms": ["postpone", "defer", "slow"]
+},
+{
+"word": "delete",
+"pos": "verb",
+"meaning_bn": "মুছে ফেলা",
+"definition": "to remove or erase something",
+"example_en": "Please delete the old files from the folder.",
+"example_bn": "দয়া করে ফোল্ডার থেকে পুরনো ফাইলগুলো মুছে ফেলো।",
+"synonyms": ["remove", "erase", "cancel"]
+},
+{
+"word": "deliver",
+"pos": "verb",
+"meaning_bn": "ডেলিভারি করা",
+"definition": "to bring goods to a destination",
+"example_en": "The courier will deliver the package tomorrow.",
+"example_bn": "কুরিয়ার আগামীকাল প্যাকেজটি ডেলিভারি করবে।",
+"synonyms": ["send", "transport", "carry"]
+},
+{
+"word": "demand",
+"pos": "noun",
+"meaning_bn": "চাহিদা",
+"definition": "an insistent request for something",
+"example_en": "There is a high demand for skilled workers.",
+"example_bn": "দক্ষ কর্মীদের জন্য উচ্চ চাহিদা আছে।",
+"synonyms": ["request", "need", "requirement"]
+},
+{
+"word": "demo",
+"pos": "noun",
+"meaning_bn": "ডেমো",
+"definition": "a demonstration of a product",
+"example_en": "The sales team gave a live demo of software.",
+"example_bn": "বিক্রয় দল সফটওয়্যারটির একটি লাইভ ডেমো দিয়েছিল।",
+"synonyms": ["display", "show", "presentation"]
+},
+{
+"word": "deny",
+"pos": "verb",
+"meaning_bn": "অস্বীকার করা",
+"definition": "to state that something is not true",
+"example_en": "He did deny the allegations against him.",
+"example_bn": "সে তার বিরুদ্ধে আনা অভিযোগগুলো অস্বীকার করেছিল।",
+"synonyms": ["refuse", "reject", "contradict"]
+},
+{
+"word": "depart",
+"pos": "verb",
+"meaning_bn": "রওনা দেওয়া",
+"definition": "to leave especially to start a journey",
+"example_en": "The train will depart from platform two soon.",
+"example_bn": "ট্রেনটি শীঘ্রই দুই নম্বর প্ল্যাটফর্ম থেকে রওনা দেবে।",
+"synonyms": ["leave", "exit", "go"]
+},
+{
+"word": "depend",
+"pos": "verb",
+"meaning_bn": "নির্ভর করা",
+"definition": "to be controlled or influenced by",
+"example_en": "Success often depends on hard work and luck.",
+"example_bn": "সাফল্য প্রায়ই কঠোর পরিশ্রম ও ভাগ্যের ওপর নির্ভর করে।",
+"synonyms": ["rely", "count", "trust"]
+},
+{
+"word": "deposit",
+"pos": "verb",
+"meaning_bn": "জমা দেওয়া",
+"definition": "to put money into an account",
+"example_en": "You need to deposit cash at the bank.",
+"example_bn": "তোমার ব্যাংকে নগদ জমা দেওয়া দরকার।",
+"synonyms": ["save", "store", "place"]
+},
+{
+"word": "depth",
+"pos": "noun",
+"meaning_bn": "গভীরতা",
+"definition": "the distance from top to bottom",
+"example_en": "The depth of the pool is marked clearly.",
+"example_bn": "পুলের গভীরতা স্পষ্টভাবে চিহ্নিত করা আছে।",
+"synonyms": ["deepness", "height", "extent"]
+},
+{
+"word": "describe",
+"pos": "verb",
+"meaning_bn": "বর্ণনা করা",
+"definition": "to give an account in words",
+"example_en": "Can you describe the man you saw yesterday?",
+"example_bn": "তুমি কি গতকাল যে লোকটিকে দেখেছিলে তাকে বর্ণনা করতে পারো?",
+"synonyms": ["explain", "detail", "portray"]
+},
+{
+"word": "desert",
+"pos": "noun",
+"meaning_bn": "মরুভূমি",
+"definition": "a barren area of landscape",
+"example_en": "Camels are well adapted to live in desert.",
+"example_bn": "উট মরুভূমিতে বাস করার জন্য ভালোভাবে অভিযোজিত।",
+"synonyms": ["wasteland", "dunes", "wilderness"]
+},
+{
+"word": "design",
+"pos": "verb",
+"meaning_bn": "ডিজাইন করা",
+"definition": "to plan or conceive something",
+"example_en": "She will design a new logo for company.",
+"example_bn": "সে কোম্পানির জন্য একটি নতুন লোগো ডিজাইন করবে।",
+"synonyms": ["create", "plan", "draft"]
+},
+{
+"word": "destination",
+"pos": "noun",
+"meaning_bn": "গন্তব্য",
+"definition": "the place to which someone is going",
+"example_en": "We reached our destination late at night.",
+"example_bn": "আমরা রাত поздно আমাদের গন্তব্যে পৌঁছেছিলাম।",
+"synonyms": ["goal", "end", "target"]
+},
+{
+"word": "destroy",
+"pos": "verb",
+"meaning_bn": "ধ্বংস করা",
+"definition": "to put an end to existence",
+"example_en": "The fire did destroy the old wooden house.",
+"example_bn": "আগুনটি পুরনো কাঠের বাড়িটি ধ্বংস করেছিল।",
+"synonyms": ["ruin", "demolish", "wreck"]
+},
+{
+"word": "detail",
+"pos": "noun",
+"meaning_bn": "বিস্তারিত",
+"definition": "an individual fact or item",
+"example_en": "Please provide more detail about the project.",
+"example_bn": "দয়া করে প্রকল্প সম্পর্কে আরও বিস্তারিত দাও।",
+"synonyms": ["particular", "item", "feature"]
+},
+{
+"word": "detect",
+"pos": "verb",
+"meaning_bn": "শনাক্ত করা",
+"definition": "to discover or identify presence",
+"example_en": "Sensors can detect smoke in the building.",
+"example_bn": "সেন্সরগুলো ভবনে ধোঁয়া শনাক্ত করতে পারে।",
+"synonyms": ["find", "spot", "notice"]
+},
+{
+"word": "develop",
+"pos": "verb",
+"meaning_bn": "বিকাশ করা",
+"definition": "to grow or cause to grow",
+"example_en": "Companies develop new products every year.",
+"example_bn": "কোম্পানিগুলো প্রতি বছর নতুন পণ্য বিকাশ করে।",
+"synonyms": ["grow", "expand", "evolve"]
+},
+{
+"word": "device",
+"pos": "noun",
+"meaning_bn": "ডিভাইস",
+"definition": "a thing made for a particular purpose",
+"example_en": "This electronic device helps us measure time.",
+"example_bn": "এই ইলেকট্রনিক ডিভাইসটি আমাদের সময় মাপতে সাহায্য করে।",
+"synonyms": ["tool", "gadget", "instrument"]
+},
+{
+"word": "digest",
+"pos": "verb",
+"meaning_bn": "হজম করা",
+"definition": "to break down food in stomach",
+"example_en": "It takes time to digest heavy meals properly.",
+"example_bn": "ভারী খাবার ঠিকমতো হজম করতে সময় লাগে।",
+"synonyms": ["absorb", "assimilate", "process"]
+},
+{
+"word": "diet",
+"pos": "noun",
+"meaning_bn": "খাদ্যতালিকা",
+"definition": "the kinds of food consumed",
+"example_en": "A balanced diet is important for health.",
+"example_bn": "স্বাস্থ্যের জন্য একটি ভারসাম্যপূর্ণ খাদ্যতালিকা গুরুত্বপূর্ণ।",
+"synonyms": ["nutrition", "food", "regimen"]
+},
+{
+"word": "differ",
+"pos": "verb",
+"meaning_bn": "ভিন্ন হওয়া",
+"definition": "to be unlike or distinct",
+"example_en": "Opinions may differ among group members.",
+"example_bn": "দলের সদস্যদের মধ্যে মতামত ভিন্ন হতে পারে।",
+"synonyms": ["vary", "contrast", "diverge"]
+},
+{
+"word": "digital",
+"pos": "adjective",
+"meaning_bn": "ডিজিটাল",
+"definition": "relating to computer technology",
+"example_en": "We live in a digital age of information.",
+"example_bn": "আমরা তথ্যের একটি ডিজিটাল যুগে বাস করি।",
+"synonyms": ["electronic", "computerized", "virtual"]
+},
+{
+"word": "dinner",
+"pos": "noun",
+"meaning_bn": "রাতের খাবার",
+"definition": "the main meal of the day",
+"example_en": "We usually have dinner at eight pm.",
+"example_bn": "আমরা সাধারণত রাত আটটায় রাতের খাবার খাই।",
+"synonyms": ["meal", "supper", "feast"]
+},
+{
+"word": "direct",
+"pos": "verb",
+"meaning_bn": "পরিচালনা করা",
+"definition": "to control the operations of",
+"example_en": "She will direct the play at the theater.",
+"example_bn": "সে থিয়েটারে নাটকটি পরিচালনা করবে।",
+"synonyms": ["guide", "manage", "lead"]
+},
+{
+"word": "director",
+"pos": "noun",
+"meaning_bn": "পরিচালক",
+"definition": "a person who directs activities",
+"example_en": "The film director won an award yesterday.",
+"example_bn": "চলচ্চিত্র পরিচালক গতকাল একটি পুরস্কার জিতেছিলেন।",
+"synonyms": ["manager", "head", "chief"]
+},
+{
+"word": "divorce",
+"pos": "noun",
+"meaning_bn": "বিবাহবিচ্ছেদ",
+"definition": "the legal dissolution of a marriage",
+"example_en": "The divorce rate is rising in many countries.",
+"example_bn": "অনেক দেশে বিবাহবিচ্ছেদের হার বাড়ছে।",
+"synonyms": ["separation", "split", "breakup"]
+},
+{
+"word": "disagree",
+"pos": "verb",
+"meaning_bn": "একমত না হওয়া",
+"definition": "to have a different opinion",
+"example_en": "I respectfully disagree with your point of view.",
+"example_bn": "আমি শ্রদ্ধার সাথে তোমার মতামতের সাথে একমত নই।",
+"synonyms": ["dissent", "object", "oppose"]
+},
+{
+"word": "disappear",
+"pos": "verb",
+"meaning_bn": "অদৃশ্য হওয়া",
+"definition": "to cease to be visible",
+"example_en": "The sun will disappear behind the clouds soon.",
+"example_bn": "সূর্য শীঘ্রই মেঘের পেছনে অদৃশ্য হয়ে যাবে।",
+"synonyms": ["vanish", "fade", "hide"]
+},
+{
+"word": "disaster",
+"pos": "noun",
+"meaning_bn": "দুর্যোগ",
+"definition": "a sudden calamitous event",
+"example_en": "The flood was a natural disaster for villagers.",
+"example_bn": "বন্যা গ্রামবাসীদের জন্য একটি প্রাকৃতিক দুর্যোগ ছিল।",
+"synonyms": ["catastrophe", "tragedy", "crisis"]
+},
+{
+"word": "discipline",
+"pos": "noun",
+"meaning_bn": "শৃঙ্খলা",
+"definition": "the practice of training people to obey",
+"example_en": "Schools teach discipline to young students.",
+"example_bn": "স্কুলগুলো年輕 শিক্ষার্থীদের শৃঙ্খলা শেখায়।",
+"synonyms": ["order", "control", "training"]
+},
+{
+"word": "discount",
+"pos": "noun",
+"meaning_bn": "ছাড়",
+"definition": "a deduction from the usual cost",
+"example_en": "They offered a ten percent discount on shoes.",
+"example_bn": "তারা জুতার ওপর দশ শতাংশ ছাড় দিয়েছিল।",
+"synonyms": ["reduction", "deduction", "cut"]
+},
+{
+"word": "discover",
+"pos": "verb",
+"meaning_bn": "আবিষ্কার করা",
+"definition": "to find something unexpectedly",
+"example_en": "Scientists discover new species every year.",
+"example_bn": "বিজ্ঞানীরা প্রতি বছর নতুন প্রজাতি আবিষ্কার করেন।",
+"synonyms": ["find", "uncover", "detect"]
+},
+{
+"word": "discuss",
+"pos": "verb",
+"meaning_bn": "আলোচনা করা",
+"definition": "to talk about something",
+"example_en": "We need to discuss the plan with team.",
+"example_bn": "আমাদের দলের সাথে পরিকল্পনাটি আলোচনা করা দরকার।",
+"synonyms": ["talk", "debate", "consider"]
+},
+{
+"word": "disease",
+"pos": "noun",
+"meaning_bn": "রোগ",
+"definition": "a disorder of structure or function",
+"example_en": "Vaccines help prevent many dangerous diseases.",
+"example_bn": "টিকা অনেক বিপজ্জনক রোগ প্রতিরোধ করতে সাহায্য করে।",
+"synonyms": ["illness", "sickness", "ailment"]
+},
+{
+"word": "dispute",
+"pos": "noun",
+"meaning_bn": "বিতর্ক",
+"definition": "a disagreement or argument",
+"example_en": "The border dispute between nations continues.",
+"example_bn": "জাতিগুলোর মধ্যে সীমান্ত বিতর্ক চলছে।",
+"synonyms": ["conflict", "argument", "clash"]
+},
+{
+"word": "dismiss",
+"pos": "verb",
+"meaning_bn": "খারিজ করা",
+"definition": "to order or allow to leave",
+"example_en": "The teacher will dismiss the class early today.",
+"example_bn": "শিক্ষক আজ ক্লাসটি তাড়াতাড়ি খারিজ করবেন।",
+"synonyms": ["discharge", "release", "send"]
+},
+{
+"word": "display",
+"pos": "verb",
+"meaning_bn": "প্রদর্শন করা",
+"definition": "to show or exhibit",
+"example_en": "The museum will display ancient artifacts soon.",
+"example_bn": "জাদুঘর শীঘ্রই প্রাচীন নিদর্শন প্রদর্শন করবে।",
+"synonyms": ["show", "exhibit", "present"]
+},
+{
+"word": "distance",
+"pos": "noun",
+"meaning_bn": "দূরত্ব",
+"definition": "the amount of space between things",
+"example_en": "What is the distance from here to city?",
+"example_bn": "এখান থেকে শহর পর্যন্ত দূরত্ব কত?",
+"synonyms": ["space", "gap", "interval"]
+},
+{
+"word": "distinct",
+"pos": "adjective",
+"meaning_bn": "স্বতন্ত্র",
+"definition": "recognizably different in nature",
+"example_en": "There are two distinct types of this flower.",
+"example_bn": "এই ফুলের দুটি স্বতন্ত্র ধরন আছে।",
+"synonyms": ["different", "separate", "unique"]
+},
+{
+"word": "distribute",
+"pos": "verb",
+"meaning_bn": "বিতরণ করা",
+"definition": "to give shares of something",
+"example_en": "Volunteers distribute food to poor people.",
+"example_bn": "স্বেচ্ছাসেবকরা গরিব মানুষদের মধ্যে খাবার বিতরণ করে।",
+"synonyms": ["share", "allocate", "dispense"]
+},
+{
+"word": "district",
+"pos": "noun",
+"meaning_bn": "জেলা",
+"definition": "an area of a country or city",
+"example_en": "He lives in the northern district of country.",
+"example_bn": "সে দেশের উত্তরাঞ্চলীয় জেলায় বাস করে।",
+"synonyms": ["area", "region", "zone"]
+},
+{
+"word": "divide",
+"pos": "verb",
+"meaning_bn": "ভাগ করা",
+"definition": "to separate into parts",
+"example_en": "Divide the cake into equal pieces please.",
+"example_bn": "দয়া করে কেকটি সমান টুকরোয় ভাগ করো।",
+"synonyms": ["split", "separate", "share"]
+},
+{
+"word": "dream",
+"pos": "noun",
+"meaning_bn": "স্বপ্ন",
+"definition": "a series of thoughts during sleep",
+"example_en": "I had a strange dream last night.",
+"example_bn": "আমি গত রাতে একটি অদ্ভুত স্বপ্ন দেখেছিলাম।",
+"synonyms": ["vision", "fantasy", "hope"]
+},
+{
+"word": "doctor",
+"pos": "noun",
+"meaning_bn": "ডাক্তার",
+"definition": "a qualified practitioner of medicine",
+"example_en": "You should see a doctor for this fever.",
+"example_bn": "এই জ্বরের জন্য তোমার একজন ডাক্তার দেখানো উচিত।",
+"synonyms": ["physician", "medic", "surgeon"]
+},
+{
+"word": "document",
+"pos": "noun",
+"meaning_bn": "নথি",
+"definition": "a piece of written information",
+"example_en": "Please sign the document at the bottom.",
+"example_bn": "দয়া করে নথির নিচে স্বাক্ষর করো।",
+"synonyms": ["paper", "record", "file"]
+},
+{
+"word": "dolphin",
+"pos": "noun",
+"meaning_bn": "ডলফিন",
+"definition": "a small cetacean with a beaklike snout",
+"example_en": "The dolphin jumped out of the water happily.",
+"example_bn": "ডলফিনটি খুশি হয়ে পানি থেকে লাফ দিয়েছিল।",
+"synonyms": ["mammal", "creature", "fish"]
+},
+{
+"word": "dollar",
+"pos": "noun",
+"meaning_bn": "ডলার",
+"definition": "the basic monetary unit of US",
+"example_en": "The price is fifty dollars for this item.",
+"example_bn": "এই আইটেমটির দাম পঞ্চাশ ডলার।",
+"synonyms": ["currency", "cash", "money"]
+},
+{
+"word": "domain",
+"pos": "noun",
+"meaning_bn": "ডোমেইন",
+"definition": "a specified sphere of activity",
+"example_en": "This website domain expires next month.",
+"example_bn": "এই ওয়েবসাইট ডোমেইনটি আগামী মাসে শেষ হয়ে যাবে।",
+"synonyms": ["area", "field", "realm"]
+},
+{
+"word": "domestic",
+"pos": "adjective",
+"meaning_bn": "ঘরোয়া",
+"definition": "relating to the running of a home",
+"example_en": "Domestic chores take a lot of time daily.",
+"example_bn": "ঘরোয়া কাজে প্রতিদিন অনেক সময় লাগে।",
+"synonyms": ["home", "household", "internal"]
+},
+{
+"word": "dominate",
+"pos": "verb",
+"meaning_bn": "প্রাধান্য দেওয়া",
+"definition": "to have power and influence over",
+"example_en": "One team seemed to dominate the game.",
+"example_bn": "একটি দল খেলাটিতে প্রাধান্য দেওয়া বলে মনে হয়েছিল।",
+"synonyms": ["rule", "control", "lead"]
+},
+{
+"word": "doorway",
+"pos": "noun",
+"meaning_bn": "দরজা",
+"definition": "the opening for a door",
+"example_en": "He stood in the doorway waiting for us.",
+"example_bn": "সে আমাদের জন্য দরজায় দাঁড়িয়ে ছিল।",
+"synonyms": ["entrance", "gate", "opening"]
+},
+{
+"word": "dose",
+"pos": "noun",
+"meaning_bn": "মাত্রা",
+"definition": "a quantity of medicine taken",
+"example_en": "Take the correct dose of medicine after food.",
+"example_bn": "খাবারের পর ওষুধের সঠিক মাত্রা নাও।",
+"synonyms": ["amount", "portion", "quantity"]
+},
+{
+"word": "double",
+"pos": "adjective",
+"meaning_bn": "দ্বিগুণ",
+"definition": "twice as much or many",
+"example_en": "The population will double in ten years.",
+"example_bn": "জনসংখ্যা দশ বছরে দ্বিগুণ হবে।",
+"synonyms": ["twice", "dual", "paired"]
+},
+{
+"word": "doubt",
+"pos": "noun",
+"meaning_bn": "সন্দেহ",
+"definition": "a feeling of uncertainty",
+"example_en": "There is no doubt about his honesty.",
+"example_bn": "তার সততা সম্পর্কে কোনো সন্দেহ নেই।",
+"synonyms": ["uncertainty", "question", "suspicion"]
+},
+{
+"word": "download",
+"pos": "verb",
+"meaning_bn": "ডাউনলোড করা",
+"definition": "to copy data to a local device",
+"example_en": "You can download the file from the website.",
+"example_bn": "তুমি ওয়েবসাইট থেকে ফাইলটি ডাউনলোড করতে পারো।",
+"synonyms": ["save", "transfer", "copy"]
+},
+{
+"word": "dozen",
+"pos": "noun",
+"meaning_bn": "ডজন",
+"definition": "a group of twelve things",
+"example_en": "She bought a dozen eggs from market.",
+"example_bn": "সে বাজার থেকে একটি ডজন ডিম কিনেছিল।",
+"synonyms": ["twelve", "batch", "set"]
+},
+{
+"word": "draft",
+"pos": "noun",
+"meaning_bn": "খসড়া",
+"definition": "a preliminary version of a text",
+"example_en": "Please review the first draft of report.",
+"example_bn": "দয়া করে রিপোর্টের প্রথম খসড়াটি পর্যালোচনা করো।",
+"synonyms": ["outline", "sketch", "version"]
+},
+{
+"word": "drag",
+"pos": "verb",
+"meaning_bn": "টানা",
+"definition": "to pull along with effort",
+"example_en": "Do not drag the heavy chair on floor.",
+"example_bn": "মেঝেতে ভারী চেয়ারটি টানো না।",
+"synonyms": ["pull", "haul", "draw"]
+},
+{
+"word": "drain",
+"pos": "verb",
+"meaning_bn": "নিষ্কাশন করা",
+"definition": "to draw off liquid",
+"example_en": "You need to drain the water from pot.",
+"example_bn": "তোমার হাঁড়ি থেকে পানি নিষ্কাশন করা দরকার।",
+"synonyms": ["empty", "pour", "remove"]
+},
+{
+"word": "draw",
+"pos": "verb",
+"meaning_bn": "আঁকা",
+"definition": "to produce a picture with pencil",
+"example_en": "Children love to draw pictures on paper.",
+"example_bn": "বাচ্চারা কাগজে ছবি আঁকতে পছন্দ করে।",
+"synonyms": ["sketch", "paint", "design"]
+},
+{
+"word": "dress",
+"pos": "noun",
+"meaning_bn": "পোশাক",
+"definition": "a garment worn by women or girls",
+"example_en": "She wore a beautiful red dress to the party.",
+"example_bn": "সে পার্টিতে একটি সুন্দর লাল পোশাক পরেছিল।",
+"synonyms": ["gown", "outfit", "attire"]
 }
 ]
