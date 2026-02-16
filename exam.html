@@ -34,14 +34,14 @@
       <div class="mode-grid">
         <div class="mode-card" id="mode-learned">
           <div class="mode-icon">🎯</div>
-          <h3>Practice What I Learned</h3>
-          <p>Quiz yourself using only the words you've marked as learned</p>
+          <h3>Practice Learned</h3>
+          <p>Quiz from your learned words only</p>
         </div>
         
         <div class="mode-card" id="mode-full">
           <div class="mode-icon">🌐</div>
-          <h3>Full Vocabulary Exam</h3>
-          <p>Random 10 questions from the complete word database</p>
+          <h3>Full Exam (50+ Words)</h3>
+          <p>50+ random words from full database (no repeats)</p>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
         <div class="corner corner-bl"></div>
         <div class="corner corner-br"></div>
 
-        <div class="question-counter" id="question-counter">Question 1 / 10</div>
+        <div class="question-counter" id="question-counter">Question 1 / 50</div>
 
         <div class="quiz-word">
           <h2 id="quiz-word">Word</h2>
@@ -79,7 +79,7 @@
         <div class="score-display">
           <div class="score-circle" id="score-circle">
             <div class="score-number" id="score-number">0</div>
-            <div class="score-total" id="score-total">/10</div>
+            <div class="score-total" id="score-total">/50</div>
           </div>
           
           <div class="accuracy" id="accuracy">0% Accuracy</div>
@@ -99,6 +99,12 @@
             <div class="stat-value" id="percentage" style="color: var(--neon-cyan);">0%</div>
             <div class="stat-label">Score</div>
           </div>
+        </div>
+
+        <!-- Wrong Words List -->
+        <div class="wrong-words-section" id="wrong-words-section">
+          <h3 class="wrong-words-title">📋 Words to Review</h3>
+          <div class="wrong-words-list" id="wrong-words-list"></div>
         </div>
 
         <div class="btn-container">
