@@ -6,7 +6,6 @@
   <title>Vocab Master</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* Index Page Specific Styles */
     .hero-container {
       display: flex;
       flex-direction: column;
@@ -19,7 +18,7 @@
 
     .hero-logo {
       font-family: var(--font-hud);
-      font-size: 3rem;
+      font-size: clamp(2rem, 10vw, 4rem);
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 8px;
@@ -28,7 +27,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-shadow: 0 0 40px rgba(0, 240, 255, 0.5);
       animation: gradient-shift 3s ease infinite, float 6s ease-in-out infinite;
       margin-bottom: 1rem;
     }
@@ -44,7 +42,6 @@
     }
 
     .hero-tagline {
-      font-family: var(--font-body);
       font-size: 1.1rem;
       color: rgba(224, 230, 237, 0.7);
       margin-bottom: 3rem;
@@ -53,14 +50,8 @@
     }
 
     @keyframes fade-in-up {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .mode-grid-index {
@@ -103,37 +94,23 @@
     .mode-card-index:hover {
       border-color: var(--neon-cyan);
       transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 20px 40px rgba(0, 240, 255, 0.2), var(--glow-cyan);
+      box-shadow: 0 20px 40px rgba(0, 240, 255, 0.2);
     }
 
     .mode-card-index.learn:hover {
       border-color: var(--neon-green);
-      box-shadow: 0 20px 40px rgba(5, 255, 161, 0.2), var(--glow-green);
+      box-shadow: 0 20px 40px rgba(5, 255, 161, 0.2);
     }
 
     .mode-card-index.exam:hover {
       border-color: var(--neon-pink);
-      box-shadow: 0 20px 40px rgba(255, 42, 109, 0.2), var(--glow-pink);
+      box-shadow: 0 20px 40px rgba(255, 42, 109, 0.2);
     }
 
     .mode-icon-index {
       font-size: 3.5rem;
       margin-bottom: 1rem;
       display: block;
-      animation: bounce 2s ease infinite;
-    }
-
-    .mode-card-index.learn .mode-icon-index {
-      animation-delay: 0s;
-    }
-
-    .mode-card-index.exam .mode-icon-index {
-      animation-delay: 0.5s;
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
     }
 
     .mode-card-index h3 {
@@ -211,7 +188,6 @@
       margin-top: 0.3rem;
     }
 
-    /* Particle effect */
     .particles {
       position: fixed;
       top: 0;
@@ -251,38 +227,21 @@
     }
 
     @media (min-width: 600px) {
-      .hero-logo {
-        font-size: 5rem;
-        letter-spacing: 12px;
-      }
-
-      .hero-tagline {
-        font-size: 1.3rem;
-      }
-
       .mode-grid-index {
         grid-template-columns: 1fr 1fr;
         max-width: 700px;
-      }
-
-      .mode-card-index {
-        padding: 2.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Background Effects -->
   <div class="bg-grid"></div>
   <div class="bg-radial"></div>
   <div class="scanlines"></div>
   <div class="scanline-bar"></div>
-  
-  <!-- Floating Particles -->
   <div class="particles" id="particles"></div>
 
   <div class="container">
-    <!-- Header -->
     <header>
       <div class="logo">VOCAB MASTER</div>
       <nav class="nav-links">
@@ -292,12 +251,10 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
     <div class="hero-container">
       <h1 class="hero-logo">VOCAB MASTER</h1>
       <p class="hero-tagline">Master English Vocabulary • Bangla Translation</p>
 
-      <!-- Mode Selection -->
       <div class="mode-grid-index">
         <a href="learn.html" class="mode-card-index learn">
           <div class="corner-accent ca-tl"></div>
@@ -316,14 +273,13 @@
         </a>
       </div>
 
-      <!-- Stats -->
       <div class="stats-bar">
         <div class="stat-item">
           <div class="stat-number" id="total-words">0</div>
           <div class="stat-label">Total Words</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" id="learned-words" style="color: var(--neon-green); text-shadow: var(--glow-green);">0</div>
+          <div class="stat-number" id="learned-words" style="color: var(--neon-green);">0</div>
           <div class="stat-label">Learned</div>
         </div>
       </div>
@@ -332,7 +288,6 @@
 
   <script src="js/app.js"></script>
   <script>
-    // Create floating particles
     function createParticles() {
       const container = document.getElementById('particles');
       for (let i = 0; i < 20; i++) {
@@ -341,30 +296,19 @@
         particle.style.left = Math.random() * 100 + '%';
         particle.style.animationDelay = Math.random() * 10 + 's';
         particle.style.animationDuration = (8 + Math.random() * 6) + 's';
-        
-        // Random colors
         const colors = ['var(--neon-cyan)', 'var(--neon-pink)', 'var(--neon-green)'];
         particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-        
         container.appendChild(particle);
       }
     }
 
-    // Update stats when app loads
     function updateStats() {
-      if (App.words.length > 0) {
-        document.getElementById('total-words').textContent = App.words.length;
-      }
-      if (App.learnedWords.length > 0) {
-        document.getElementById('learned-words').textContent = App.learnedWords.length;
-      }
+      document.getElementById('total-words').textContent = App.words.length;
+      document.getElementById('learned-words').textContent = App.learnedWords.length;
     }
 
-    // Initialize
     document.addEventListener('DOMContentLoaded', () => {
       createParticles();
-      
-      // Wait for App to load
       const checkApp = setInterval(() => {
         if (App.words.length > 0) {
           updateStats();
