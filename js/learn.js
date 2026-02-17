@@ -3,13 +3,33 @@
  */
 
 const LearnPage = {
-  currentFilter: 'all', // 'all' or 'learned'
+  currentFilter: 'all',
   wordList: [],
+  isReady: false,
   
   init() {
+    // Check if App is loaded
     if (App.words.length === 0) {
-      App.init().then(() => this.setup());
+      console.log('Waiting for App to load...');
+      // Wait for App.init to complete
+      const checkInterval = setInterval(() => {
+        if (App.words.length > 0) {
+          clearInterval(checkInterval);
+          this.isReady = true;
+          this.setup();
+        }
+      }, 100);
+      
+      // Timeout after 10 seconds
+      setTimeout(() => {
+        clearInterval(checkInterval);
+        if (!this.isReady) {
+          console.error('Failed to load words');
+          this.showError();
+        }
+      }, 10000);
     } else {
+      this.isReady = true;
       this.setup();
     }
   },
@@ -70,12 +90,20 @@ const LearnPage = {
     });
     
     // Filter buttons
-    this.elements.filterAll.addEventListener('click', () => this.applyFilter('all'));
-    this.elements.filterLearned.addEventListener('click', () => this.applyFilter('learned'));
+    if (this.elements.filterAll) {
+      this.elements.filterAll.addEventListener('click', () => this.applyFilter('all'));
+    }
+    if (this.elements.filterLearned) {
+      this.elements.filterLearned.addEventListener('click', () => this.applyFilter('learned'));
+    }
     
     // Word list buttons
-    this.elements.wordCount.addEventListener('click', () => this.showWordList());
-    this.elements.learnedCount.addEventListener('click', () => this.showLearnedList());
+    if (this.elements.wordCount) {
+      this.elements.wordCount.addEventListener('click', () => this.showWordList());
+    }
+    if (this.elements.learnedCount) {
+      this.elements.learnedCount.addEventListener('click', () => this.showLearnedList());
+    }
     
     // Modal close
     this.elements.modalClose.forEach(btn => {
@@ -106,50 +134,76 @@ const LearnPage = {
     App.currentIndex = 0;
     
     // Update button states
-    if (filter === 'all') {
-      this.elements.filterAll.classList.add('active');
-      this.elements.filterLearned.classList.remove('active');
-      this.wordList = [...App.words];
+    if (this.elements.filterAll && this.elements.filterLearned) {
+      if (filter === 'all') {
+        this.elements.filterAll.classList.add('active');
+        this.elements.filterLearned.classList.remove('active');
+        this.wordList = [...App.words];
+      } else {
+        this.elements.filterAll.classList.remove('active');
+        this.elements.filterLearned.classList.add('active');
+        this.wordList = App.getLearnedWordsData();
+      }
     } else {
-      this.elements.filterAll.classList.remove('active');
-      this.elements.filterLearned.classList.add('active');
-      this.wordList = App.getLearnedWordsData();
+      // Fallback if filter buttons don't exist
+      this.wordList = filter === 'all' ? [...App.words] : App.getLearnedWordsData();
     }
     
     // Update counts
-    this.elements.wordCount.querySelector('.count').textContent = App.words.length;
-    this.elements.learnedCount.querySelector('.count').textContent = App.learnedWords.length;
+    if (this.elements.wordCount) {
+      const countEl = this.elements.wordCount.querySelector('.count');
+      if (countEl) countEl.textContent = App.words.length;
+    }
+    if (this.elements.learnedCount) {
+      const countEl = this.elements.learnedCount.querySelector('.count');
+      if (countEl) countEl.textContent = App.learnedWords.length;
+    }
     
     this.render();
   },
   
   render() {
-    if (this.wordList.length === 0) {
+    if (!this.wordList || this.wordList.length === 0) {
       this.showEmpty();
       return;
     }
     
+    // Ensure index is valid
+    if (App.currentIndex >= this.wordList.length) {
+      App.currentIndex = 0;
+    }
+    
     const word = this.wordList[App.currentIndex];
+    if (!word) {
+      this.showEmpty();
+      return;
+    }
+    
     this.displayWord(word);
     this.updateNavigation();
   },
   
   displayWord(word) {
-    this.elements.wordMain.textContent = word.word;
-    this.elements.wordPos.textContent = word.pos || 'unknown';
-    this.elements.wordBangla.textContent = word.meaning_bn;
-    this.elements.definition.textContent = word.definition || 'No definition available.';
-    this.elements.example.textContent = word.example_en || 'No example available.';
-    this.elements.exampleBn.textContent = word.example_bn || '';
+    if (!word) return;
+    
+    // Safely set text content
+    if (this.elements.wordMain) this.elements.wordMain.textContent = word.word || 'N/A';
+    if (this.elements.wordPos) this.elements.wordPos.textContent = word.pos || 'unknown';
+    if (this.elements.wordBangla) this.elements.wordBangla.textContent = word.meaning_bn || '-';
+    if (this.elements.definition) this.elements.definition.textContent = word.definition || 'No definition available.';
+    if (this.elements.example) this.elements.example.textContent = word.example_en || 'No example available.';
+    if (this.elements.exampleBn) this.elements.exampleBn.textContent = word.example_bn || '';
     
     this.renderSynonyms(word.synonyms);
     this.updateLearnedButton(word.word);
     
-    this.elements.currentIndex.textContent = App.currentIndex + 1;
-    this.elements.totalWords.textContent = this.wordList.length;
+    if (this.elements.currentIndex) this.elements.currentIndex.textContent = App.currentIndex + 1;
+    if (this.elements.totalWords) this.elements.totalWords.textContent = this.wordList.length;
   },
   
   renderSynonyms(synonyms) {
+    if (!this.elements.synonyms) return;
+    
     this.elements.synonyms.innerHTML = '';
     
     if (!synonyms || synonyms.length === 0) {
@@ -166,6 +220,8 @@ const LearnPage = {
   },
   
   updateLearnedButton(word) {
+    if (!this.elements.learnedBtn || !this.elements.learnedStatus) return;
+    
     const isLearned = App.isLearned(word);
     const btn = this.elements.learnedBtn;
     
@@ -185,8 +241,12 @@ const LearnPage = {
   },
   
   updateNavigation() {
-    this.elements.prevBtn.disabled = App.currentIndex === 0;
-    this.elements.nextBtn.disabled = App.currentIndex >= this.wordList.length - 1;
+    if (this.elements.prevBtn) {
+      this.elements.prevBtn.disabled = App.currentIndex === 0;
+    }
+    if (this.elements.nextBtn) {
+      this.elements.nextBtn.disabled = App.currentIndex >= this.wordList.length - 1;
+    }
   },
   
   prevWord() {
@@ -204,7 +264,11 @@ const LearnPage = {
   },
   
   toggleLearned() {
+    if (!this.wordList || this.wordList.length === 0) return;
+    
     const word = this.wordList[App.currentIndex];
+    if (!word) return;
+    
     const isLearned = App.isLearned(word.word);
     
     if (isLearned) {
@@ -225,27 +289,40 @@ const LearnPage = {
     }
     
     // Update counts
-    this.elements.wordCount.querySelector('.count').textContent = App.words.length;
-    this.elements.learnedCount.querySelector('.count').textContent = App.learnedWords.length;
+    if (this.elements.wordCount) {
+      const countEl = this.elements.wordCount.querySelector('.count');
+      if (countEl) countEl.textContent = App.words.length;
+    }
+    if (this.elements.learnedCount) {
+      const countEl = this.elements.learnedCount.querySelector('.count');
+      if (countEl) countEl.textContent = App.learnedWords.length;
+    }
     
     App.updateHUD();
   },
   
   showEmpty() {
-    this.elements.wordMain.textContent = 'No Words';
-    this.elements.wordPos.textContent = '-';
-    this.elements.wordBangla.textContent = '-';
-    this.elements.definition.textContent = 'No words available in this filter.';
-    this.elements.example.textContent = '-';
-    this.elements.exampleBn.textContent = '-';
-    this.elements.synonyms.innerHTML = '<span class="synonym-tag">-</span>';
-    this.elements.currentIndex.textContent = '0';
-    this.elements.totalWords.textContent = '0';
-    this.elements.prevBtn.disabled = true;
-    this.elements.nextBtn.disabled = true;
+    if (this.elements.wordMain) this.elements.wordMain.textContent = 'No Words';
+    if (this.elements.wordPos) this.elements.wordPos.textContent = '-';
+    if (this.elements.wordBangla) this.elements.wordBangla.textContent = '-';
+    if (this.elements.definition) this.elements.definition.textContent = 'No words available in this filter.';
+    if (this.elements.example) this.elements.example.textContent = '-';
+    if (this.elements.exampleBn) this.elements.exampleBn.textContent = '-';
+    if (this.elements.synonyms) this.elements.synonyms.innerHTML = '<span class="synonym-tag">-</span>';
+    if (this.elements.currentIndex) this.elements.currentIndex.textContent = '0';
+    if (this.elements.totalWords) this.elements.totalWords.textContent = '0';
+    if (this.elements.prevBtn) this.elements.prevBtn.disabled = true;
+    if (this.elements.nextBtn) this.elements.nextBtn.disabled = true;
+  },
+  
+  showError() {
+    if (this.elements.wordMain) this.elements.wordMain.textContent = 'Error';
+    if (this.elements.definition) this.elements.definition.textContent = 'Failed to load words. Please refresh the page.';
   },
   
   showWordList() {
+    if (!this.elements.wordListContainer) return;
+    
     this.elements.wordListContainer.innerHTML = '';
     
     App.words.forEach((word, index) => {
@@ -275,6 +352,8 @@ const LearnPage = {
   },
   
   showLearnedList() {
+    if (!this.elements.learnedListContainer) return;
+    
     this.elements.learnedListContainer.innerHTML = '';
     
     const learnedWords = App.getLearnedWordsData();
@@ -307,11 +386,15 @@ const LearnPage = {
   },
   
   closeModals() {
-    this.elements.wordListModal.classList.remove('show');
-    this.elements.learnedListModal.classList.remove('show');
+    if (this.elements.wordListModal) this.elements.wordListModal.classList.remove('show');
+    if (this.elements.learnedListModal) this.elements.learnedListModal.classList.remove('show');
   }
 };
 
+// Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  LearnPage.init();
+  // Small delay to ensure App is initialized
+  setTimeout(() => {
+    LearnPage.init();
+  }, 100);
 });
