@@ -6,57 +6,123 @@ const App = {
   words: [],
   learnedWords: [],
   currentIndex: 0,
-  usedExamWords: [], // Track used words for exam rotation
+  usedExamWords: [],
+  isLoaded: false,
   
-  init() {
+  async init() {
     this.loadLearnedWords();
     this.loadUsedExamWords();
-    return this.loadWords();
+    await this.loadWords();
+    this.isLoaded = true;
+    this.updateHUD();
+    console.log('App initialized with', this.words.length, 'words');
+    return this.isLoaded;
   },
   
   async loadWords() {
     try {
-      const response = await fetch('word.json');
-      if (!response.ok) {
-        throw new Error('Failed to load word.json');
+      // Try multiple possible paths for word.json
+      const possiblePaths = ['word.json', './word.json', '../word.json', '/word.json'];
+      let response = null;
+      
+      for (const path of possiblePaths) {
+        try {
+          response = await fetch(path);
+          if (response.ok) {
+            console.log('Loaded word.json from:', path);
+            break;
+          }
+        } catch (e) {
+          continue;
+        }
       }
+      
+      if (!response || !response.ok) {
+        throw new Error('Failed to load word.json from any path');
+      }
+      
       this.words = await response.json();
-      console.log('Loaded', this.words.length, 'words');
+      
+      // Validate words data
+      if (!Array.isArray(this.words) || this.words.length === 0) {
+        throw new Error('Invalid word data');
+      }
+      
+      // Ensure each word has required fields
+      this.words = this.words.map(w => ({
+        word: w.word || 'unknown',
+        pos: w.pos || 'unknown',
+        meaning_bn: w.meaning_bn || '-',
+        definition: w.definition || 'No definition',
+        example_en: w.example_en || 'No example',
+        example_bn: w.example_bn || '',
+        synonyms: w.synonyms || []
+      }));
+      
       return true;
     } catch (error) {
       console.error('Error loading words:', error);
+      // Set dummy data for testing
+      this.words = [
+        {
+          word: "abandon",
+          pos: "verb",
+          meaning_bn: "পরিত্যাগ করা",
+          definition: "To leave behind, to desert",
+          example_en: "The crew had to abandon the sinking ship.",
+          example_bn: "দলকে ডুবে যাওয়া জাহাজ পরিত্যাগ করতে হয়েছিল।",
+          synonyms: ["desert", "forsake"]
+        },
+        {
+          word: "ability",
+          pos: "noun",
+          meaning_bn: "সামর্থ্য",
+          definition: "The power to do something",
+          example_en: "She has the ability to solve problems.",
+          example_bn: "তার সমস্যা সমাধান করার সামর্থ্য আছে।",
+          synonyms: ["skill", "talent"]
+        }
+      ];
       return false;
     }
   },
   
   loadLearnedWords() {
-    const stored = localStorage.getItem('learned_words');
-    if (stored) {
-      try {
+    try {
+      const stored = localStorage.getItem('learned_words');
+      if (stored) {
         this.learnedWords = JSON.parse(stored);
-      } catch (e) {
-        this.learnedWords = [];
       }
+    } catch (e) {
+      this.learnedWords = [];
     }
   },
   
   saveLearnedWords() {
-    localStorage.setItem('learned_words', JSON.stringify(this.learnedWords));
+    try {
+      localStorage.setItem('learned_words', JSON.stringify(this.learnedWords));
+    } catch (e) {
+      console.error('Failed to save learned words:', e);
+    }
   },
   
   loadUsedExamWords() {
-    const stored = localStorage.getItem('used_exam_words');
-    if (stored) {
-      try {
+    try {
+      const stored = localStorage.getItem('used_exam_words');
+      if (stored) {
         this.usedExamWords = JSON.parse(stored);
-      } catch (e) {
-        this.usedExamWords = [];
       }
+    } catch (e) {
+      this.usedExamWords = [];
     }
   },
   
   saveUsedExamWords() {
-    localStorage.setItem('used_exam_words', JSON.stringify(this.usedExamWords));
+    try {
+      localStorage.setItem('used_exam_words', JSON.stringify(this.usedExamWords));
+    } catch (e) {
+      console.error('Failed to save used exam words:', e);
+    }
   },
   
   isLearned(word) {
@@ -90,7 +156,6 @@ const App = {
     return this.words.filter(w => !this.isLearned(w.word));
   },
   
-  // Get exam words - 50+ words, no repetition until all used
   getExamWords(count = 50) {
     // If all words used, reset
     if (this.usedExamWords.length >= this.words.length - 5) {
@@ -138,8 +203,5 @@ const App = {
   }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  App.init().then(() => {
-    App.updateHUD();
-  });
-});
+// Initialize App immediately
+App.init();
