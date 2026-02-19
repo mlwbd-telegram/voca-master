@@ -3,105 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vocab Master - Learn</title>
+  <title>Learn - Vocab Master</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="bg-radial"></div>
-  <div class="scanlines"></div>
-  <div class="scanline-bar"></div>
+  <!-- Background -->
+  <div class="bg-mesh"></div>
+  <div class="grid-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- Loading -->
+  <div class="loading-screen" id="loading">
+    <div class="loader"></div>
+    <div class="loading-text">LOADING</div>
+  </div>
 
   <div class="container">
-    <header>
-      <div class="logo">VOCAB MASTER</div>
-      <nav class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="learn.html" class="nav-link active">Learn</a>
-        <a href="exam.html" class="nav-link">Exam</a>
-      </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">VOCAB</div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-item"><span>Home</span></a>
+        <a href="learn.html" class="nav-item active"><span>Learn</span></a>
+        <a href="exam.html" class="nav-item"><span>Exam</span></a>
+      </div>
+    </nav>
 
-    <!-- Filter Buttons -->
-    <div class="filter-hud">
-      <button class="filter-btn active" id="filter-all">
-        📋 All Words <span class="count" id="word-count">0</span>
+    <!-- Filter Tabs -->
+    <div class="filter-tabs">
+      <button class="filter-tab active" id="tab-all" onclick="LearnPage.setFilter('all')">
+        <span class="icon">📋</span>
+        <span class="text">All</span>
+        <span class="badge" id="count-all">0</span>
       </button>
-      <button class="filter-btn" id="filter-learned">
-        ✓ Learned <span class="count" id="learned-count-btn">0</span>
+      <button class="filter-tab" id="tab-learned" onclick="LearnPage.setFilter('learned')">
+        <span class="icon">✓</span>
+        <span class="text">Learned</span>
+        <span class="badge" id="count-learned">0</span>
       </button>
     </div>
 
-    <div class="progress-hud">
-      <span class="progress-text">Word <span id="current-index">1</span> / <span id="total-words">0</span></span>
-      <span class="learned-count">Learned: <span id="learned-counter">0</span></span>
-      <span id="learned-status" style="color: var(--neon-cyan);">NEW</span>
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-label">Word</span>
+        <span class="stat-value"><span id="current-index">1</span>/<span id="total-count">0</span></span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-label">Learned</span>
+        <span class="stat-value learned" id="learned-counter">0</span>
+      </div>
+      <div class="stat-divider"></div>
+      <span class="status-badge" id="status-badge">NEW</span>
     </div>
 
-    <div class="hud-panel">
-      <div class="corner corner-tl"></div>
-      <div class="corner corner-tr"></div>
-      <div class="corner corner-bl"></div>
-      <div class="corner corner-br"></div>
-
-      <div class="word-display">
+    <!-- Main Card -->
+    <div class="main-card">
+      <div class="card-glow"></div>
+      
+      <!-- Word Section -->
+      <div class="word-section">
         <h1 class="word-main" id="word-main">Loading...</h1>
         <span class="word-pos" id="word-pos">...</span>
         <div class="word-bangla" id="word-bangla">...</div>
       </div>
 
-      <div class="info-grid">
-        <div class="info-section">
-          <div class="info-label">Definition</div>
-          <div class="info-content" id="definition">Loading...</div>
+      <!-- Info List -->
+      <div class="info-list">
+        <div class="info-item">
+          <div class="info-header">
+            <span class="info-dot"></span>
+            <span class="info-label">Definition</span>
+          </div>
+          <p class="info-text" id="definition">Loading definition...</p>
         </div>
 
-        <div class="info-section">
-          <div class="info-label">Example</div>
-          <div class="info-content" id="example">Loading...</div>
+        <div class="info-item">
+          <div class="info-header">
+            <span class="info-dot"></span>
+            <span class="info-label">Example</span>
+          </div>
+          <p class="info-text" id="example">Loading example...</p>
         </div>
 
-        <div class="info-section bangla-section">
-          <div class="info-label">উদাহরণ (Bangla Example)</div>
-          <div class="info-content bangla" id="example-bn">...</div>
+        <div class="info-item">
+          <div class="info-header">
+            <span class="info-dot pink"></span>
+            <span class="info-label">উদাহরণ</span>
+          </div>
+          <p class="info-text bangla" id="example-bn">...</p>
         </div>
 
-        <div class="info-section">
-          <div class="info-label">Synonyms</div>
-          <div class="synonyms-container" id="synonyms">
-            <span class="synonym-tag">Loading...</span>
+        <div class="info-item">
+          <div class="info-header">
+            <span class="info-dot"></span>
+            <span class="info-label">Synonyms</span>
+          </div>
+          <div class="synonyms-row" id="synonyms">
+            <span class="syn-tag">Loading...</span>
           </div>
         </div>
       </div>
 
-      <div class="btn-container">
-        <button class="btn nav-btn" id="prev-btn" title="Previous">◀</button>
-        <button class="btn btn-success" id="learned-btn">+ MARK AS LEARNED</button>
-        <button class="btn btn-primary" id="exam-btn">GO TO EXAM</button>
-        <button class="btn nav-btn" id="next-btn" title="Next">▶</button>
+      <!-- Controls -->
+      <div class="controls">
+        <button class="nav-circle" id="prev-btn" onclick="LearnPage.prev()">◀</button>
+        <button class="action-btn learn" id="action-btn" onclick="LearnPage.toggleLearned()">
+          <span>✓</span> Mark Learned
+        </button>
+        <button class="nav-circle" id="next-btn" onclick="LearnPage.next()">▶</button>
       </div>
     </div>
   </div>
 
   <!-- Word List Modal -->
-  <div class="modal-overlay" id="word-list-modal">
-    <div class="modal">
+  <div class="modal-overlay" id="word-modal">
+    <div class="modal-sheet">
       <div class="modal-header">
-        <h3 class="modal-title">📋 All Words</h3>
-        <button class="modal-close">&times;</button>
+        <span class="modal-title" id="modal-title">All Words</span>
+        <button class="modal-close" onclick="LearnPage.closeModal()">✕</button>
       </div>
-      <div class="modal-body" id="word-list-container"></div>
-    </div>
-  </div>
-
-  <!-- Learned List Modal -->
-  <div class="modal-overlay" id="learned-list-modal">
-    <div class="modal">
-      <div class="modal-header">
-        <h3 class="modal-title">✓ Learned Words</h3>
-        <button class="modal-close">&times;</button>
+      <div class="modal-body">
+        <div class="word-list" id="word-list"></div>
       </div>
-      <div class="modal-body" id="learned-list-container"></div>
     </div>
   </div>
 
