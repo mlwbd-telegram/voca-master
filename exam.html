@@ -3,114 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vocab Master - Exam</title>
+  <title>Exam - Vocab Master</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="bg-radial"></div>
-  <div class="scanlines"></div>
-  <div class="scanline-bar"></div>
+  <!-- Background -->
+  <div class="bg-mesh"></div>
+  <div class="grid-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- Loading -->
+  <div class="loading-screen" id="loading">
+    <div class="loader"></div>
+    <div class="loading-text">LOADING</div>
+  </div>
 
   <div class="container">
-    <header>
-      <div class="logo">VOCAB MASTER</div>
-      <nav class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="learn.html" class="nav-link">Learn</a>
-        <a href="exam.html" class="nav-link active">Exam</a>
-      </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">VOCAB</div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-item"><span>Home</span></a>
+        <a href="learn.html" class="nav-item"><span>Learn</span></a>
+        <a href="exam.html" class="nav-item active"><span>Exam</span></a>
+      </div>
+    </nav>
 
     <!-- Mode Selection -->
-    <div id="mode-selection" class="hud-panel mode-selection">
-      <div class="corner corner-tl"></div>
-      <div class="corner corner-tr"></div>
-      <div class="corner corner-bl"></div>
-      <div class="corner corner-br"></div>
-
-      <h2 class="mode-title">Select Exam Mode</h2>
-      
-      <div class="mode-grid">
-        <div class="mode-card" id="mode-learned">
-          <div class="mode-icon">🎯</div>
-          <h3>Practice Learned</h3>
-          <p>Quiz from your learned words only</p>
+    <div class="exam-mode-grid" id="mode-select">
+      <div class="mode-option" onclick="ExamPage.start('learned')">
+        <div class="mode-content">
+          <div class="mode-icon-large">🎯</div>
+          <div class="mode-title">Practice Learned</div>
+          <div class="mode-desc">Quiz from your learned words only</div>
         </div>
-        
-        <div class="mode-card" id="mode-full">
-          <div class="mode-icon">🌐</div>
-          <h3>Full Exam (50+ Words)</h3>
-          <p>50+ random words from full database (no repeats)</p>
+      </div>
+      <div class="mode-option" onclick="ExamPage.start('full')">
+        <div class="mode-content">
+          <div class="mode-icon-large">🌐</div>
+          <div class="mode-title">Full Exam</div>
+          <div class="mode-desc">50+ words from full database</div>
         </div>
       </div>
     </div>
 
     <!-- Quiz -->
-    <div id="quiz-container" class="quiz-container hidden">
-      <div class="hud-panel">
-        <div class="corner corner-tl"></div>
-        <div class="corner corner-tr"></div>
-        <div class="corner corner-bl"></div>
-        <div class="corner corner-br"></div>
-
-        <div class="question-counter" id="question-counter">Question 1 / 50</div>
-
-        <div class="quiz-word">
-          <h2 id="quiz-word">Word</h2>
-        </div>
-
-        <div class="options-grid" id="options-grid"></div>
-
-        <div class="feedback" id="feedback"></div>
-
-        <button class="btn btn-primary next-btn hidden" id="next-btn">Next Question →</button>
-      </div>
+    <div class="quiz-card hidden" id="quiz-section">
+      <div class="quiz-progress">Question <span id="q-current">1</span> / <span id="q-total">50</span></div>
+      
+      <h2 class="quiz-word-display" id="quiz-word">WORD</h2>
+      
+      <div class="options-list" id="options-list"></div>
+      
+      <div class="feedback-msg" id="feedback"></div>
+      
+      <button class="next-btn-large hidden" id="next-btn" onclick="ExamPage.next()">Next Question →</button>
     </div>
 
     <!-- Results -->
-    <div id="results-container" class="results-container hidden">
-      <div class="hud-panel">
-        <div class="corner corner-tl"></div>
-        <div class="corner corner-tr"></div>
-        <div class="corner corner-bl"></div>
-        <div class="corner corner-br"></div>
-
-        <div class="score-display">
-          <div class="score-circle" id="score-circle">
-            <div class="score-number" id="score-number">0</div>
-            <div class="score-total" id="score-total">/50</div>
-          </div>
-          
-          <div class="accuracy" id="accuracy">0% Accuracy</div>
-          <p class="performance-msg" id="performance-msg">Performance message</p>
+    <div class="results-card hidden" id="results-section">
+      <div class="score-ring" id="score-ring">
+        <div class="score-content">
+          <div class="score-value" id="score-percent">0%</div>
+          <div class="score-label">Score</div>
         </div>
+      </div>
 
-        <div class="stats-grid">
-          <div class="stat-box">
-            <div class="stat-value" id="correct-count" style="color: var(--neon-green);">0</div>
-            <div class="stat-label">Correct</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-value" id="wrong-count" style="color: var(--neon-pink);">0</div>
-            <div class="stat-label">Wrong</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-value" id="percentage" style="color: var(--neon-cyan);">0%</div>
-            <div class="stat-label">Score</div>
-          </div>
+      <div class="result-stats">
+        <div class="result-stat">
+          <div class="result-stat-value correct" id="res-correct">0</div>
+          <div class="result-stat-label">Correct</div>
         </div>
+        <div class="result-stat">
+          <div class="result-stat-value wrong" id="res-wrong">0</div>
+          <div class="result-stat-label">Wrong</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-value total" id="res-total">0</div>
+          <div class="result-stat-label">Total</div>
+        </div>
+      </div>
 
-        <!-- Wrong Words List -->
-        <div class="wrong-words-section" id="wrong-words-section">
-          <h3 class="wrong-words-title">📋 Words to Review</h3>
-          <div class="wrong-words-list" id="wrong-words-list"></div>
-        </div>
+      <p class="result-message" id="result-msg">Great job!</p>
 
-        <div class="btn-container">
-          <button class="btn btn-primary" id="restart-btn">Try Again</button>
-          <button class="btn btn-success" id="home-btn">Back to Learn</button>
-        </div>
+      <div class="wrong-words-box hidden" id="wrong-box">
+        <div class="wrong-words-title">Words to Review</div>
+        <div id="wrong-words-list"></div>
+      </div>
+
+      <div class="result-actions">
+        <button class="result-btn primary" onclick="ExamPage.restart()">Try Again</button>
+        <button class="result-btn secondary" onclick="location.href='learn.html'">Back to Learn</button>
       </div>
     </div>
   </div>
