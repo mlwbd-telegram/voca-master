@@ -101,5 +101,13 @@
 
   <script src="js/app.js"></script>
   <script src="js/exam.js"></script>
+  <script>
+    // Hide loading screen when page loads
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loading').classList.add('hide');
+      }, 500);
+    });
+  </script>
 </body>
 </html>
